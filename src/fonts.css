@@ -1,0 +1,81 @@
+/* FUTURA PT */
+
+@font-face {
+    font-family: 'Futura PT';
+    font-weight: 100;
+    src: local('Futura PT'), url("./Assets/fonts/Futura PT/FuturaPTLight.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    font-weight: 300;
+    src: local('Futura PT'), url("./Assets/fonts/Futura PT/FuturaPTBook.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    font-weight: 400;
+    src: local('Futura PT'), url("./Assets/fonts/Futura PT/FuturaPTMedium.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    font-weight: 600;
+    src: local('Futura PT'), url("./Assets/fonts/Futura PT/FuturaPTDemi.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    font-weight: 700;
+    src: local('Futura PT'), url("./Assets/fonts/Futura PT/FuturaPTHeavy.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    font-weight: 900;
+    src: local('Futura PT'), url("./Assets/fonts/Futura PT/FuturaPTBold.otf") format('opentype');
+}
+
+/* PROXIMA NOVA */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 100;
+    src: local('Proxima Nova'), url("./Assets/fonts/Proxima Nova/ProximaNova-Thin.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    src: local('Proxima Nova'), url("./Assets/fonts/Proxima Nova/ProximaNova-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    src: local('Proxima Nova'), url("./Assets/fonts/Proxima Nova/ProximaNova-Bold.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 900;
+    src: local('Proxima Nova'), url("./Assets/fonts/Proxima Nova/ProximaNova-Extrabold.otf") format('opentype');
+}
+
+/* SPACE MONO */
+@font-face {
+    font-family: 'Space Mono';
+    font-weight: 400;
+    src: local('Space Mono'), url("./Assets/fonts/Space Mono/SpaceMono-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    font-weight: 900;
+    src: local('Space Mono'), url("./Assets/fonts/Space Mono/SpaceMono-Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    font-style: italic;
+    src: local('Space Mono'), url("./Assets/fonts/Space Mono/SpaceMono-Italic.ttf") format('truetype');
+}
