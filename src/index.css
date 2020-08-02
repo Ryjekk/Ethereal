@@ -1,8 +1,6 @@
-@import "./fonts.css";
-
 body {
   margin: 0;
-  font-family: 'Futura PT', 'Proxima Nova', 'Space Mono', sans-serif;
+  font-family: 'Space Mono', monospace;
   overflow-x: hidden;
   background-color: #121212;
   color: #fff;
