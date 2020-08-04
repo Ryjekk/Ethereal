@@ -5,8 +5,8 @@ export {
     Heading,
     SmallHeading,
     Paragraph,
-    Inner,
-    InnerLanding,
-    Spacing,
-    FixedSpacing
+    // Inner,
+    // InnerLanding,
+    // Spacing,
+    // FixedSpacing
 } from './styles';
