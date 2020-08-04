@@ -10,11 +10,11 @@ export const VideoEl = styled.video`
 
 export const Overlay = styled.div`
     position: absolute;
-    display: flex;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
