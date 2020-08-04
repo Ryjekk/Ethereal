@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Space Mono', 'bebas-neue-by-fontfabric', 'droid-sans-mono', monospace;
   overflow-x: hidden;
   background-color: #121212;
-  color: #fff;
+  color: #f9f8f8;
 }
 
 * {
