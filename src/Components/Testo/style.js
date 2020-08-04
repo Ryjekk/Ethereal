@@ -5,6 +5,7 @@ import { SmallHeading } from '../../Style';
 export const GuidesCont = styled.div`
     background-color: black;
     width: 100vw;
+    // height: 100vh;
     padding: 100px 0 50px 0;
    
     @media (${QUERIES.medium}) {

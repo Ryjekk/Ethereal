@@ -19,9 +19,7 @@ function App() {
                   <WelcomePage />
               </Spacing>
           </InnerLanding>
-          <FixedSpacing>
               <Testo />
-          </FixedSpacing>
       </Container>
   );
 }

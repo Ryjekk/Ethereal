@@ -63,9 +63,10 @@ export const Inner = styled.div`
     width: 100vw;
     height: auto;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    overflow: hidden;
     align-items: center;
 `;
 

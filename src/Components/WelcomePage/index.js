@@ -1,11 +1,12 @@
 import React from "react";
-
 import { VideoEl, Overlay, WelcomeText, WelcomeParagraph } from './style'
 
+// Assets
 import welcomeVideo from '../../Assets/Movies/movie.mp4'
 import welcomeVideoWebm from '../../Assets/Movies/movie_1.webm'
 
 // TODO Optimize video for phones -> add gif instead ?> change for Iframes for mobile to work
+// TODO Add animation when video is loading in - fade in text or other bs
 
 const WelcomePage = () => {
     return (
