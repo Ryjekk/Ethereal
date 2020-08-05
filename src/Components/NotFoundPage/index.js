@@ -4,6 +4,7 @@ import { OverlayWrapper, Paragraph404 } from './style'
 
 // TODO change image DMCA
 // TODO add button to go back to homepage
+// TODO add footer to page
 
 const NotFoundPage = () => {
     return (
