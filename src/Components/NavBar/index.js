@@ -1,20 +1,37 @@
 import React from "react";
 import { Navigation, NavTopL, NavTopR, NavBotL, NavBotR, Logo, Options } from './style'
 import { Link } from 'react-router-dom';
+import Index from "./Drawer";
 
 import LogoImg from '../../Assets/logo.svg'
 
-export default class Navbar extends React.Component {
+class Navbar extends React.Component {
+    state = {
+        toggleDrawer: false
+    };
+
     render() {
+        let ShowDrawer = () => {
+            this.setState((pervState) => {
+                return {toggleDrawer: !pervState.toggleDrawer}
+            })
+        };
+
+        let linkDrawer = null;
+        if (this.state.toggleDrawer) {
+            linkDrawer =  <Index/>
+        }
+
         return (
             <Navigation>
                 <NavTopL>
                     <Logo src={LogoImg}/>
                 </NavTopL>
                 <NavTopR>
-                    <Link to='/'>
-                        <Options>一 Home</Options>
-                    </Link>
+                    <div onClick={ShowDrawer}>
+                        <Options>三</Options>
+                        {linkDrawer}
+                    </div>
                 </NavTopR>
                 <NavBotL>
                     <Link to='/about'>
@@ -30,3 +47,5 @@ export default class Navbar extends React.Component {
         )
     }
 }
+
+export default Navbar;

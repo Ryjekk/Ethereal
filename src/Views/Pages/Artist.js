@@ -3,7 +3,7 @@ import React from "react";
 function Artist() {
     return (
         <div>
-            Artist
+            Gallery of artists and redirection to profiles of artist
         </div>
     );
 }

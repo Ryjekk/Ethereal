@@ -28,13 +28,13 @@ export const NavTopR = styled.div`
     top: ${PADDING.medium};
     right: ${PADDING.medium};
     transform: rotate(90deg);
-    margin-right: -10px;
-    margin-top: 30px;
+    margin-right: 5px;
+    margin-top: -10px;
     
     @media (${QUERIES.medium}) {
-        margin-left: 0px;
+        margin-right: 10px;
+        margin-top: -5px;
     }
-
 `;
 
 export const NavBotL = styled.div`
@@ -42,12 +42,8 @@ export const NavBotL = styled.div`
     bottom: ${PADDING.medium};
     left: ${PADDING.medium};
     transform: rotate(-90deg);
-    margin-bottom: -30px;
-    margin-bottom: 30px;
-    
-    @media (${QUERIES.medium}) {
-        margin-left: 0px;
-    }
+    margin-left: -10px;
+    margin-bottom: 25px;
 `;
 
 export const NavBotR = styled.div`
@@ -71,8 +67,20 @@ export const Logo = styled.img`
 
 export const Options = styled.p`
     color: ${COLORS.gray};
+    cursor: pointer;
     
     @media (${QUERIES.medium}) {
         font-size: 18px;
     }
+`;
+
+export const LinkList = styled.ul`
+    list-style: none;
+    padding: 0 0 0 30px;
+
+`;
+
+export const LinkOptions = styled(Options)`
+    margin-top: -10px;
+    padding-bottom: 0px;
 `;
