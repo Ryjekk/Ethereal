@@ -1,9 +1,11 @@
 import React from "react";
 import { Navigation, NavTopL, NavTopR, NavBotL, NavBotR, Logo, Options } from './style'
 import { Link } from 'react-router-dom';
-import Index from "./Drawer";
+import Drawer from "./Drawer";
 
 import LogoImg from '../../Assets/logo.svg'
+
+// TODO ADD text on :hoover animation
 
 class Navbar extends React.Component {
     state = {
@@ -19,7 +21,7 @@ class Navbar extends React.Component {
 
         let linkDrawer = null;
         if (this.state.toggleDrawer) {
-            linkDrawer =  <Index/>
+            linkDrawer =  <Drawer/>
         }
 
         return (
@@ -28,11 +30,9 @@ class Navbar extends React.Component {
                     <Logo src={LogoImg}/>
                 </NavTopL>
                 <NavTopR>
-                    <div onClick={ShowDrawer}>
-                        <Options>三</Options>
-                        {linkDrawer}
-                    </div>
+                    <Options onClick={ShowDrawer}>三</Options>
                 </NavTopR>
+                    {linkDrawer}
                 <NavBotL>
                     <Link to='/about'>
                         <Options>三 About</Options>

@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { QUERIES, COLORS } from '../../Style';
 
 export const PADDING = {
-    medium: '25px'
+    big: '35px',
+    medium: '25px',
+    small: '15px'
 };
 
 export const Navigation = styled.nav`
@@ -18,9 +20,13 @@ export const Navigation = styled.nav`
 `;
 
 export const NavTopL = styled.div`
-    position: fixed;
+    position: fixed; 
     top: ${PADDING.medium};
     left: ${PADDING.medium};
+    
+    @media (${QUERIES.medium}) {
+        left: ${PADDING.small};
+    }
 `;
 
 export const NavTopR = styled.div`
@@ -28,32 +34,34 @@ export const NavTopR = styled.div`
     top: ${PADDING.medium};
     right: ${PADDING.medium};
     transform: rotate(90deg);
-    margin-right: 5px;
-    margin-top: -10px;
     
     @media (${QUERIES.medium}) {
-        margin-right: 10px;
-        margin-top: -5px;
+        right: ${PADDING.big};
+        top: ${PADDING.big};
     }
 `;
 
 export const NavBotL = styled.div`
     position: fixed;
-    bottom: ${PADDING.medium};
-    left: ${PADDING.medium};
     transform: rotate(-90deg);
-    margin-left: -10px;
-    margin-bottom: 25px;
+    transform-origin: 0 0;
+    left: ${PADDING.medium};
+    bottom: 0;
+    
+    @media (${QUERIES.medium}) {
+        left: ${PADDING.big};
+        bottom: ${PADDING.small};
+    }
 `;
 
 export const NavBotR = styled.div`
     position: fixed;
     bottom: ${PADDING.medium};
     right: ${PADDING.medium};
-    margin-right: 20px;
     
     @media (${QUERIES.medium}) {
-        margin-left: 0px;
+        right: ${PADDING.big};
+        bottom: ${PADDING.big};
     }
 `;
 
@@ -65,22 +73,11 @@ export const Logo = styled.img`
     }
 `;
 
-export const Options = styled.p`
+export const Options = styled.div`
     color: ${COLORS.gray};
     cursor: pointer;
     
     @media (${QUERIES.medium}) {
         font-size: 18px;
     }
-`;
-
-export const LinkList = styled.ul`
-    list-style: none;
-    padding: 0 0 0 30px;
-
-`;
-
-export const LinkOptions = styled(Options)`
-    margin-top: -10px;
-    padding-bottom: 0px;
 `;
