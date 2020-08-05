@@ -9,8 +9,8 @@ function App() {
   return (
       <Container>
           <NavBar/>
-          <WelcomePage />
-          <MainContent />
+              <WelcomePage />
+              <MainContent />
       </Container>
   );
 }
