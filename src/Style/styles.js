@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 // Main
+// TODO Add queries for laptop L
 export const QUERIES = {
     medium: `min-width: 1092px`,
     small: `min-width: 552px`,
@@ -39,14 +40,14 @@ export const SmallHeading = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-    font-size: 13px;
+    font-size: 10px;
     color: ${COLORS.lightGray};
     line-height: 190%;
     letter-spacing: 0.05em;
     // padding-right: 10px;
 
     @media (${QUERIES.medium}) {
-        font-size: 15px;
+        font-size: 13px;
         // padding-right: 30px;
     }
 `;
@@ -57,45 +58,3 @@ export const Container = styled.div`
     opacity: 1;
     z-index: 3;
 `;
-
-
-
-
-
-
-
-
-
-
-
-
-// // Not used
-// export const Inner = styled.div`
-//     max-width: ${QUERIES.maxWidth};
-//     width: 100vw;
-//     height: auto;
-//     margin: 0 auto;
-//     // display: flex;
-//     // flex-direction: column;
-//     // justify-content: center;
-//     overflow: hidden;
-//     align-items: center;
-// `;
-//
-// export const InnerLanding = styled(Inner)`
-//     z-index: 5;
-//     // margin-bottom: 670px;
-//     // position: relative;
-// `;
-//
-// export const Spacing = styled.div`
-//     display: flex;
-//     margin: 0px auto 0 auto;
-// `;
-//
-// export const FixedSpacing = styled(Spacing)`
-//     width: 100vw;
-//     // position: fixed;
-//     // z-index: -99;
-//     bottom: 0;
-// `;

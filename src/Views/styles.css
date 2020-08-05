@@ -2,6 +2,13 @@
     display: none !important;
 }
 
+/*TODO Hide scroll for firefox*/
+
+.ClearSearchbar {
+    -ms-overflow-style: none;
+    /*scrollbar-width: none;*/
+}
+
 .ScrollDown {
     background: #121212 linear-gradient(transparent 0%, transparent 50%, #f9f8f8 50%, #f9f8f8 100%);
     position: absolute;

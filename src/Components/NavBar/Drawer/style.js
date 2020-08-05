@@ -8,7 +8,7 @@ export const LinkList = styled(NavTopR)`
     top: 60px;
 
     @media (${QUERIES.medium}) {
-       right: 50px;
-       top: 75px;
+       right: 40px;
+       top: 65px;
     }
 `;

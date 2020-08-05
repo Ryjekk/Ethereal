@@ -4,9 +4,5 @@ export {
     Container,
     Heading,
     SmallHeading,
-    Paragraph,
-    // Inner,
-    // InnerLanding,
-    // Spacing,
-    // FixedSpacing
+    Paragraph
 } from './styles';
