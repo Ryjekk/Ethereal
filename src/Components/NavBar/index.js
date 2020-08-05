@@ -27,7 +27,9 @@ class Navbar extends React.Component {
         return (
             <Navigation>
                 <NavTopL>
-                    <Logo src={LogoImg}/>
+                    <Link to='/'>
+                        <Logo src={LogoImg}/>
+                    </Link>
                 </NavTopL>
                 <NavTopR>
                     <Options onClick={ShowDrawer}>三</Options>

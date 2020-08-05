@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { QUERIES } from '../../Style';
-import { SmallHeading } from '../../Style';
+import { QUERIES, SmallHeading } from '../../Style';
 
-export const GuidesCont = styled.div`
+export const WelcomeCont = styled.div`
     background-color: black;
     width: 100vw;
-    // height: 100vh;
+    height: 100vh;
     padding: 100px 0 50px 0;
    
     @media (${QUERIES.medium}) {
@@ -13,7 +12,7 @@ export const GuidesCont = styled.div`
     }
 `;
 
-export const SmallHeadingGuides = styled(SmallHeading)`
+export const PlAcEhOlDeR = styled(SmallHeading)`
     color: white;
     margin: 0 30px 50px 30px;
 

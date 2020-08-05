@@ -1,8 +1,6 @@
 import React from "react";
-import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import { VideoEl, Overlay, WelcomeText } from './style'
 import { Paragraph } from "../../Style";
-import './Styles.css'
 
 // Assets
 import welcomeVideo from '../../Assets/Movies/movie.mp4'
@@ -15,8 +13,7 @@ import WelcomeVideoPoster from '../../Assets/skullBlack.jpg'
 
 const WelcomePage = () => {
     return (
-        <Parallax pages={2} className="ClearSearchbar">
-            <ParallaxLayer speed={0.5}>
+        <>
             <VideoEl loop="loop" autoPlay="autoPlay" muted poster={WelcomeVideoPoster}>
                 <source src={welcomeVideo} type="video/mp4"/>
                 <source src={welcomeVideoWebm} type="video/webm"/>
@@ -32,8 +29,7 @@ const WelcomePage = () => {
                 </Paragraph>
                 <div className="ScrollDown"/>
             </Overlay>
-            </ParallaxLayer>
-        </Parallax>
+        </>
     )
 };
 

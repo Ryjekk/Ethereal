@@ -1,16 +1,24 @@
 import React from 'react';
+import {Parallax, ParallaxLayer} from "react-spring/renderprops-addons";
 import { Container } from '../Style';
+import './styles.css'
 
 import NavBar from '../Components/NavBar';
 import WelcomePage from '../Components/WelcomePage';
-import MainContent from '../Components/MainContent';
+import WelcomePageParallax from '../Components/WelcomePageParallax';
+import FooterContent from '../Components/FooterContent'
 
 function App() {
   return (
       <Container>
           <NavBar/>
-              <WelcomePage />
-              <MainContent />
+          <Parallax pages={2} className="ClearSearchbar">
+              <ParallaxLayer speed={0.5}>
+                  <WelcomePage />
+              </ParallaxLayer>
+          </Parallax>
+          <WelcomePageParallax />
+          <FooterContent/>
       </Container>
   );
 }

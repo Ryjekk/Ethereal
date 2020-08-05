@@ -1,22 +1,19 @@
 import React from 'react';
 
-import {
-    GuidesCont,
-    SmallHeadingGuides,
-} from './style';
+import { WelcomeCont, PlAcEhOlDeR } from './style';
 
-function MainContent() {
+function WelcomePageParallax() {
     return (
-        <GuidesCont>
-            <SmallHeadingGuides>
+        <WelcomeCont>
+            <PlAcEhOlDeR>
                 Really good coffee is complex and confusing for a new brewer,
                 but it doesn’t have to be. Explore our guides to learn
                 everything you’ll need.Really good coffee is complex and confusing for a new brewer,Really good coffee is complex and confusing for a new brewer,
                 but it doesn’t have to be. Explore our guides to learn
                 everything you’ll need.RReally good coffee is complex and confusing for a new brewer,
-            </SmallHeadingGuides>
-        </GuidesCont>
+            </PlAcEhOlDeR>
+        </WelcomeCont>
     );
 }
 
-export default MainContent;
+export default WelcomePageParallax;
