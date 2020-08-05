@@ -74,6 +74,7 @@ export const Logo = styled.img`
 `;
 
 export const Options = styled.div`
+    text-transform: uppercase;
     color: ${COLORS.gray};
     cursor: pointer;
     

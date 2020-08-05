@@ -3,6 +3,7 @@ import { Heading } from '../../Style'
 import { OverlayWrapper, Paragraph404 } from './style'
 
 // TODO change image DMCA
+// TODO add button to go back to homepage
 
 const NotFoundPage = () => {
     return (

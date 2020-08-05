@@ -1,8 +1,10 @@
 export {
     QUERIES,
     COLORS,
+    FONTS,
     Container,
     Heading,
     SmallHeading,
-    Paragraph
+    Paragraph,
+    Inner
 } from './styles';

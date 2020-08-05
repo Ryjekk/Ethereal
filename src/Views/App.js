@@ -1,6 +1,6 @@
 import React from 'react';
 import {Parallax, ParallaxLayer} from "react-spring/renderprops-addons";
-import { Container } from '../Style';
+import { Container, Inner } from '../Style';
 import './styles.css'
 
 import NavBar from '../Components/NavBar';
@@ -17,8 +17,10 @@ function App() {
                   <WelcomePage />
               </ParallaxLayer>
           </Parallax>
-          <WelcomePageParallax />
-          <FooterContent/>
+              <WelcomePageParallax />
+          <Inner>
+              <FooterContent/>
+          </Inner>
       </Container>
   );
 }

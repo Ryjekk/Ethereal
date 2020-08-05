@@ -13,6 +13,12 @@ export const COLORS = {
     gray: '#f9f8f8'
 };
 
+export const FONTS = {
+    fontOne: 'Space Mono',
+    fontTwo: 'bebas-neue-by-fontfabric',
+    fontThree: 'droid-sans-mono'
+};
+
 // Text
 export const Heading = styled.h1`
     font-size: 30px;
@@ -54,7 +60,13 @@ export const Paragraph = styled.p`
 
 export const Container = styled.div`
     height: 100vh;
-    background-color: #121212;
-    opacity: 1;
     z-index: 3;
+`;
+
+export const Inner = styled.div`
+    padding: 50px 8%;
+
+    @media (${QUERIES.medium}) {
+        padding: 100px 8%;
+    }
 `;

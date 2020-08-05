@@ -3,10 +3,12 @@
 }
 
 /*TODO Hide scroll for firefox*/
+/*TODO FIX WIDTH ON IFRAMES*/
 
 .ClearSearchbar {
     -ms-overflow-style: none;
     /*scrollbar-width: none;*/
+    width: 100vw !important;
 }
 
 .ScrollDown {
