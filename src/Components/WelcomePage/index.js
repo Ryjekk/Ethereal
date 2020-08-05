@@ -1,6 +1,7 @@
 import React from "react";
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
-import { VideoEl, Overlay, WelcomeText, WelcomeParagraph } from './style'
+import { VideoEl, Overlay, WelcomeText } from './style'
+import { Paragraph } from "../../Style";
 import './Styles.css'
 
 // Assets
@@ -26,10 +27,10 @@ const WelcomePage = () => {
                 <WelcomeText>
                     ETHRERAL TOTTOO
                 </WelcomeText>
-                <WelcomeParagraph style={{textDecoration: 'underline'}}>
+                <Paragraph style={{textDecoration: 'underline'}}>
                     Laugavegur 105, Reykjavik IS
-                </WelcomeParagraph>
-                <div className="ScrollDown"></div>
+                </Paragraph>
+                <div className="ScrollDown"/>
             </Overlay>
             </ParallaxLayer>
         </Parallax>

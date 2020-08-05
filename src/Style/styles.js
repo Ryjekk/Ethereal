@@ -39,15 +39,15 @@ export const SmallHeading = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-    font-size: 10px;
+    font-size: 13px;
     color: ${COLORS.lightGray};
     line-height: 190%;
     letter-spacing: 0.05em;
-    padding-right: 10px;
+    // padding-right: 10px;
 
     @media (${QUERIES.medium}) {
-        font-size: 13px;
-        padding-right: 30px;
+        font-size: 15px;
+        // padding-right: 30px;
     }
 `;
 

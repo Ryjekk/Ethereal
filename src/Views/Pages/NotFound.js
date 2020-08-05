@@ -1,10 +1,14 @@
 import React from "react";
 
+import Navbar from "../../Components/NavBar";
+import NotFoundPage from '../../Components/NotFoundPage'
+
 function NotFound() {
     return (
-        <div>
-            404
-        </div>
+        <>
+            <Navbar/>
+           <NotFoundPage/>
+        </>
     );
 }
 

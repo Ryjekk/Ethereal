@@ -35,11 +35,3 @@ export const WelcomeText = styled.div`
         letter-spacing: .4em;
     }
 `;
-
-export const WelcomeParagraph = styled(Paragraph)`
-    font-size: 13px;
-
-    @media (${QUERIES.medium}) {
-        font-size: 15px;
-    }
-`;
