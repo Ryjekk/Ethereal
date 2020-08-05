@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { QUERIES, Paragraph } from "../../Style";
+import { QUERIES } from "../../Style";
 
 export const VideoEl = styled.video`
     width: 100%;

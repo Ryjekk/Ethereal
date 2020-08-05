@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Overlay } from "../WelcomePage/style";
-import {Paragraph, QUERIES} from "../../Style";
+import { Paragraph, QUERIES } from "../../Style";
 
 import Img404 from '../../Assets/skullBlack.jpg'
 

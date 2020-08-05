@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading, Paragraph } from '../../Style'
+import { Heading } from '../../Style'
 import { OverlayWrapper, Paragraph404 } from './style'
 
 // TODO change image DMCA
