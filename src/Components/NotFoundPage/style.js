@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Paragraph, QUERIES, COLORS, Inner, Options} from "../../Style";
+import {Paragraph, QUERIES, Options} from "../../Style";
 
 import Img404 from '../../Assets/skullBlack.jpg'
 
@@ -24,18 +24,6 @@ export const Paragraph404 = styled(Paragraph)`
     text-align: center;   
     padding: 0 50px;
     font-size: 13px;
-`;
-
-export const BottomBox = styled(Inner)`
-    width: 100%;
-    bottom: 0;
-    background-color: ${COLORS.bgBlack};
-    opacity: .7;
-    
-    @media (${QUERIES.medium}) {
-        padding: 50px 8%;
-        position: absolute;
-    }
 `;
 
 export const OptionsLink = styled(Options)`

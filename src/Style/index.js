@@ -7,6 +7,7 @@ export {
     SmallHeading,
     Paragraph,
     Inner,
+    BottomBox,
     Options,
     TrackBallSlide,
     ColorSlide,

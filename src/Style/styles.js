@@ -32,6 +32,11 @@ export const Heading = styled.h1`
     align-items: center;
     text-align: center;
     letter-spacing: 0.1em;
+    padding: 0 50px;
+    
+    media (${QUERIES.medium}) {
+       padding: 0;
+    }
 `;
 
 export const SmallHeading = styled.h2`
@@ -73,6 +78,18 @@ export const Inner = styled.div`
 
     @media (${QUERIES.medium}) {
         padding: 100px 8%;
+    }
+`;
+
+export const BottomBox = styled(Inner)`
+    width: 100%;
+    bottom: 0;
+    background-color: ${COLORS.bgBlack};
+    opacity: .7;
+    
+    @media (${QUERIES.medium}) {
+        padding: 50px 8%;
+        position: absolute;
     }
 `;
 
