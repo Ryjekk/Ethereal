@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Overlay } from "../WelcomePage/style";
-import { Paragraph, QUERIES, Inner } from "../../Style";
+import { Paragraph, QUERIES, COLORS, Inner } from "../../Style";
 
 import Img404 from '../../Assets/skullBlack.jpg'
 
@@ -27,7 +27,7 @@ export const BottomBox = styled(Inner)`
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: #121212;
+    background-color: ${COLORS.bgBlack};
     opacity: .7;
     
     @media (${QUERIES.medium}) {

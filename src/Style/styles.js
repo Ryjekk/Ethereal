@@ -9,8 +9,11 @@ export const QUERIES = {
 };
 
 export const COLORS = {
-    lightGray: '#9E9E9E',
-    gray: '#f9f8f8'
+    gray: '#f9f8f8',
+    darkGray: '#9E9E9E',
+    darkestGray: '#4e5559',
+    black: '#000000',
+    bgBlack: "#121212"
 };
 
 export const FONTS = {
@@ -47,7 +50,7 @@ export const SmallHeading = styled.h2`
 
 export const Paragraph = styled.p`
     font-size: 10px;
-    color: ${COLORS.lightGray};
+    color: ${COLORS.darkGray};
     line-height: 190%;
     letter-spacing: 0.05em;
     // padding-right: 10px;
@@ -92,38 +95,38 @@ export const ColorSlide = keyframes`
         background-position: 0% 0%;
     }
     21% {
-        background-color: #4e5559;
+        background-color: ${COLORS.darkestGray};
     }
     29.99% {
-        background-color: #f9f8f8;
+        background-color: ${COLORS.gray};
         background-position: 0% 0%;
     }
     30% {
-        background-color: #4e5559;
+        background-color: ${COLORS.darkestGray};
         background-position: 0% 100%;
     }
     50% {
         background-position: 0% 0%;
     }
     51% {
-        background-color: #4e5559;
+        background-color: ${COLORS.darkestGray};
     }
     59% {
-        background-color: #f9f8f8;
+        background-color: ${COLORS.gray};
         background-position: 0% 0%;
     }
     60% {
-        background-color: #4e5559;
+        background-color: ${COLORS.darkestGray};
         background-position: 0% 100%;
     }
     80% {
         background-position: 0% 0%;
     }
     81% {
-        background-color: #4e5559;
+        background-color: ${COLORS.darkestGray};
     }
     90%, 100% {
-        background-color: #f9f8f8;
+        background-color: ${COLORS.gray};
     }
 `;
 

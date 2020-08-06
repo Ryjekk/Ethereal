@@ -22,7 +22,7 @@ const NotFoundPage = () => {
             </Paragraph404>
             <DivBtn>
                 <Link to='/'>
-                    <Options>
+                    <Options style={{textDecoration: "underline", letterSpacing: '2px'}}>
                         Home
                     </Options>
                 </Link>

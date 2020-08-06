@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { QUERIES, ColorSlide, TrackBallSlide, NudgeMouse } from "../../Style";
+import { QUERIES, COLORS, ColorSlide, TrackBallSlide, NudgeMouse } from "../../Style";
 
 export const VideoEl = styled.video`
     width: 100%;
@@ -37,7 +37,7 @@ export const WelcomeText = styled.div`
 `;
 
 export const Scroller = styled.div`
-    background: #121212 linear-gradient(transparent 0%, transparent 50%, #f9f8f8 50%, #f9f8f8 100%);
+    background: ${COLORS.bgBlack} linear-gradient(transparent 0%, transparent 50%, ${COLORS.gray} 50%, ${COLORS.gray} 100%);
     position: absolute;
     bottom: 0;
     margin-bottom: 45px;
@@ -60,12 +60,12 @@ export const Scroller = styled.div`
     &::before{
         width: 26px;
         height: 47px;
-        background-color: #121212;
+        background-color: ${COLORS.bgBlack};
         border-radius: 100px;
     }
     
     &::after {
-        background-color: #f9f8f8;
+        background-color: ${COLORS.gray};
         width: 5px;
         height: 5px;
         border-radius: 100%;

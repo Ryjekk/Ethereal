@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { QUERIES, SmallHeading } from '../../Style';
+import {COLORS, QUERIES, SmallHeading} from '../../Style';
 
 export const WelcomeCont = styled.div`
-    background-color: black;
+    background-color: ${COLORS.black};
     width: 100vw;
     height: 100vh;
     padding: 100px 0 50px 0;
