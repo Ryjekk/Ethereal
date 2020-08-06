@@ -3,10 +3,7 @@ import { Btn } from './style'
 
 const DivBtn = (props) => {
     return (
-        <Btn
-            // disabled={props.disabled}
-            // onClick={props.clicked}
-        >
+        <Btn>
             {props.children}
         </Btn>
     );

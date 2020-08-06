@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Heading } from '../../Style'
-import { Options } from "../NavBar/style";
-import { OverlayWrapper, Paragraph404, BottomBox } from './style'
+//Components
 import FooterContent from "../FooterContent";
 import DivBtn from "../UI/DivBtn";
+//Style
+import { Heading, Options } from '../../Style'
+import { OverlayWrapper, Paragraph404, BottomBox } from './style'
 
 // TODO change image DMCA
 

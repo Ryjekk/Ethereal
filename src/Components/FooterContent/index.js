@@ -1,9 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link}  from "react-router-dom";
+//Style
 import { InnerWrapper, ContentCol, Heading, ParagraphFoot, Social, SocialLink } from './style';
-import { Options } from "../NavBar/style";
-
+import { Options } from "../../Style";
+//Assets
 import sprite from '../../Assets/Icons/sprite.svg'
+
 // TODO add links to <a>
 
 const FooterContent = () => {

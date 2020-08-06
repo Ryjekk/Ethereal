@@ -6,5 +6,6 @@ export {
     Heading,
     SmallHeading,
     Paragraph,
-    Inner
+    Inner,
+    Options
 } from './styles';

@@ -1,5 +1,5 @@
 import React from 'react';
-
+//Style
 import { WelcomeCont, PlAcEhOlDeR } from './style';
 
 function WelcomePageParallax() {

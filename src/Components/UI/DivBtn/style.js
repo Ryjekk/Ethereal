@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {COLORS, FONTS} from "../../../Style";
+import { COLORS, FONTS } from "../../../Style";
 
 
 export const Btn = styled.div`

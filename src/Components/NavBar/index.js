@@ -1,8 +1,10 @@
 import React from "react";
-import { Navigation, NavTopL, NavTopR, NavBotL, NavBotR, Logo, Options } from './style'
 import { Link } from 'react-router-dom';
+//Style
+import { Navigation, NavTopL, NavTopR, NavBotL, NavBotR, Logo } from './style'
+import { Options } from '../../Style'
 import Drawer from "./Drawer";
-
+//Asets
 import LogoImg from '../../Assets/logo.svg'
 
 // TODO ADD text on :hoover animation

@@ -58,6 +58,7 @@ export const Paragraph = styled.p`
     }
 `;
 
+// Boxes
 export const Container = styled.div`
     height: 100vh;
     z-index: 3;
@@ -68,5 +69,16 @@ export const Inner = styled.div`
 
     @media (${QUERIES.medium}) {
         padding: 100px 8%;
+    }
+`;
+
+// Links
+export const Options = styled.div`
+    text-transform: uppercase;
+    color: ${COLORS.gray};
+    cursor: pointer;
+    
+    @media (${QUERIES.medium}) {
+        font-size: 13px;
     }
 `;

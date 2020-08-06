@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {QUERIES} from "../../../Style";
-import {NavTopR} from "../style";
+import { QUERIES } from "../../../Style";
+import { NavTopR } from "../style";
 
 
 export const LinkList = styled(NavTopR)`

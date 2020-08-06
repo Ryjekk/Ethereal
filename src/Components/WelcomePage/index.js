@@ -1,7 +1,7 @@
 import React from "react";
+//Style
 import { VideoEl, Overlay, WelcomeText } from './style'
 import { Paragraph } from "../../Style";
-
 // Assets
 import welcomeVideo from '../../Assets/Movies/movie.mp4'
 import welcomeVideoWebm from '../../Assets/Movies/movie_1.webm'

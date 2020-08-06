@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { QUERIES, COLORS } from '../../Style';
+import { QUERIES } from '../../Style';
 
 export const PADDING = {
     big: '35px',
@@ -70,15 +70,5 @@ export const Logo = styled.img`
     
     @media (${QUERIES.medium}) {
         height: 45px;
-    }
-`;
-
-export const Options = styled.div`
-    text-transform: uppercase;
-    color: ${COLORS.gray};
-    cursor: pointer;
-    
-    @media (${QUERIES.medium}) {
-        font-size: 13px;
     }
 `;
