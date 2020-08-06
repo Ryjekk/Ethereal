@@ -1,6 +1,6 @@
 import React from "react";
 //Style
-import { VideoEl, Overlay, WelcomeText } from './style'
+import { VideoEl, Overlay, WelcomeText, Scroller } from './style'
 import { Paragraph } from "../../Style";
 // Assets
 import welcomeVideo from '../../Assets/Movies/movie.mp4'
@@ -27,7 +27,7 @@ const WelcomePage = () => {
                 <Paragraph style={{textDecoration: 'underline'}}>
                     Laugavegur 105, Reykjavik IS
                 </Paragraph>
-                <div className="ScrollDown"/>
+                <Scroller/>
             </Overlay>
         </>
     )

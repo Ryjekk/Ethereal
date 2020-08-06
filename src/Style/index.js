@@ -7,5 +7,8 @@ export {
     SmallHeading,
     Paragraph,
     Inner,
-    Options
+    Options,
+    TrackBallSlide,
+    ColorSlide,
+    NudgeMouse
 } from './styles';

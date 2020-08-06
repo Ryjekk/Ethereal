@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 // Main
 // TODO Add queries for laptop L
@@ -80,5 +80,136 @@ export const Options = styled.div`
     
     @media (${QUERIES.medium}) {
         font-size: 13px;
+    }
+`;
+
+//Animations
+export const ColorSlide = keyframes`
+0% {
+        background-position: 0% 100%;
+    }
+    20% {
+        background-position: 0% 0%;
+    }
+    21% {
+        background-color: #4e5559;
+    }
+    29.99% {
+        background-color: #f9f8f8;
+        background-position: 0% 0%;
+    }
+    30% {
+        background-color: #4e5559;
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 0% 0%;
+    }
+    51% {
+        background-color: #4e5559;
+    }
+    59% {
+        background-color: #f9f8f8;
+        background-position: 0% 0%;
+    }
+    60% {
+        background-color: #4e5559;
+        background-position: 0% 100%;
+    }
+    80% {
+        background-position: 0% 0%;
+    }
+    81% {
+        background-color: #4e5559;
+    }
+    90%, 100% {
+        background-color: #f9f8f8;
+    }
+`;
+
+export const TrackBallSlide = keyframes`
+0% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+    6% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+    }
+    14% {
+        opacity: 0;
+        transform: scale(0.4) translateY(40px);
+    }
+    15%, 19% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-20px);
+    }
+    28%, 29.99% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+    30% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+    36% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+    }
+    44% {
+        opacity: 0;
+        transform: scale(0.4) translateY(40px);
+    }
+    45%, 49% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-10px);
+    }
+    58%, 59.99% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+    66% {
+        opacity: 1;
+        transform: scale(0.9) translateY(5px);
+    }
+    74% {
+        opacity: 0;
+        transform: scale(0.4) translateY(40px);
+    }
+    75%, 79% {
+        opacity: 0;
+        transform: scale(0.4) translateY(-10px);
+    }
+    88%, 100% {
+        opacity: 1;
+        transform: scale(1) translateY(-10px);
+    }
+`;
+
+export const NudgeMouse = keyframes`
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(8px);
+    }
+    30% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(8px);
+    }
+    90% {
+        transform: translateY(0);
     }
 `;
