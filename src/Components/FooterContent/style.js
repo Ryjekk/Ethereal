@@ -12,7 +12,7 @@ export const InnerWrapper = styled.footer`
 `;
 
 export const ContentCol = styled.div`
-//Opcjonalnie
+//optional
     // text-align: center;
 `;
 

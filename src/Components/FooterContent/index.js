@@ -25,14 +25,14 @@ const FooterContent = () => {
                     SATURDAY, SUNDAY CLOSED
                 </ParagraphFoot>
                 <Link to='/booking'>
-                    <Options>Link to booking</Options>
+                    <Options style={{textDecoration: "underline"}}>Link to booking</Options>
                 </Link>
             </ContentCol>
             <ContentCol>
                 <Heading>Contact</Heading>
                 <ParagraphFoot>+354 776 32 41</ParagraphFoot>
                 <ParagraphFoot>
-                    <a href="mailto:webmaster@example.com" style={{color: "#f9f8f8"}}>example@gmail.com</a>
+                    <a href="mailto:webmaster@example.com" style={{textDecoration: "underline", color: "#f9f8f8"}}>example@gmail.com</a>
                 </ParagraphFoot>
             </ContentCol>
             <ContentCol>
