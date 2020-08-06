@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 // Main
 // TODO Add queries for laptop L
+// TODO Add universal margin
 export const QUERIES = {
     medium: `min-width: 1092px`,
     small: `min-width: 552px`,

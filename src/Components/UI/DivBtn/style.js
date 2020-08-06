@@ -3,10 +3,18 @@ import { COLORS, FONTS } from "../../../Style";
 
 
 export const Btn = styled.div`
+    margin-top: 10px;
     border: 2px solid ${COLORS.gray};
     cursor: pointer;
     font-family: ${FONTS.fontThree};
-    padding: 13px 26px;
+    
+    * {
+        //targeting link
+        *{
+            //targeting text
+            padding: 13px 26px;
+        }
+    }
     
     :hover {
         background-color: ${COLORS.gray};
