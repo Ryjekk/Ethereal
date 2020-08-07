@@ -7,7 +7,7 @@ export const InnerWrapper = styled.footer`
     
     @media (${QUERIES.medium}) {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 `;
 
