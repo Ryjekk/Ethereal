@@ -49,8 +49,8 @@ export const SmallHeading = styled.h2`
     letter-spacing: 0.1em;
 
     @media (${QUERIES.medium}) {
-        align-items: center;
-        text-align: center;
+        // align-items: center;
+        // text-align: center;
     }
 `;
 
@@ -74,7 +74,7 @@ export const Container = styled.div`
 `;
 
 export const Inner = styled.div`
-    padding: 50px 8%;
+    padding: 50px 13%;
 
     @media (${QUERIES.medium}) {
         padding: 100px 8%;
@@ -89,7 +89,7 @@ export const BottomBox = styled(Inner)`
     
     @media (${QUERIES.medium}) {
         padding: 50px 8%;
-        position: absolute;
+        // position: absolute;
     }
 `;
 
@@ -233,4 +233,21 @@ export const NudgeMouse = keyframes`
     90% {
         transform: translateY(0);
     }
+`;
+
+export const FaqAnimation = keyframes`
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: .1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
 `;

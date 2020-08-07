@@ -1,7 +1,7 @@
 import React from "react";
 import { Link}  from "react-router-dom";
 //Style
-import { InnerWrapper, ContentCol, Heading, ParagraphFoot, Social, SocialLink } from './style';
+import { InnerWrapper, ContentCol, FooterHeading, ParagraphFoot, Social, SocialLink } from './style';
 import { Options } from "../../Style";
 //Assets
 import sprite from '../../Assets/Icons/sprite.svg'
@@ -12,7 +12,7 @@ const FooterContent = () => {
     return (
         <InnerWrapper>
             <ContentCol>
-                <Heading>Location</Heading>
+                <FooterHeading>Location</FooterHeading>
                 <ParagraphFoot>
                     Laugavegur 105
                     <br/>
@@ -20,7 +20,7 @@ const FooterContent = () => {
                 </ParagraphFoot>
             </ContentCol>
             <ContentCol>
-                <Heading>Hours</Heading>
+                <FooterHeading>Hours</FooterHeading>
                 <ParagraphFoot>
                     Open 5 days 10am to 5pm
                     <br/>
@@ -31,14 +31,14 @@ const FooterContent = () => {
                 </Link>
             </ContentCol>
             <ContentCol>
-                <Heading>Contact</Heading>
+                <FooterHeading>Contact</FooterHeading>
                 <ParagraphFoot>+354 776 32 41</ParagraphFoot>
                 <ParagraphFoot>
                     <a href="mailto:webmaster@example.com" style={{textDecoration: "underline", color: "#f9f8f8"}}>example@gmail.com</a>
                 </ParagraphFoot>
             </ContentCol>
             <ContentCol>
-                <Heading>Follow</Heading>
+                <FooterHeading>Follow</FooterHeading>
                 <Social>
                     <SocialLink href="https://www.facebook.com/" target="_blank">
                         <svg>

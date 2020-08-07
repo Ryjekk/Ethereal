@@ -11,5 +11,6 @@ export {
     Options,
     TrackBallSlide,
     ColorSlide,
-    NudgeMouse
+    NudgeMouse,
+    FaqAnimation
 } from './styles';

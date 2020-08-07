@@ -16,7 +16,7 @@ export const ContentCol = styled.div`
     // text-align: center;
 `;
 
-export const Heading = styled.h3`
+export const FooterHeading = styled.h3`
     font-family: ${FONTS.fontTwo};
     font-size: 34px;
     font-weight: 400;

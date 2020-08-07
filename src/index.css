@@ -23,6 +23,10 @@ a {
   display: none !important;
 }
 
+.faqOpenQuestion {
+  display: block !important;
+}
+
 /*TODO Hide scroll for firefox*/
 /*TODO FIX WIDTH ON IFRAMES*/
 
