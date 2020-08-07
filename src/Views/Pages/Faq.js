@@ -1,10 +1,13 @@
 import React from "react";
+import Navbar from "../../Components/NavBar";
+import {Container} from "../../Style";
 
 function Faq() {
     return (
-        <div>
+        <Container>
+            <Navbar/>
             FAQ
-        </div>
+        </Container>
     );
 }
 

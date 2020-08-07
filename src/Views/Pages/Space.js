@@ -1,10 +1,13 @@
 import React from "react";
+import Navbar from "../../Components/NavBar";
+import {Container} from "../../Style";
 
 function Space() {
     return (
-        <div>
-            Space
-        </div>
+        <Container>
+            <Navbar/>
+            SPACE
+        </Container>
     );
 }
 

@@ -1,10 +1,13 @@
 import React from "react";
+import Navbar from "../../Components/NavBar";
+import {Container} from "../../Style";
 
 function About() {
     return (
-        <div>
-            About
-        </div>
+        <Container>
+            <Navbar/>
+            ABOUT
+        </Container>
     );
 }
 

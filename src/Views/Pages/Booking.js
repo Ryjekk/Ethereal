@@ -1,10 +1,13 @@
 import React from "react";
+import Navbar from "../../Components/NavBar";
+import {Container} from "../../Style";
 
 function Booking() {
     return (
-        <div>
-            Booking
-        </div>
+        <Container>
+            <Navbar/>
+            BOOKING
+        </Container>
     );
 }
 
