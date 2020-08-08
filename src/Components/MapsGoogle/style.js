@@ -11,6 +11,6 @@ export const MapIframe = styled.iframe`
 
 export const MapWrapper = styled.div`
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     margin: 100px 0;
 `;

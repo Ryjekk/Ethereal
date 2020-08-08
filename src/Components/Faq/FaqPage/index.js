@@ -1,14 +1,14 @@
 import React from "react";
-import {Inner, SmallHeading} from "../../Style";
+import {Inner, SmallHeading} from "../../../Style";
 import { InnerFaq, FaqBox, FaqHeading, Question, Answer } from './style'
-import '../../index.css'
+import '../../../index.css'
 
-import { FaqData } from '../../Data/FaqData/faqData.js'
+import { FaqPageData } from '../../../Data/FaqData/faqData'
 
 const {useState} = React;
 
 const FaqPage = () => {
-    const faqs = FaqData;
+    const faqs = FaqPageData;
     const [ selectedQuestion, toggleQuestion ] = useState(-1);
 
     function openQuestion(index) {

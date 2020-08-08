@@ -1,47 +1,55 @@
-export const FaqData = [
+export const FaqPageData = [
   {
     "question": "+ Where are we located?",
     "answer": "Closest subway station: Lansdowne Parking available at Value Village west of the shop or Green Parking at Lansdowne Statio Look out for the BMO!"
   },
   {
     "question": "+ How do I book an appointment?",
-    "answer": "To book an appointment you can contact an artist directly, claim a flash design from our online shop or go to our contact page and fill out the form. We will get you in touch with your desired artist. The preferred method is for you to drop by our shop and have a face to face consult."
+    "answer": "Once you’ve selected your preferred artist(s), you can contact him directly, call us at 777 77 77, or fill out dedicated form on our booking page."
   },
   {
-    "question": "+ How much will it cost?",
-    "answer": "The shop minimum is $150. Your artist will be more than happy to give a price quote after the final artwork, size and placement is decided upon and before your appointment."
+    "question": "+ How old do I have to be to get a Tattoo?",
+    "answer": "You must be 18 years of age or older to be tattooed at our shop. If you are under this age notify me. In that case please and come to the studio with your parents who will want to sign a tattoo permit."
   },
   {
-    "question": "+ How do I pick my artist?",
-    "answer": "Check out all of the artist’s portfolios on our website! You can also check out our instagram page or contact us for a recommendation :)"
+    "question": "+ How much does a Tattoo cost?",
+    "answer": "It depends on the artist, but all tattoos start at 15.000 ISK. Final price is dependent on size, detail of the design, location on the body where it will be placed, and finally which artist you’ve chosen."
   },
   {
-    "question": "+ How do I pick a design?",
-    "answer": "If you’re looking to get a tattoo but can’t decide on what to get custom tattoos are the right direction. You can work together with the artist to create a unique tattoo. Our suggestion for custom pieces, coverups, or larger pieces is to come by for a consultation first. We also post pre-drawn design collections constantly in our webstore available for purchase."
-  },
-  {
-    "question": "+ Do you take walk-ins?",
-    "answer": "We take walk-ins everyday on a first come, first serve basis. Feel free to call the shop for availability. Drop by early to claim a spot!"
-  },
-  {
-    "question": "+ How do desposits work?",
-    "answer": "The shop requires a $150 deposit for all appointments; this deposit is deducted off the final price of the tattoo. Deposits are non-refundable within 2 days of your appointment date. Deposits can be made via our deposit link or in person. We accept cash, debit and credit. If you have to reschedule the appointment, please contact us or your artist at least 2 days in advance to retain your deposit."
+    "question": "+ How do deposits works?",
+    "answer": "The shop requires a 5000 ISK deposit for all appointments. This deposit is deducted off the final price of the tattoo. Deposits are non-refundable within 2 days of your appointment date."
   },
   {
     "question": "+ What is the cancellation policy?",
-    "answer": "Deposits are refundable if cancelled 2 days prior to the day of your appointment (not hour). If you have to reschedule - it must be made 2 days before the appointment date to retain your deposit. Please let the artist know if you wish to cancel."
+    "answer": "Deposits are refundable if cancelled 2 days prior to the day of your appointment (not hour). If you have to reschedule - it must be made 2 days before the appointment date to retain your deposit. Please let us know if you wish to cancel."
   },
   {
-    "question": "+ How do I prepare for my upcoming appointment?",
-    "answer": "So you’re getting your tattoo soon, it's time to prepare! Maintain your hygiene! That means taking a shower and wearing deodorant. Getting a tattoo means being up close and personal with our artists, so make sure you are smelling great and feeling clean. Dress appropriately. Make sure to wear loose clothing that can easily reveal the area being tattooed. Keep in mind that tattoos on the torso, especially on the ribs may require you to be shirtless. If this makes you uncomfortable, consider wearing a button down shirt that can be flipped to reveal the area while covering your front. Eat and hydrate prior to the appointment. Do not drink alcohol the night before your appointment. Bring a water bottle just in case, hydration is important!"
+    "question": "+ What forms of payment are accepted?",
+    "answer": "We accept payment only in cash"
   },
   {
     "question": "+ Can I bring my friends?",
     "answer": "Guests are always welcome, but try not to bring a party! One or two guests only please! Yes we are dog friendly! Parents, friends and children are all welcome!"
   },
   {
-    "question": "+ How old do I have to be?",
-    "answer": "You must be 18 years of age or older to be tattooed at our shop, whether or not you have parental consent. Be prepared with photo ID on the day of your appointment."
+    "question": "+ Where Can I find your available Flashworks",
+    "answer": "You may find our available designs on Instagrams of the chosen artists. We post everything there. Of course, I can make minor adjustments to my existing Flashworks."
+  },
+  {
+    "question": "+ Can I reserve one of your Flashworks?",
+    "answer": "If you like any flashwork than please try to book session with us. Otherwise we can not keep a design you like reserved for you."
+  },
+  {
+    "question": "+ When will you send me a custom design?",
+    "answer": "Usually, I am sending custom work one day before our appointment, it is enough time to make some adjustments and have a design completely ready."
+  },
+  {
+    "question": "+ How do I prepare for my upcoming appointment?",
+    "answer": "We recommend that you eat well before you come in, and remember to stay hydrated. If you start to feel woozy, have a soda. Sugar is your friend in this situation. It’s best not to party the night before !THIS IS VERY IMPORTANT! because alcohol can increase bleeding for up to 24 hours. Blood also dilutes our pigments, affecting both the appearance of your tattoo as well as the healing process. Remember to stay calm and cool, you’re in good hands. There’s nothing to stress over—it’s just a tattoo! On the day of the session, wear loose clothing that will not rub the tattooed area. Also keep in mind that for some tattoos you will have to undress more. Choose the right clothes for your own comfort. Maintain your hygiene! That means taking a shower and wearing deodorant. Getting a tattoo means being up close and personal with our artists, so make sure you are smelling great and feeling clean."
+  },
+  {
+    "question": "+ How should I take care of Tattoo?",
+    "answer": "Getting a tattoo done by me is part of the job. The client is responsible for the hygiene of the tattoo during healing. This is also extremely important because it affects the quality of the tattoo. At the studio, I will give you professional information on how to take care of your tattoo. You will need such materials as antiseptic / neutral soap or intimate hygiene washing liquid, paper towels and a special tattoo cream (this you can buy in our studio)"
   },
   {
     "question": "+ I have an allergic reaction, what now?",
@@ -52,3 +60,58 @@ export const FaqData = [
     "answer": "XXXXXXX"
   },
 ];
+
+export const FaqDataLeft = [
+  {
+    "question": "How do I book an appointment?",
+    "answer": "Once you’ve selected your preferred artist(s), you can contact him directly, call us at 777 77 77, or fill out dedicated form on our booking page."
+  },
+  {
+    "question": "How old do I have to be to get a Tattoo?",
+    "answer": "You must be 18 years of age or older to be tattooed at our shop. If you are under this age notify me. In that case please and come to the studio with your parents who will want to sign a tattoo permit."
+  },
+  {
+    "question": "How much does a Tattoo cost?",
+    "answer": "It depends on the artist, but all tattoos start at 15.000 ISK. Final price is dependent on size, detail of the design, location on the body where it will be placed, and finally which artist you’ve chosen."
+  },
+  {
+    "question": "How do deposits works?",
+    "answer": "The shop requires a 5000 ISK deposit for all appointments. This deposit is deducted off the final price of the tattoo. Deposits are non-refundable within 2 days of your appointment date."
+  },
+  {
+    "question": "What is the cancellation policy?",
+    "answer": "Deposits are refundable if cancelled 2 days prior to the day of your appointment (not hour). If you have to reschedule - it must be made 2 days before the appointment date to retain your deposit. Please let us know if you wish to cancel."
+  },
+  {
+    "question": "What forms of payment are accepted?",
+    "answer": "We accept payment only in cash"
+  },
+  {
+    "question": "Can I bring my friends?",
+    "answer": "Guests are always welcome, but try not to bring a party! One or two guests only please! Yes we are dog friendly! Parents, friends and children are all welcome!"
+  },
+];
+
+export const FaqDataRight = [
+  {
+    "question": "Where Can I find your available Flashworks",
+    "answer": "You may find our available designs on Instagrams of the chosen artists. We post everything there. Of course, I can make minor adjustments to my existing Flashworks."
+  },
+  {
+    "question": "Can I reserve one of your Flashworks?",
+    "answer": "If you like any flashwork than please try to book session with us. Otherwise we can not keep a design you like reserved for you."
+  },
+  {
+    "question": "When will you send me a custom design?",
+    "answer": "Usually, I am sending custom work one day before our appointment, it is enough time to make some adjustments and have a design completely ready."
+  },
+  {
+    "question": "How do I prepare for my upcoming appointment?",
+    "answer": "We recommend that you eat well before you come in, and remember to stay hydrated. If you start to feel woozy, have a soda. Sugar is your friend in this situation. It’s best not to party the night before !THIS IS VERY IMPORTANT! because alcohol can increase bleeding for up to 24 hours. Blood also dilutes our pigments, affecting both the appearance of your tattoo as well as the healing process. Remember to stay calm and cool, you’re in good hands. There’s nothing to stress over—it’s just a tattoo! On the day of the session, wear loose clothing that will not rub the tattooed area. Also keep in mind that for some tattoos you will have to undress more. Choose the right clothes for your own comfort. Maintain your hygiene! That means taking a shower and wearing deodorant. Getting a tattoo means being up close and personal with our artists, so make sure you are smelling great and feeling clean."
+  },
+  {
+    "question": "How should I take care of Tattoo?",
+    "answer": "Getting a tattoo done by me is part of the job. The client is responsible for the hygiene of the tattoo during healing. This is also extremely important because it affects the quality of the tattoo. At the studio, I will give you professional information on how to take care of your tattoo. You will need such materials as antiseptic / neutral soap or intimate hygiene washing liquid, paper towels and a special tattoo cream (this you can buy in our studio)"
+  },
+];
+

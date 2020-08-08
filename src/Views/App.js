@@ -6,6 +6,7 @@ import { Container, Inner } from '../Style';
 import NavBar from '../Components/NavBar';
 import WelcomePage from '../Components/WelcomePage';
 import WelcomePageParallax from '../Components/WelcomePageParallax';
+import FaqContent from '../Components/Faq/FaqContent'
 import MapsGoogle from "../Components/MapsGoogle";
 import FooterContent from '../Components/FooterContent'
 
@@ -20,6 +21,7 @@ function App() {
           </Parallax>
               <WelcomePageParallax />
           <Inner>
+              <FaqContent />
               <MapsGoogle/>
               <FooterContent/>
           </Inner>

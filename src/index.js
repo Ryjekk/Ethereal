@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import ScrollToTop from "./Handler/ScrollToTop";
 import * as serviceWorker from './serviceWorker';
 import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
 
@@ -14,16 +15,18 @@ import NotFound from './Views/Pages/NotFound'
 
 const routing = (
     <BrowserRouter>
-        <Switch>
-            <Route exact path='/' component={App} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/artist' component={Artist} />
-            <Route exact path='/booking' component={Booking} />
-            <Route exact path='/space' component={Space} />
-            <Route exact path='/faq' component={Faq} />
-            <Route path="/404" component={NotFound} />
-            <Redirect to="/404" />
-        </Switch>
+        <ScrollToTop>
+            <Switch>
+                <Route exact path='/' component={App} />
+                <Route exact path='/about' component={About} />
+                <Route exact path='/artist' component={Artist} />
+                <Route exact path='/booking' component={Booking} />
+                <Route exact path='/space' component={Space} />
+                <Route exact path='/faq' component={Faq} />
+                <Route path="/404" component={NotFound} />
+                <Redirect to="/404" />
+            </Switch>
+        </ScrollToTop>
     </BrowserRouter>
 );
 

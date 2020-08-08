@@ -23,10 +23,6 @@ export const NavTopL = styled.div`
     position: fixed; 
     top: ${PADDING.medium};
     left: ${PADDING.medium};
-    
-    @media (${QUERIES.medium}) {
-        left: ${PADDING.small};
-    }
 `;
 
 export const NavTopR = styled.div`

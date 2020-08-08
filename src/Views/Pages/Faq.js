@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../Components/NavBar";
-import FaqPage from '../../Components/FaqPage'
+import FaqPage from '../../Components/Faq/FaqPage'
 import FooterContent from "../../Components/FooterContent";
 import {BottomBox, Container} from "../../Style";
 

@@ -5,7 +5,8 @@ import styled, { keyframes } from 'styled-components';
 // TODO Add universal margin
 export const QUERIES = {
     medium: `min-width: 1092px`,
-    small: `min-width: 552px`,
+    // small: `min-width: 552px`,
+    small: `min-width: 689px`,
     maxWidth: `1500px`
 };
 
@@ -55,14 +56,14 @@ export const SmallHeading = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-    font-size: 10px;
+    font-size: 12px;
     color: ${COLORS.darkGray};
     line-height: 190%;
     letter-spacing: 0.05em;
     // padding-right: 10px;
 
     @media (${QUERIES.medium}) {
-        font-size: 13px;
+        font-size: 14px;
         // padding-right: 30px;
     }
 `;
@@ -74,6 +75,8 @@ export const Container = styled.div`
 `;
 
 export const Inner = styled.div`
+    display: flex;
+    flex-direction: column;
     padding: 50px 13%;
 
     @media (${QUERIES.medium}) {
