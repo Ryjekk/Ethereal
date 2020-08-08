@@ -19,10 +19,13 @@ const FaqPage = () => {
         <Inner>
             <InnerFaq>
                 <FaqHeading>FAQ's</FaqHeading>
-                {faqs.map(( { question, answer }, index) => (
+                {faqs.map(( { question, answer, answer1, answer2, answer3  }, index) => (
                     <FaqBox key={`${index}`}>
                         <Question onClick={() => openQuestion(index)}>{question}</Question>
                         <Answer className={`${selectedQuestion === index ? 'faqOpenQuestion' : ''}`}>{answer}</Answer>
+                        <Answer className={`${selectedQuestion === index ? 'faqOpenQuestion' : ''}`}>{answer1}</Answer>
+                        <Answer className={`${selectedQuestion === index ? 'faqOpenQuestion' : ''}`}>{answer2}</Answer>
+                        <Answer className={`${selectedQuestion === index ? 'faqOpenQuestion' : ''}`}>{answer3}</Answer>
                     </FaqBox>
                 ))}
                 <SmallHeading style={{fontWeight: '400'}}>Have more questions? Feel free to email us at <br/> exampletattoo@gmail.com</SmallHeading>

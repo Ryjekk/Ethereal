@@ -45,11 +45,15 @@ export const FaqPageData = [
   },
   {
     "question": "+ How do I prepare for my upcoming appointment?",
-    "answer": "We recommend that you eat well before you come in, and remember to stay hydrated. If you start to feel woozy, have a soda. Sugar is your friend in this situation. It’s best not to party the night before !THIS IS VERY IMPORTANT! because alcohol can increase bleeding for up to 24 hours. Blood also dilutes our pigments, affecting both the appearance of your tattoo as well as the healing process. Remember to stay calm and cool, you’re in good hands. There’s nothing to stress over—it’s just a tattoo! On the day of the session, wear loose clothing that will not rub the tattooed area. Also keep in mind that for some tattoos you will have to undress more. Choose the right clothes for your own comfort. Maintain your hygiene! That means taking a shower and wearing deodorant. Getting a tattoo means being up close and personal with our artists, so make sure you are smelling great and feeling clean."
+    "answer": "We recommend that you eat well before you come in, and remember to stay hydrated. If you start to feel woozy, have a soda. Sugar is your friend in this situation.",
+    "answer1": "It’s best not to party the night before !THIS IS VERY IMPORTANT! because alcohol can increase bleeding for up to 24 hours. Blood also dilutes our pigments, affecting both the appearance of your tattoo as well as the healing process.",
+    "answer2": "Remember to stay calm and cool, you’re in good hands. There’s nothing to stress over—it’s just a tattoo! On the day of the session, wear loose clothing that will not rub the tattooed area. Also keep in mind that for some tattoos you will have to undress more. Choose the right clothes for your own comfort.",
+    "answer3": "Maintain your hygiene! That means taking a shower and wearing deodorant. Getting a tattoo means being up close and personal with our artists, so make sure you are smelling great and feeling clean."
   },
   {
     "question": "+ How should I take care of Tattoo?",
-    "answer": "Getting a tattoo done by me is part of the job. The client is responsible for the hygiene of the tattoo during healing. This is also extremely important because it affects the quality of the tattoo. At the studio, I will give you professional information on how to take care of your tattoo. You will need such materials as antiseptic / neutral soap or intimate hygiene washing liquid, paper towels and a special tattoo cream (this you can buy in our studio)"
+    "answer": "Getting a tattoo done by me is part of the job. The client is responsible for the hygiene of the tattoo during healing. This is also extremely important because it affects the quality of the tattoo.",
+    "answer1": "At the studio, I will give you professional information on how to take care of your tattoo. You will need such materials as antiseptic / neutral soap or intimate hygiene washing liquid, paper towels and a special tattoo cream (this you can buy in our studio)."
   },
   {
     "question": "+ I have an allergic reaction, what now?",
@@ -107,11 +111,15 @@ export const FaqDataRight = [
   },
   {
     "question": "How do I prepare for my upcoming appointment?",
-    "answer": "We recommend that you eat well before you come in, and remember to stay hydrated. If you start to feel woozy, have a soda. Sugar is your friend in this situation. It’s best not to party the night before !THIS IS VERY IMPORTANT! because alcohol can increase bleeding for up to 24 hours. Blood also dilutes our pigments, affecting both the appearance of your tattoo as well as the healing process. Remember to stay calm and cool, you’re in good hands. There’s nothing to stress over—it’s just a tattoo! On the day of the session, wear loose clothing that will not rub the tattooed area. Also keep in mind that for some tattoos you will have to undress more. Choose the right clothes for your own comfort. Maintain your hygiene! That means taking a shower and wearing deodorant. Getting a tattoo means being up close and personal with our artists, so make sure you are smelling great and feeling clean."
+    "answer": "We recommend that you eat well before you come in, and remember to stay hydrated. If you start to feel woozy, have a soda. Sugar is your friend in this situation.",
+    "answer1": "It’s best not to party the night before !THIS IS VERY IMPORTANT! because alcohol can increase bleeding for up to 24 hours. Blood also dilutes our pigments, affecting both the appearance of your tattoo as well as the healing process.",
+    "answer2": "Remember to stay calm and cool, you’re in good hands. There’s nothing to stress over—it’s just a tattoo! On the day of the session, wear loose clothing that will not rub the tattooed area. Also keep in mind that for some tattoos you will have to undress more. Choose the right clothes for your own comfort.",
+    "answer3": "Maintain your hygiene! That means taking a shower and wearing deodorant. Getting a tattoo means being up close and personal with our artists, so make sure you are smelling great and feeling clean."
   },
   {
     "question": "How should I take care of Tattoo?",
-    "answer": "Getting a tattoo done by me is part of the job. The client is responsible for the hygiene of the tattoo during healing. This is also extremely important because it affects the quality of the tattoo. At the studio, I will give you professional information on how to take care of your tattoo. You will need such materials as antiseptic / neutral soap or intimate hygiene washing liquid, paper towels and a special tattoo cream (this you can buy in our studio)"
+    "answer": "Getting a tattoo done by me is part of the job. The client is responsible for the hygiene of the tattoo during healing. This is also extremely important because it affects the quality of the tattoo.",
+    "answer1": "At the studio, I will give you professional information on how to take care of your tattoo. You will need such materials as antiseptic / neutral soap or intimate hygiene washing liquid, paper towels and a special tattoo cream (this you can buy in our studio)."
   },
 ];
 
