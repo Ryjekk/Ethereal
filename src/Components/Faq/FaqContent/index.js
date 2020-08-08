@@ -25,7 +25,7 @@ const FaqContent = () => {
                 </FaqButtonWrapper>
                 <LeftColumn className="left">
                     {dataLeft.map(( { question, answer }, index) => (
-                        <ColWrapper>
+                        <ColWrapper key={`${index}`}>
                             <FaqQ>{question}</FaqQ>
                             <FaqA>{answer}</FaqA>
                         </ColWrapper>
@@ -33,7 +33,7 @@ const FaqContent = () => {
                 </LeftColumn>
                 <RightColumn className='right'>
                     {dataRight.map(( { question, answer, answer1, answer2, answer3 }, index) => (
-                        <ColWrapper>
+                        <ColWrapper key={`${index}`}>
                             <FaqQ>{question}</FaqQ>
                             <FaqA>{answer}</FaqA>
                             <FaqA>{answer1}</FaqA>
