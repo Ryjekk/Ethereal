@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {Paragraph, QUERIES, Options} from "../../Style";
+import {Paragraph, QUERIES, Options} from "../../../Style";
 
-import Img404 from '../../Assets/skullBlack.jpg'
+import Img404 from '../../../Assets/skullBlack.jpg'
 
 export const OverlayWrapper = styled.div`
     background-image: url(${Img404});

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { QUERIES, COLORS, ColorSlide, TrackBallSlide, NudgeMouse } from "../../Style";
+import { QUERIES, COLORS, ColorSlide, TrackBallSlide, NudgeMouse } from "../../../Style";
 
 export const VideoEl = styled.video`
     width: 100%;

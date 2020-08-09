@@ -1,12 +1,17 @@
 import React from "react";
-import Navbar from "../../Components/NavBar";
-import {Container} from "../../Style";
+import Navbar from "../../Components/Contents/NavBar";
+import {BottomBox, Container} from "../../Style";
+import AboutPage from '../../Components/PagesContents/AboutPage'
+import FooterContent from "../../Components/Contents/FooterContent";
 
 function About() {
     return (
         <Container>
             <Navbar/>
-            ABOUT
+            <AboutPage />
+            <BottomBox>
+                <FooterContent/>
+            </BottomBox>
         </Container>
     );
 }

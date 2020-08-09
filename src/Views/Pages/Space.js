@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../Components/NavBar";
+import Navbar from "../../Components/Contents/NavBar";
 import {Container} from "../../Style";
 
 function Space() {

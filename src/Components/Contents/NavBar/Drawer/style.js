@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { QUERIES } from "../../../Style";
+import { QUERIES } from "../../../../Style";
 import { NavTopR } from "../style";
 
 

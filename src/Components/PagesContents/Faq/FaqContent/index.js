@@ -3,8 +3,8 @@ import {Link} from "react-router-dom";
 import { FaqWrapper, LeftColumn, RightColumn, FaqQ, FaqA, ColWrapper, FaqButtonWrapper } from "./style";
 import { OptionsLink } from "../../NotFoundPage/style";
 
-import { FaqDataLeft, FaqDataRight } from "../../../Data/FaqData/faqData";
-import DivBtn from "../../UI/DivBtn";
+import { FaqDataLeft, FaqDataRight } from "../../../../Data/FaqData/faqData";
+import DivBtn from "../../../UI/DivBtn";
 
 const FaqContent = () => {
 

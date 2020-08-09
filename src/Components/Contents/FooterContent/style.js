@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { QUERIES, FONTS, Paragraph } from "../../Style";
+import { QUERIES, FONTS, Paragraph } from "../../../Style";
 
 export const InnerWrapper = styled.footer`
     // max-width: 70%;

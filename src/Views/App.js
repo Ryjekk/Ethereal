@@ -3,12 +3,12 @@ import {Parallax, ParallaxLayer} from "react-spring/renderprops-addons";
 //Style
 import { Container, Inner } from '../Style';
 //Components
-import NavBar from '../Components/NavBar';
-import WelcomePage from '../Components/WelcomePage';
-import WelcomePageParallax from '../Components/WelcomePageParallax';
-import FaqContent from '../Components/Faq/FaqContent'
-import MapsGoogle from "../Components/MapsGoogle";
-import FooterContent from '../Components/FooterContent'
+import NavBar from '../Components/Contents/NavBar';
+import WelcomePage from '../Components/PagesContents/WelcomePage';
+import WelcomePageParallax from '../Components/Contents/WelcomePageParallax';
+import FaqContent from '../Components/PagesContents/Faq/FaqContent'
+import MapsGoogle from "../Components/Contents/MapsGoogle";
+import FooterContent from '../Components/Contents/FooterContent'
 
 function App() {
   return (

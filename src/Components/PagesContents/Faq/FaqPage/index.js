@@ -1,9 +1,9 @@
 import React from "react";
-import {Inner, SmallHeading} from "../../../Style";
+import {Inner, SmallHeading} from "../../../../Style";
 import { InnerFaq, FaqBox, FaqHeading, Question, Answer } from './style'
-import '../../../index.css'
+import '../../../../index.css'
 
-import { FaqPageData } from '../../../Data/FaqData/faqData'
+import { FaqPageData } from '../../../../Data/FaqData/faqData'
 
 const {useState} = React;
 

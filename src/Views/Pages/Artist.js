@@ -1,6 +1,6 @@
 import React from "react";
 import {Container} from "../../Style";
-import Navbar from "../../Components/NavBar";
+import Navbar from "../../Components/Contents/NavBar";
 
 function Artist() {
     return (

@@ -1,8 +1,8 @@
 import React from "react";
 
-import Navbar from "../../Components/NavBar";
-import NotFoundPage from '../../Components/NotFoundPage'
-import FooterContent from "../../Components/FooterContent";
+import Navbar from "../../Components/Contents/NavBar";
+import NotFoundPage from '../../Components/PagesContents/NotFoundPage'
+import FooterContent from "../../Components/Contents/FooterContent";
 
 import { BottomBox, Container } from '../../Style'
 

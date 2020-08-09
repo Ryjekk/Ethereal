@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 //Components
-import DivBtn from "../UI/DivBtn";
+import DivBtn from "../../UI/DivBtn";
 //Style
-import { Heading } from '../../Style'
+import { Heading } from '../../../Style'
 import { OverlayWrapper, Paragraph404, OptionsLink } from './style'
 
 // TODO change image DMCA

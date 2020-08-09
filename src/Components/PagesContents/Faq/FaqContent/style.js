@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { FooterHeading } from "../../FooterContent/style";
-import {Paragraph, FONTS, QUERIES} from "../../../Style";
+import { FooterHeading } from "../../../Contents/FooterContent/style";
+import {Paragraph, FONTS, QUERIES} from "../../../../Style";
 
 export const FaqWrapper = styled.div`
     @media (${QUERIES.medium}) {

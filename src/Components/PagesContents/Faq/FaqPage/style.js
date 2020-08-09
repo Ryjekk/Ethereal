@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {FONTS, Paragraph, QUERIES, FaqAnimation} from "../../../Style";
-import { FooterHeading } from "../../FooterContent/style";
+import {FONTS, Paragraph, QUERIES, FaqAnimation} from "../../../../Style";
+import { FooterHeading } from "../../../Contents/FooterContent/style";
 
 export const InnerFaq = styled.div`
     margin-right: auto;

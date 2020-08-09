@@ -1,11 +1,11 @@
 import React from "react";
 //Style
 import { VideoEl, Overlay, WelcomeText, Scroller } from './style'
-import { Paragraph } from "../../Style";
+import { Paragraph } from "../../../Style";
 // Assets
-import welcomeVideo from '../../Assets/Movies/movie.mp4'
-import welcomeVideoWebm from '../../Assets/Movies/movie_1.webm'
-import WelcomeVideoPoster from '../../Assets/skullBlack.jpg'
+import welcomeVideo from '../../../Assets/Movies/movie.mp4'
+import welcomeVideoWebm from '../../../Assets/Movies/movie_1.webm'
+import WelcomeVideoPoster from '../../../Assets/skullBlack.jpg'
 
 // TODO Optimize video for phones -> add gif instead ?> change for Iframes for mobile to work
 // TODO Add animation when video is loading in - fade in text or other bs

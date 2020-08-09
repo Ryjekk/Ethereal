@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import {COLORS, QUERIES, SmallHeading} from '../../Style';
+import {COLORS, QUERIES, SmallHeading} from '../../../Style';
 
-import bg from '../../Assets/skullPink.jpg'
+import bg from '../../../Assets/skullPink.jpg'
 // TODO if you want paralax
 
 export const WelcomeCont = styled.div`

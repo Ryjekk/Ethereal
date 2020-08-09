@@ -1,6 +1,6 @@
 import React from "react";
 //Style
-import { Options } from "../../../Style";
+import { Options } from "../../../../Style";
 import { LinkList } from './style'
 import { Link } from "react-router-dom";
 
