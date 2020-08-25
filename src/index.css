@@ -35,3 +35,9 @@ a {
   /*scrollbar-width: none;*/
   width: 100vw !important;
 }
+
+
+/* Revert booking calendar icon color*/
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
