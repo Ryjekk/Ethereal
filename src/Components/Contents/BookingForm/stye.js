@@ -41,7 +41,7 @@ export const FormFieldset = styled.fieldset`
 
 export const FormLabel = styled.label`
     // color: ${COLORS.darkGray};
-    // padding-bottom: 10px;
+    padding-bottom: 10px;
 `;
 
 export const FormInput = styled.input`

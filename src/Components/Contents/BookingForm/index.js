@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from 'emailjs-com';
 import {
     FormInput,
     FormLabel,
@@ -9,10 +10,25 @@ import {
 } from "./stye";
 
 const BookingForm = () => {
+    const apiKey = process.env.REACT_APP_API_KEY;
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('etherealtattoo', 'etheraltattoo', e.target, `${apiKey}`)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                alert(`There was problem with submitting your form, please try again`)
+                console.log(error.text);
+            });
+        e.target.reset();
+    }
+
     return (
 
         <FormWrapper>
-            <FormStyled method="POST">
+            <FormStyled onSubmit={sendEmail}>
                 {/* Name */}
                 <FormLabel htmlFor="name"/>
                 <FormInput name="name" type="text" placeholder="Full Name" required/>
@@ -41,11 +57,11 @@ const BookingForm = () => {
                 <FormFieldset>
                     <legend> Select Artist </legend>
                     <label>
-                        <input type="checkbox" value="Anna"/>
+                        <input type="radio" value="Anna" name="artist"/>
                         Anna
                     </label>
                     <label>
-                        <input type="checkbox" value="Anna2"/>
+                        <input type="radio" value="Anna2" name="artist"/>
                         Anna2
                     </label>
                 </FormFieldset>
@@ -59,19 +75,20 @@ const BookingForm = () => {
                 <FormFieldset>
                     <legend> Tattoo Colour </legend>
                     <label>
-                        <input type="checkbox" value="Colour"/>
+                        <input type="radio" value="Colour" name="color"/>
                         Colour
                     </label>
                     <label>
-                        <input type="checkbox" value="Black & Gray"/>
+                        <input type="radio" value="Black & Gray" name="color"/>
                         Black & Gray
                     </label>
                 </FormFieldset>
                 {/* Availability Date */}
-                <FormLabel htmlFor="dates"> Please provide date and time </FormLabel>
+                <FormLabel htmlFor="dates"> Please provide date and time. We are open 09:00-18:00 </FormLabel>
                 <FormInput name="dates" type="date" required/>
                 {/* Availability time */}
-                <FormInput name="dates" type="time" min="09:00" max="18:00" required/>
+                <FormLabel htmlFor="time"/>
+                <FormInput name="time" type="time" min="09:00" max="18:00" required/>
                 {/* Errors */}
                 <FormError>
                     <p>Error message here</p>
