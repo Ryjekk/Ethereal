@@ -1,12 +1,17 @@
 import React from "react";
 import Navbar from "../../Components/Contents/NavBar";
-import {Container} from "../../Style";
+import {BottomBox, Container} from "../../Style";
+import BookingPage from '../../Components/PagesContents/BookingPage'
+import FooterContent from "../../Components/Contents/FooterContent";
 
 function Booking() {
     return (
         <Container>
             <Navbar/>
-            BOOKING
+            <BookingPage/>
+            <BottomBox>
+                <FooterContent/>
+            </BottomBox>
         </Container>
     );
 }
