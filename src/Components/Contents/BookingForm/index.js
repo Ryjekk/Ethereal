@@ -77,12 +77,12 @@ class BookingForm extends Component {
                 .then((result) => {
                     console.log(result.text);
                 }, (error) => {
-                    alert(`There was problem with submitting your form, please try again`)
+                    alert(`🤯 There was problem with submitting your form, please try again`)
                     console.log(error.text);
                 });
             e.target.reset();
         } else {
-            alert(`There was problem with submitting your form, please try again`)
+            alert(`🤯 There was problem with submitting your form, please try again`)
         }
     }
 
@@ -202,6 +202,7 @@ class BookingForm extends Component {
                         style={{marginRight: '10px'}}
                         name="dates"
                         type="date"
+                        min="2020-08-01"
                         required/>
                     <FormLabel htmlFor="time"/>
                     <FormInput

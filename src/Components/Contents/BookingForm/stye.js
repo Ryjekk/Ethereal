@@ -91,6 +91,7 @@ export const FormButton = styled.button`
     border: 2px solid;
     background-color: transparent;    
     padding: 14px 28px;
+    margin-top: 35px;
     font-size: 16px;
     cursor: pointer;
     
