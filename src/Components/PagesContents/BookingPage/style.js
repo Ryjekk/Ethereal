@@ -32,6 +32,7 @@ export const BtnWrapper = styled.div`
 `;
 
 export const TextBox = styled.div`
+    text-align: center;
     @media (${QUERIES.medium}) {
         padding: 0 15%;
     }
