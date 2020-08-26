@@ -58,6 +58,13 @@ export const FormInput = styled.input`
     border-radius: 5px;
     padding-left: 15px;
     width: 100%;
+    
+    &::after {
+        color: orangered;
+        content: "*";
+        opacity: 1;
+        margin: -15px 0 0 4px;
+    }
 `;
 
 export const FormTextarea = styled.textarea`
@@ -73,11 +80,6 @@ export const FormTextarea = styled.textarea`
     font-size: 16px;
     padding: 15px;
     border-radius: 5px;
-`;
-
-export const FormError = styled.div`
-    color: orangered;
-    font-weight: 400;
 `;
 
 export const FormButton = styled.button`
@@ -101,5 +103,11 @@ export const FormButton = styled.button`
 
 export const FormSection = styled.div`
     display: flex;
-    
+`;
+
+export const ErrorSpan = styled.p`
+    color: red;
+    font-family: Arial;
+    font-size: 14px;
+    color: orangered;
 `;
