@@ -40,30 +40,20 @@ class BookingForm extends Component {
     handleChange = (e) => {
         e.preventDefault();
         const {name, value} = e.target;
-
-        console.log('name', name);
-        console.log('val', value);
-
         let formErrors = this.state.formErrors;
 
-        switch (name) {
-            case 'name':
-                formErrors.name = value.length < 3 ? 'Insert Name' : '';
-                break;
-            case 'email':
-                formErrors.email = emailRegex.test(value) ? '' : 'Invalid Email Address';
-                break;
-            case 'description':
-                formErrors.description = value.length < 5 ? 'Please Provide Description Or Links To Design' : '';
-                break;
-            case 'size':
-                formErrors.size = value.length < 2 ? 'Please Provide Size Of Tattoo' : '';
-                break;
-            case 'placement':
-                formErrors.placement = value.length < 2 ? 'Please Provide Placement Of Tattoo' : '';
-                break;
-            default:
-                break
+        if(name === 'name') {
+            formErrors.name = value.length < 3 ? 'Insert Name' : '';
+        } else if (name === "email") {
+            formErrors.email = emailRegex.test(value) ? '' : 'Invalid Email Address';
+        } else if (name === 'description') {
+            formErrors.description = value.length < 5 ? 'Please Provide Description Or Links To Design' : '';
+        } else if (name === 'size') {
+            formErrors.size = value.length < 2 ? 'Please Provide Size Of Tattoo' : '';
+        } else if (name === "placement") {
+            formErrors.placement = value.length < 2 ? 'Please Provide Placement Of Tattoo' : '';
+        } else {
+            return
         }
 
         this.setState({formErrors, [name]: value})
@@ -111,7 +101,7 @@ class BookingForm extends Component {
                         placeholder="Your email *"
                         required
                         onChange={this.handleChange}/>
-                    {formErrors.name.length > 0 && (<ErrorSpan>{formErrors.email}</ErrorSpan>)}
+                    {formErrors.email.length > 0 && (<ErrorSpan>{formErrors.email}</ErrorSpan>)}
                     {/* Phone */}
                     <FormLabel htmlFor="phone"/>
                     <FormInput name="phone" type="text" placeholder="Phone Number"/>
@@ -141,7 +131,7 @@ class BookingForm extends Component {
                         placeholder="Tattoo Description. Please send link to chosen Flashwork, or describe a custom design. [you can provide links to inspiration] *"
                         required
                         onChange={this.handleChange}/>
-                    {formErrors.name.length > 0 && (<ErrorSpan>{formErrors.description}</ErrorSpan>)}
+                    {formErrors.description.length > 0 && (<ErrorSpan>{formErrors.description}</ErrorSpan>)}
                     {/* Artist */}
                     <FormFieldset>
                         <legend> Select Artist </legend>
@@ -167,7 +157,7 @@ class BookingForm extends Component {
                         placeholder="Approximate Size (in cm) *"
                         required
                         onChange={this.handleChange}/>
-                    {formErrors.name.length > 0 && (<ErrorSpan>{formErrors.size}</ErrorSpan>)}
+                    {formErrors.size.length > 0 && (<ErrorSpan>{formErrors.size}</ErrorSpan>)}
                     {/* Placement */}
                     <FormLabel htmlFor="placement"/>
                     <FormInput
@@ -177,7 +167,7 @@ class BookingForm extends Component {
                         placeholder="Placement on your Body *"
                         required
                         onChange={this.handleChange}/>
-                    {formErrors.name.length > 0 && (<ErrorSpan>{formErrors.placement}</ErrorSpan>)}
+                    {formErrors.placement.length > 0 && (<ErrorSpan>{formErrors.placement}</ErrorSpan>)}
                     {/* Colour */}
                     <FormFieldset>
                         <legend> Tattoo Colour </legend>
