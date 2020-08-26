@@ -6,7 +6,7 @@ import {
     FormTextarea,
     FormWrapper,
     FormButton,
-    FormFieldset, FormStyled, FormError
+    FormFieldset, FormStyled, FormError, FormSection
 } from "./stye";
 
 const BookingForm = () => {
@@ -84,11 +84,13 @@ const BookingForm = () => {
                     </label>
                 </FormFieldset>
                 {/* Availability Date */}
-                <FormLabel htmlFor="dates"> Please provide date and time. We are open 09:00-18:00 </FormLabel>
-                <FormInput name="dates" type="date" required/>
                 {/* Availability time */}
+                <FormLabel htmlFor="dates"> Please provide date and time. We are open 09:00-18:00 </FormLabel>
+                <FormSection>
+                <FormInput style={{marginRight: '10px'}} name="dates" type="date" required/>
                 <FormLabel htmlFor="time"/>
-                <FormInput name="time" type="time" min="09:00" max="18:00" required/>
+                <FormInput style={{marginLeft: '10px'}} name="time" type="time" min="09:00" max="18:00" required/>
+                </FormSection>
                 {/* Errors */}
                 <FormError>
                     <p>Error message here</p>

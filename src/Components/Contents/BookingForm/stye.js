@@ -40,7 +40,8 @@ export const FormFieldset = styled.fieldset`
 `;
 
 export const FormLabel = styled.label`
-    // color: ${COLORS.darkGray};
+    color: ${COLORS.darkGray};
+    font-family: Arial;
     padding-bottom: 10px;
 `;
 
@@ -56,6 +57,7 @@ export const FormInput = styled.input`
     background: rgba(255,255,255, .01);
     border-radius: 5px;
     padding-left: 15px;
+    width: 100%;
 `;
 
 export const FormTextarea = styled.textarea`
@@ -95,4 +97,9 @@ export const FormButton = styled.button`
         transition: 0.1s background-color linear, 0.1s color linear;
         color:${COLORS.bgBlack};
     }
+`;
+
+export const FormSection = styled.div`
+    display: flex;
+    
 `;
