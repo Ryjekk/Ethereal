@@ -1,9 +1,8 @@
 import React from 'react';
 //Style
-import {WelcomeBox, WelcomeCont, WelcomeHeading, WelcomeParagraph} from './style';
+import {WelcomeBox, WelcomeCont, WelcomeHeading, WelcomeParagraph, WelcomeDivBtn} from './style';
 import {Link} from "react-router-dom";
 import {OptionsLink} from "../../PagesContents/NotFoundPage/style";
-import DivBtn from "../../UI/DivBtn";
 
 function WelcomePageParallax() {
     return (
@@ -17,13 +16,13 @@ function WelcomePageParallax() {
                     <br/>
                     Thank you for visiting our website
                 </WelcomeParagraph>
-                <DivBtn>
+                <WelcomeDivBtn>
                     <Link to='/booking'>
                         <OptionsLink>
                             Book Appointment
                         </OptionsLink>
                     </Link>
-                </DivBtn>
+                </WelcomeDivBtn>
             </WelcomeBox>
         </WelcomeCont>
     );

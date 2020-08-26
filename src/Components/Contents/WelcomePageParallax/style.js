@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import {COLORS, Paragraph, QUERIES} from '../../../Style';
-
-import bg from '../../../Assets/Spaces/space3.jpg'
 import {FooterHeading} from "../FooterContent/style";
+import {Btn} from "../../UI/DivBtn/style";
+import bg from '../../../Assets/stars.jpg'
+
 // TODO if you want paralax
 
 export const WelcomeCont = styled.div`
@@ -11,8 +12,7 @@ export const WelcomeCont = styled.div`
     justify-content: center;
     align-items: center;
     width: 100vw;
-    // TODO if using paralax npm it have to be 100
-    height: 70vh;
+    height: 100vh;
     padding: 100px 0 50px 0;
     
     // TODO if you want paralax
@@ -48,4 +48,14 @@ export const WelcomeHeading = styled(FooterHeading)`
 export const WelcomeParagraph = styled(Paragraph)`
     padding: 0 10px;
     text-align:center;
+    @media (${QUERIES.medium}) {
+        margin-top: 30px;
+    }
+`;
+
+export const WelcomeDivBtn = styled(Btn)`
+    z-index: 1;
+     @media (${QUERIES.medium}) {
+        margin-top: 30px;
+     }
 `;

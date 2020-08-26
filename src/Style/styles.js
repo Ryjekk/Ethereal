@@ -66,6 +66,7 @@ export const Paragraph = styled.p`
 
     @media (${QUERIES.medium}) {
         font-size: 14px;
+        margin-top: 10px;
         // padding-right: 30px;
     }
 `;
