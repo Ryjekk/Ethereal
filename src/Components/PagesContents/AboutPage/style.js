@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {FONTS, QUERIES, Inner, Paragraph} from "../../../Style";
+import {QUERIES, Inner} from "../../../Style";
 import {FooterHeading} from "../../Contents/FooterContent/style";
 import aboutImg from '../../../Assets/aboutImg.jpg';
 
@@ -47,9 +47,3 @@ export const AboutHeading = styled(FooterHeading)`
         margin-top: 0;
     } 
 `;
-
-export const AboutParagraph = styled(Paragraph)`
-    font-family: ${FONTS.fontThree};
-    white-space: pre-wrap;
-`;
-

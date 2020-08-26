@@ -61,6 +61,8 @@ export const Paragraph = styled.p`
     line-height: 190%;
     letter-spacing: 0.05em;
     // padding-right: 10px;
+    font-family: ${FONTS.fontThree};
+    white-space: pre-wrap;
 
     @media (${QUERIES.medium}) {
         font-size: 14px;

@@ -3,7 +3,7 @@ import { COLORS, FONTS } from "../../../Style";
 
 
 export const Btn = styled.div`
-    margin-top: 10px;
+    margin: 10px 0;
     border: 2px solid ${COLORS.gray};
     cursor: pointer;
     font-family: ${FONTS.fontThree};

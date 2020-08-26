@@ -1,5 +1,6 @@
 import React from "react";
-import { InnerRow, AboutImg, AboutBox, AboutHeading, AboutParagraph } from './style';
+import { InnerRow, AboutImg, AboutBox, AboutHeading } from './style';
+import {Paragraph} from "../../../Style";
 
 const AboutPage = () => {
     return (
@@ -9,15 +10,15 @@ const AboutPage = () => {
                 <AboutHeading>
                     About Ethereal Tattoo
                 </AboutHeading>
-                <AboutParagraph>
+                <Paragraph>
                     Ethereal Tattoo was established in 2017 in Reykjavik. We are small, but very open society. We are strongly inspired by Icelandic nature, Elfs and amazing small creatures. Ethereal Tattoo was established in 2017 in Reykjavik. We are small, but very open society. We are strongly inspired by Icelandic nature, Elfs and amazing small creatures.
-                </AboutParagraph>
+                </Paragraph>
                 <AboutHeading style={{marginTop: "34px"}}>
                     Our Mission
                 </AboutHeading>
-                <AboutParagraph>
+                <Paragraph>
                     Ethereal Tattoo was established in 2017 in Reykjavik. We are small, but very open society. We are strongly inspired by Icelandic nature, Elfs and amazing small creatures.Ethereal Tattoo was established in 2017 in Reykjavik. We are small, but very open society. We are strongly inspired by Icelandic nature, Elfs and amazing small creatures.
-                </AboutParagraph>
+                </Paragraph>
             </AboutBox>
         </InnerRow>
     )

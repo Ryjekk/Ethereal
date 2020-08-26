@@ -1,5 +1,5 @@
 import React from 'react';
-import {Parallax, ParallaxLayer} from "react-spring/renderprops-addons";
+// import {Parallax, ParallaxLayer} from "react-spring/renderprops-addons";
 //Style
 import { Container, Inner } from '../Style';
 //Components
@@ -14,11 +14,12 @@ function App() {
   return (
       <Container>
           <NavBar/>
-          <Parallax pages={2} className="ClearSearchbar">
-              <ParallaxLayer speed={0.5}>
+          {/* TODO maybe delete paralax package*/}
+          {/*<Parallax pages={2} className="ClearSearchbar">*/}
+          {/*    <ParallaxLayer speed={0.5}>*/}
                   <WelcomePage />
-              </ParallaxLayer>
-          </Parallax>
+          {/*    </ParallaxLayer>*/}
+          {/*</Parallax>*/}
               <WelcomePageParallax />
           <Inner>
               <FaqContent />
