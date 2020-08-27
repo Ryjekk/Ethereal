@@ -5,38 +5,31 @@ import { InnerWrapper, ContentCol, FooterHeading, ParagraphFoot, Social, SocialL
 import { Options } from "../../../Style";
 //Assets
 import sprite from '../../../Assets/Icons/sprite.svg'
+import {FooterData} from "../../../Data/footerData";
 
 // TODO add links to <a>
 
 const FooterContent = () => {
     return (
         <InnerWrapper>
-            <ContentCol>
-                <FooterHeading>Location</FooterHeading>
-                <ParagraphFoot>
-                    Laugavegur 105
-                    <br/>
-                    Reykjavik 101
-                </ParagraphFoot>
-            </ContentCol>
-            <ContentCol>
-                <FooterHeading>Hours</FooterHeading>
-                <ParagraphFoot>
-                    Open 5 days 10am to 5pm
-                    <br/>
-                    SATURDAY, SUNDAY CLOSED
-                </ParagraphFoot>
-                <Link to='/booking'>
-                    <Options style={{textDecoration: "underline"}}>Link to booking</Options>
-                </Link>
-            </ContentCol>
-            <ContentCol>
-                <FooterHeading>Contact</FooterHeading>
-                <ParagraphFoot>+354 776 32 41</ParagraphFoot>
-                <ParagraphFoot>
-                    <a href="mailto:webmaster@example.com" style={{textDecoration: "underline", color: "#f9f8f8"}}>example@gmail.com</a>
-                </ParagraphFoot>
-            </ContentCol>
+            {FooterData.map((el) => (
+                <ContentCol>
+                    <FooterHeading>{el.heading}</FooterHeading>
+                    <ParagraphFoot>
+                        {el.paragraph_one}
+                        <br/>
+                        {el.paragraph_two}
+                    </ParagraphFoot>
+                    {/* For Hours*/}
+                    <Link to={el.btn_link}>
+                        <Options style={{textDecoration: "underline"}}>{el.btn_text}</Options>
+                    </Link>
+                    {/* For Contact*/}
+                    <ParagraphFoot>
+                        <a href={el.a_href} style={{textDecoration: "underline", color: "#f9f8f8"}}>{el.a_text}</a>
+                    </ParagraphFoot>
+                </ContentCol>
+            ))}
             <ContentCol>
                 <FooterHeading>Follow</FooterHeading>
                 <Social>
