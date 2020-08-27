@@ -1,12 +1,17 @@
 import React from "react";
-import {Container} from "../../Style";
+import {BottomBox, Container} from "../../Style";
 import Navbar from "../../Components/Contents/NavBar";
+import FooterContent from "../../Components/Contents/FooterContent";
+import ArtistPage from "../../Components/PagesContents/ArtistPage";
 
 function Artist() {
     return (
         <Container>
             <Navbar/>
-            Gallery of artists and redirection to profiles of artist
+            <ArtistPage/>
+            <BottomBox>
+                <FooterContent/>
+            </BottomBox>
         </Container>
     );
 }
