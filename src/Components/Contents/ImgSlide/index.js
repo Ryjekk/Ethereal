@@ -1,8 +1,8 @@
 import React, {useState, useCallback} from "react";
-import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
+import Gallery from "react-photo-gallery";
+// Assets
 import { photos } from '../../../Data/ImgSlideData'
-import {SliderWrapper} from "./style";
 
 function ImgSlide() {
     const [currentImage, setCurrentImage] = useState(0);
@@ -18,7 +18,7 @@ function ImgSlide() {
         setViewerIsOpen(false);
     };
     return (
-        <SliderWrapper>
+        <div>
             <Gallery photos={photos} onClick={openLightbox} margin={7} targetRowHeight={250}/>
             <ModalGateway>
                 {viewerIsOpen ? (
@@ -34,7 +34,7 @@ function ImgSlide() {
                     </Modal>
                 ) : null}
             </ModalGateway>
-        </SliderWrapper>
+        </div>
     )
 }
 
