@@ -1,5 +1,5 @@
 import React from "react";
-import {ArtistWrapper, ArtistWelcome} from "../../Artist/ArtistHead/style";
+import {ArtistWrapper, ArtistWelcome} from "../../../Contents/DivideComponent/style";
 import {Paragraph} from "../../../../Style";
 import {FaqButtonWrapper} from "../FaqContent/style";
 import DivBtn from "../../../UI/DivBtn";

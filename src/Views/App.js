@@ -10,8 +10,7 @@ import ArtistContent from '../Components/PagesContents/Artist/ArtistContent'
 import FaqContent from '../Components/PagesContents/Faq/FaqContent'
 import MapsGoogle from "../Components/Contents/MapsGoogle";
 import FooterContent from '../Components/Contents/FooterContent'
-import ArtistHead from "../Components/PagesContents/Artist/ArtistHead";
-import FaqHead from "../Components/PagesContents/Faq/FaqHead";
+import DivideComponent from "../Components/Contents/DivideComponent";
 
 function App() {
   return (
@@ -24,11 +23,11 @@ function App() {
               </ParallaxLayer >
           </Parallax>
           <WelcomePageParallax/>
-          <ArtistHead/>
+          <DivideComponent text={"OUR CREW"}/>
           <Inner>
               <ArtistContent/>
           </Inner>
-              <FaqHead/>
+          <DivideComponent text={"FAQ"} paragraph={"Frequently Asked Questions"}/>
           <Inner>
               <FaqContent />
               <MapsGoogle/>

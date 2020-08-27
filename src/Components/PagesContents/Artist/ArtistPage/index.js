@@ -1,9 +1,10 @@
 import React from "react";
+import ArtistHead from "../../../Contents/DivideComponent";
 
 const ArtistPage = () => {
     return (
         <div>
-            ello
+            <ArtistHead text={'Anna'}/>
         </div>
     )
 }

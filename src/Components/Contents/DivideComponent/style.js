@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {WelcomeText} from "../../WelcomePage/style";
+import {WelcomeText} from "../../PagesContents/WelcomePage/style";
 
-export const ArtistWrapper = styled.div`
+export const DivideWrapper = styled.div`
     width: 100%;
     height: 50vh;
     display: flex;
@@ -12,4 +12,4 @@ export const ArtistWrapper = styled.div`
     flex-direction: column;
 `;
 
-export const ArtistWelcome = styled(WelcomeText)``;
+export const DivideWelcome = styled(WelcomeText)``;
