@@ -1,5 +1,4 @@
 import React from "react";
-
 import Navbar from "../../Components/Contents/NavBar";
 import NotFoundPage from '../../Components/PagesContents/NotFoundPage'
 import FooterContent from "../../Components/Contents/FooterContent";
