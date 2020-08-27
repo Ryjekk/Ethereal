@@ -3,7 +3,7 @@ import {WelcomeText} from "../../PagesContents/WelcomePage/style";
 
 export const DivideWrapper = styled.div`
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;

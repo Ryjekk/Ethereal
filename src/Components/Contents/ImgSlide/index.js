@@ -19,7 +19,7 @@ function ImgSlide() {
     };
     return (
         <SliderWrapper>
-            <Gallery photos={photos} onClick={openLightbox} margin={7} columns={4}/>
+            <Gallery photos={photos} onClick={openLightbox} margin={7} targetRowHeight={250}/>
             <ModalGateway>
                 {viewerIsOpen ? (
                     <Modal onClose={closeLightbox}>
