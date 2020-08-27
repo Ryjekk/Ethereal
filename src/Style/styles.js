@@ -25,18 +25,19 @@ export const FONTS = {
 };
 
 // Text
-export const Heading = styled.h1`
-    font-size: 30px;
-    max-width: 700px;
+export const Heading = styled.div`
+    font-family: 'bebas-neue-by-fontfabric';
+    font-size: 45px;
+    width: 100%;
     line-height: 149%;
-    display: flex;
     align-items: center;
     text-align: center;
+    position: relative;
     letter-spacing: 0.1em;
-    padding: 0 50px;
-    
-    media (${QUERIES.medium}) {
-       padding: 0;
+
+    @media (${QUERIES.medium}) {
+        font-size: 72px;
+        letter-spacing: .4em;
     }
 `;
 
@@ -115,6 +116,11 @@ export const Options = styled.div`
     @media (${QUERIES.medium}) {
         font-size: 13px;
     }
+`;
+
+export const OptionsLink = styled(Options)`
+    text-decoration: underline;
+    letter-spacing: 1px;
 `;
 
 //Animations

@@ -20,21 +20,6 @@ export const Overlay = styled.div`
     flex-direction: column;
 `;
 
-export const WelcomeText = styled.div`
-    font-family: 'bebas-neue-by-fontfabric';
-    font-size: 45px;
-    width: 100%;
-    line-height: 149%;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    letter-spacing: 0.1em;
-
-    @media (${QUERIES.medium}) {
-        font-size: 72px;
-        letter-spacing: .4em;
-    }
-`;
 
 export const Scroller = styled.div`
     background: ${COLORS.bgBlack} linear-gradient(transparent 0%, transparent 50%, ${COLORS.gray} 50%, ${COLORS.gray} 100%);

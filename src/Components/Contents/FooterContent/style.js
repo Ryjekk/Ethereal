@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { QUERIES, FONTS } from "../../../Style";
+import { QUERIES } from "../../../Style";
 
 export const InnerWrapper = styled.footer`    
     @media (${QUERIES.medium}) {

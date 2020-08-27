@@ -1,16 +1,16 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {Inner} from "../../../../Style";
-import {OptionsLink} from "../../NotFoundPage/style";
-import {BtnWrapper, TextBox} from "./style";
+// Components
 import BookingForm from '../BookingForm'
 import DivBtn from "../../../UI/DivBtn";
-import {WelcomeText} from "../../WelcomePage/style";
+// Style
+import {Inner, OptionsLink, Heading} from "../../../../Style";
+import {BtnWrapper, TextBox} from "./style";
 
 const BookingPage = () => {
     return (
         <Inner>
-            <WelcomeText> MAKE AN APPOINTMENT </WelcomeText>
+            <Heading> MAKE AN APPOINTMENT </Heading>
             <TextBox>
                 Please read our FAQ before making a booking. You can find there all information about how to prepare for an appointment, how much it cost, and when we are sending custom designs.
             </TextBox>

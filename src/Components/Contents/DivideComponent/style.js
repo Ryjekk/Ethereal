@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {WelcomeText} from "../../PagesContents/WelcomePage/style";
 
 export const DivideWrapper = styled.div`
     display: flex;
@@ -11,4 +10,3 @@ export const DivideWrapper = styled.div`
     background-color: #0d0d0d;
 `;
 
-export const DivideWelcome = styled(WelcomeText)``;

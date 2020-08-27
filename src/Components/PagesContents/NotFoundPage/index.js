@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 //Components
 import DivBtn from "../../UI/DivBtn";
 //Style
-import { Heading } from '../../../Style'
-import { OverlayWrapper, Paragraph404, OptionsLink } from './style'
+import { Heading, OptionsLink } from '../../../Style'
+import { OverlayWrapper, Paragraph404 } from './style'
 
 // TODO change image DMCA
 

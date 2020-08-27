@@ -1,7 +1,7 @@
 import React from "react";
-import { Link}  from "react-router-dom";
+import {Link}  from "react-router-dom";
 //Style
-import { InnerWrapper, Social, SocialLink } from './style';
+import {InnerWrapper, Social, SocialLink} from './style';
 import {Options, Paragraph, MediumHeading} from "../../../Style";
 //Assets
 import sprite from '../../../Assets/Icons/sprite.svg'

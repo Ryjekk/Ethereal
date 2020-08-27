@@ -1,7 +1,7 @@
 import React from "react";
-//Style
-import { VideoEl, Overlay, WelcomeText, Scroller } from './style'
-import { Paragraph } from "../../../Style";
+// Style
+import {VideoEl, Overlay, Scroller} from './style'
+import {Paragraph, Heading} from "../../../Style";
 // Assets
 import welcomeVideo from '../../../Assets/Movies/movie.mp4'
 import welcomeVideoWebm from '../../../Assets/Movies/movie_1.webm'
@@ -21,9 +21,9 @@ const WelcomePage = () => {
                 <br/>
             </VideoEl>
             <Overlay>
-                <WelcomeText>
+                <Heading>
                     ETHRERAL TOTTOO
-                </WelcomeText>
+                </Heading>
                 <Paragraph style={{textDecoration: 'underline'}}>
                     Laugavegur 105, Reykjavik IS
                 </Paragraph>

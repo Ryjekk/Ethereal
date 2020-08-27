@@ -1,9 +1,8 @@
 import React from "react";
 import {ArtistBox, ArtistImage, ArtistWrap, ArtistButtonWrapper} from "./style";
-import {Paragraph, MediumHeading} from "../../../../Style";
+import {Paragraph, MediumHeading, OptionsLink} from "../../../../Style";
 import DivBtn from "../../../UI/DivBtn";
 import {Link} from "react-router-dom";
-import {OptionsLink} from "../../NotFoundPage/style";
 
 import {ArtistData} from "../../../../Data/artistData";
 

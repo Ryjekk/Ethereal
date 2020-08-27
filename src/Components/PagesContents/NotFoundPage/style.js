@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Paragraph, QUERIES, Options} from "../../../Style";
+import {Paragraph, QUERIES} from "../../../Style";
 
 import Img404 from '../../../Assets/skullBlack.jpg'
 
@@ -24,9 +24,4 @@ export const Paragraph404 = styled(Paragraph)`
     text-align: center;   
     padding: 0 50px;
     font-size: 13px;
-`;
-
-export const OptionsLink = styled(Options)`
-    text-decoration: underline;
-    letter-spacing: 1px;
 `;

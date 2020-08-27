@@ -2,7 +2,7 @@ import React from 'react';
 //Style
 import {WelcomeBox, WelcomeCont, WelcomeHeading, WelcomeParagraph, WelcomeDivBtn} from './style';
 import {Link} from "react-router-dom";
-import {OptionsLink} from "../../NotFoundPage/style";
+import {OptionsLink} from "../../../../Style";
 
 function WelcomePageParallax() {
     return (

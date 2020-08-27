@@ -1,10 +1,11 @@
 import React, {Component} from "react";
-import {DivideWelcome, DivideWrapper} from "./style";
-import {Paragraph} from "../../../Style";
-import {FaqButtonWrapper} from "../../PagesContents/Faq/FaqContent/style";
-import DivBtn from "../../UI/DivBtn";
 import {Link} from "react-router-dom";
-import {OptionsLink} from "../../PagesContents/NotFoundPage/style";
+// Components
+import DivBtn from "../../UI/DivBtn";
+// Style
+import {DivideWrapper} from "./style";
+import {Paragraph, Heading, OptionsLink} from "../../../Style";
+import {FaqButtonWrapper} from "../../PagesContents/Faq/FaqContent/style";
 
 class DivideComponent extends Component{
     render() {
@@ -25,7 +26,7 @@ class DivideComponent extends Component{
 
         return(
             <DivideWrapper>
-            <DivideWelcome>{this.props.text}</DivideWelcome>
+            <Heading>{this.props.text}</Heading>
             <Paragraph>{this.props.paragraph}</Paragraph>
             {faqBtn}
             </DivideWrapper>

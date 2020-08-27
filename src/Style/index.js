@@ -10,6 +10,7 @@ export {
     Inner,
     BottomBox,
     Options,
+    OptionsLink,
     TrackBallSlide,
     ColorSlide,
     NudgeMouse,
