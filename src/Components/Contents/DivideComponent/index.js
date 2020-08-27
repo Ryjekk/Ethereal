@@ -12,13 +12,13 @@ class DivideComponent extends Component{
         if (this.props.text === "FAQ") {
             faqBtn =  (
                 <FaqButtonWrapper>
-                <DivBtn>
-                <Link to='/faq'>
-                <OptionsLink>
-                FAQ
-                </OptionsLink>
-                </Link>
-                </DivBtn>
+                    <DivBtn>
+                        <Link to='/faq'>
+                            <OptionsLink>
+                                FAQ
+                            </OptionsLink>
+                        </Link>
+                    </DivBtn>
                 </FaqButtonWrapper>
             )
         }

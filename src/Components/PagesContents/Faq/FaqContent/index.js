@@ -1,17 +1,13 @@
 import React from "react";
-import { FaqWrapper, LeftColumn, RightColumn, FaqQ, FaqA, ColWrapper } from "./style";
-
-import { FaqDataLeft, FaqDataRight } from "../../../../Data/FaqData/faqData";
+import {ColWrapper, FaqA, FaqQ, FaqWrapper, LeftColumn, RightColumn} from "./style";
+import {FaqDataLeft, FaqDataRight} from "../../../../Data/faqData";
 
 const FaqContent = () => {
-
-        const dataLeft = FaqDataLeft;
-        const dataRight = FaqDataRight;
 
         return (
             <FaqWrapper>
                 <LeftColumn className="left">
-                    {dataLeft.map(( { question, answer }, index) => (
+                    {FaqDataLeft.map(({ question, answer }, index) => (
                         <ColWrapper key={`${index}`}>
                             <FaqQ>{question}</FaqQ>
                             <FaqA>{answer}</FaqA>
@@ -19,7 +15,7 @@ const FaqContent = () => {
                     ))}
                 </LeftColumn>
                 <RightColumn className='right'>
-                    {dataRight.map(( { question, answer, answer1, answer2, answer3 }, index) => (
+                    {FaqDataRight.map(({ question, answer, answer1, answer2, answer3 }, index) => (
                         <ColWrapper key={`${index}`}>
                             <FaqQ>{question}</FaqQ>
                             <FaqA>{answer}</FaqA>

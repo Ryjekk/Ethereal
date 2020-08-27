@@ -6,56 +6,36 @@ import DivBtn from "../../../UI/DivBtn";
 import {Link} from "react-router-dom";
 import {OptionsLink} from "../../NotFoundPage/style";
 
-import ProfileImg from '../../../../Assets/Profile/profile1.jpg'
-import ProfileImgSoon from '../../../../Assets/Profile/profile4.jpg'
+import {ArtistData} from "../../../../Data/artistData";
 
 const ArtistContent = () => {
 
     return (
         <ArtistWrap>
-            <ArtistBox>
-                <ArtistImage src={ProfileImg}/>
-                <FooterHeading>
-                    Anna
-                </FooterHeading>
-                <ArtistButtonWrapper>
-                    <DivBtn>
-                        <Link to='/artist'>
-                            <OptionsLink>
-                                View Gallery
-                            </OptionsLink>
-                        </Link>
-                    </DivBtn>
-                </ArtistButtonWrapper>
+            {ArtistData.map((el) => (
+                <ArtistBox>
+                    <ArtistImage src={el.ima}/>
+                    <FooterHeading>
+                        {el.heading}
+                    </FooterHeading>
+                    <ArtistButtonWrapper>
+                        <DivBtn>
+                            <Link to={el.btn_link}>
+                                <OptionsLink>
+                                    {el.btn_text}
+                                </OptionsLink>
+                            </Link>
+                        </DivBtn>
+                    </ArtistButtonWrapper>
                     <Paragraph>
-                        Specializes in single needle and fine line.
+                        {el.paragraph_one}
                     </Paragraph>
                     <Paragraph>
-                        She started her career as a tattoo artist in Poland. With a following that is inspired by her designs, the passion she started with still holds true. She says, “It’s hard work, a lot of focus and a lot of trial and error. When I decided to grab a machine for the first time, I never wanted to stop.”
+                        {el.paragraph_two}
                     </Paragraph>
-            </ArtistBox>
+                </ArtistBox>
+            ))}
 
-            <ArtistBox>
-                <ArtistImage src={ProfileImgSoon}/>
-                <FooterHeading>
-                    Coming Soon...
-                </FooterHeading>
-                <ArtistButtonWrapper>
-                    <DivBtn>
-                        <Link to='/booking'>
-                            <OptionsLink>
-                                Contact
-                            </OptionsLink>
-                        </Link>
-                    </DivBtn>
-                </ArtistButtonWrapper>
-                <Paragraph>
-                    Are You Looking for working experience?
-                </Paragraph>
-                <Paragraph>
-                    Don't hesitate and slide into our DM's
-                </Paragraph>
-            </ArtistBox>
         </ArtistWrap>
     )
 }
