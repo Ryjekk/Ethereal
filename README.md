@@ -18,3 +18,9 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+http://neptunian.github.io/react-photo-gallery/api.html
+
+https://www.npmjs.com/package/react-photo-gallery
+
+https://github.com/neptunian/react-photo-gallery

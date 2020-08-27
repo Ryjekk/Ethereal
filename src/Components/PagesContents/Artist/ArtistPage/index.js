@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 import {OptionsLink} from "../../NotFoundPage/style";
 import DivBtn from "../../../UI/DivBtn";
 import {ArtBtnWrap} from "./style";
+import ImgSlide from "../../../Contents/ImgSlide";
+import {Inner} from "../../../../Style";
 
 const ArtistPage = () => {
     return (
@@ -18,6 +20,9 @@ const ArtistPage = () => {
                     </Link>
                 </DivBtn>
             </ArtBtnWrap>
+            <Inner>
+                <ImgSlide/>
+            </Inner>
         </div>
     )
 }
