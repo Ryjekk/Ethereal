@@ -2,23 +2,23 @@ import React from "react";
 import { InnerRow, AboutImg, AboutBox, AboutHeading } from './style';
 import {Paragraph} from "../../../../Style";
 
+import {AboutData} from "../../../../Data/aboutData";
+
 const AboutPage = () => {
     return (
         <InnerRow>
             <AboutImg />
             <AboutBox>
-                <AboutHeading>
-                    About Ethereal Tattoo
-                </AboutHeading>
-                <Paragraph>
-                    Ethereal Tattoo was established in 2017 in Reykjavik. We are small, but very open society. We are strongly inspired by Icelandic nature, Elfs and amazing small creatures. Ethereal Tattoo was established in 2017 in Reykjavik. We are small, but very open society. We are strongly inspired by Icelandic nature, Elfs and amazing small creatures.
-                </Paragraph>
-                <AboutHeading style={{marginTop: "34px"}}>
-                    Our Mission
-                </AboutHeading>
-                <Paragraph>
-                    Ethereal Tattoo was established in 2017 in Reykjavik. We are small, but very open society. We are strongly inspired by Icelandic nature, Elfs and amazing small creatures.Ethereal Tattoo was established in 2017 in Reykjavik. We are small, but very open society. We are strongly inspired by Icelandic nature, Elfs and amazing small creatures.
-                </Paragraph>
+                {AboutData.map((el) =>
+                    <>
+                    <AboutHeading>
+                        {el.heading}
+                    </AboutHeading>
+                    <Paragraph style={{marginBottom: "34px"}}>
+                        {el.paragraph_one}
+                    </Paragraph>
+                    </>
+                )}
             </AboutBox>
         </InnerRow>
     )
