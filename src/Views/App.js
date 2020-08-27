@@ -10,6 +10,8 @@ import ArtistContent from '../Components/Contents/ArtistContent'
 import FaqContent from '../Components/PagesContents/Faq/FaqContent'
 import MapsGoogle from "../Components/Contents/MapsGoogle";
 import FooterContent from '../Components/Contents/FooterContent'
+import ArtistHead from "../Components/Contents/ArtistContent/ArtistHead";
+import FaqHead from "../Components/PagesContents/Faq/FaqHead";
 
 function App() {
   return (
@@ -22,7 +24,11 @@ function App() {
               </ParallaxLayer >
           </Parallax>
           <WelcomePageParallax/>
-          <ArtistContent/>
+          <ArtistHead/>
+          <Inner>
+              <ArtistContent/>
+          </Inner>
+              <FaqHead/>
           <Inner>
               <FaqContent />
               <MapsGoogle/>

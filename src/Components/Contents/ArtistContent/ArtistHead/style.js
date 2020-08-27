@@ -7,6 +7,9 @@ export const ArtistWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const ArtistWelcome = styled(WelcomeText)``;
