@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import {FONTS, Paragraph, QUERIES, FaqAnimation} from "../../../../Style";
-import { FooterHeading } from "../../../Contents/FooterContent/style";
+import {FONTS, Paragraph, QUERIES, FaqAnimation, MediumHeading} from "../../../../Style";
 
 export const InnerFaq = styled.div`
     margin-right: auto;
@@ -19,7 +18,7 @@ export const FaqBox = styled.div`
     display: block
 `;
 
-export const FaqHeading = styled(FooterHeading)`
+export const FaqHeading = styled(MediumHeading)`
     font-size: 40px;
     padding: 0;
 `;

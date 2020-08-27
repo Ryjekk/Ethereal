@@ -1,30 +1,11 @@
 import styled from "styled-components";
-import { QUERIES, FONTS, Paragraph } from "../../../Style";
+import { QUERIES, FONTS } from "../../../Style";
 
-export const InnerWrapper = styled.footer`
-    // max-width: 70%;
-    // margin: 0 auto;
-    
+export const InnerWrapper = styled.footer`    
     @media (${QUERIES.medium}) {
         display: flex;
         justify-content: space-between;
     }
-`;
-
-export const ContentCol = styled.div`
-//optional
-    // text-align: center;
-`;
-
-export const FooterHeading = styled.h3`
-    font-family: ${FONTS.fontTwo};
-    font-size: 34px;
-    font-weight: 400;
-    letter-spacing: 5px;
-`;
-
-export const ParagraphFoot = styled(Paragraph)`
-    font-family: ${FONTS.fontThree}
 `;
 
 export const Social = styled.div`

@@ -2,14 +2,13 @@ import styled from "styled-components";
 import {WelcomeText} from "../../PagesContents/WelcomePage/style";
 
 export const DivideWrapper = styled.div`
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0d0d0d;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-color: #0d0d0d;
 `;
 
 export const DivideWelcome = styled(WelcomeText)``;

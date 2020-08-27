@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { FooterHeading } from "../../../Contents/FooterContent/style";
-import {Paragraph, FONTS, QUERIES} from "../../../../Style";
+import {Paragraph, FONTS, QUERIES, MediumHeading} from "../../../../Style";
 
 export const FaqWrapper = styled.div`
     @media (${QUERIES.medium}) {
@@ -28,7 +27,7 @@ export const RightColumn = styled.div`
     }
 `;
 
-export const FaqQ = styled(FooterHeading)`
+export const FaqQ = styled(MediumHeading)`
     text-transform: uppercase;
     white-space: pre-wrap;
 `;

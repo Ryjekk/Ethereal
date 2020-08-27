@@ -1,7 +1,6 @@
 import React from "react";
-import {FooterHeading} from "../../../Contents/FooterContent/style";
 import {ArtistBox, ArtistImage, ArtistWrap, ArtistButtonWrapper} from "./style";
-import {Paragraph} from "../../../../Style";
+import {Paragraph, MediumHeading} from "../../../../Style";
 import DivBtn from "../../../UI/DivBtn";
 import {Link} from "react-router-dom";
 import {OptionsLink} from "../../NotFoundPage/style";
@@ -15,9 +14,9 @@ const ArtistContent = () => {
             {ArtistData.map((el) => (
                 <ArtistBox>
                     <ArtistImage src={el.ima}/>
-                    <FooterHeading>
+                    <MediumHeading>
                         {el.heading}
-                    </FooterHeading>
+                    </MediumHeading>
                     <ArtistButtonWrapper>
                         <DivBtn>
                             <Link to={el.btn_link}>

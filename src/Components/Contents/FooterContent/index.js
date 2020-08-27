@@ -1,8 +1,8 @@
 import React from "react";
 import { Link}  from "react-router-dom";
 //Style
-import { InnerWrapper, ContentCol, FooterHeading, ParagraphFoot, Social, SocialLink } from './style';
-import { Options } from "../../../Style";
+import { InnerWrapper, Social, SocialLink } from './style';
+import {Options, Paragraph, MediumHeading} from "../../../Style";
 //Assets
 import sprite from '../../../Assets/Icons/sprite.svg'
 import {FooterData} from "../../../Data/footerData";
@@ -13,25 +13,25 @@ const FooterContent = () => {
     return (
         <InnerWrapper>
             {FooterData.map((el) => (
-                <ContentCol>
-                    <FooterHeading>{el.heading}</FooterHeading>
-                    <ParagraphFoot>
+                <div>
+                    <MediumHeading>{el.heading}</MediumHeading>
+                    <Paragraph>
                         {el.paragraph_one}
                         <br/>
                         {el.paragraph_two}
-                    </ParagraphFoot>
+                    </Paragraph>
                     {/* For Hours*/}
                     <Link to={el.btn_link}>
                         <Options style={{textDecoration: "underline"}}>{el.btn_text}</Options>
                     </Link>
                     {/* For Contact*/}
-                    <ParagraphFoot>
+                    <Paragraph>
                         <a href={el.a_href} style={{textDecoration: "underline", color: "#f9f8f8"}}>{el.a_text}</a>
-                    </ParagraphFoot>
-                </ContentCol>
+                    </Paragraph>
+                </div>
             ))}
-            <ContentCol>
-                <FooterHeading>Follow</FooterHeading>
+            <div>
+                <MediumHeading>Follow</MediumHeading>
                 <Social>
                     <SocialLink href="https://www.facebook.com/" target="_blank">
                         <svg>
@@ -49,7 +49,7 @@ const FooterContent = () => {
                         </svg>
                     </SocialLink>
                 </Social>
-            </ContentCol>
+            </div>
         </InnerWrapper>
     )
 };

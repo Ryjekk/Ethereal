@@ -40,6 +40,13 @@ export const Heading = styled.h1`
     }
 `;
 
+export const MediumHeading = styled.h3`
+    font-family: ${FONTS.fontTwo};
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 5px;
+`;
+
 export const SmallHeading = styled.h2`
     font-size: 18px;
     max-width: 700px;

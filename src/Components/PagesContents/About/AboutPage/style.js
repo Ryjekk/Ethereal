@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import {QUERIES, Inner} from "../../../../Style";
-import {FooterHeading} from "../../../Contents/FooterContent/style";
+import {QUERIES, Inner, MediumHeading} from "../../../../Style";
 import aboutImg from '../../../../Assets/aboutImg.jpg';
 
 
@@ -38,7 +37,7 @@ export const AboutBox = styled.div`
     }   
 `;
 
-export const AboutHeading = styled(FooterHeading)`
+export const AboutHeading = styled(MediumHeading)`
     text-transform: uppercase;
     white-space: pre-wrap;
     margin-top: 34px;

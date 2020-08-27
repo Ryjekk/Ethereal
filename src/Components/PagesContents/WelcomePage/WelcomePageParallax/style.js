@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import {COLORS, Paragraph, QUERIES} from '../../../../Style';
-import {FooterHeading} from "../../../Contents/FooterContent/style";
+import {COLORS, Paragraph, QUERIES, MediumHeading} from '../../../../Style';
 import {Btn} from "../../../UI/DivBtn/style";
 import bg from '../../../../Assets/stars.jpg'
 
@@ -41,7 +40,7 @@ export const WelcomeBox = styled.div`
     }
 `;
 
-export const WelcomeHeading = styled(FooterHeading)`
+export const WelcomeHeading = styled(MediumHeading)`
     margin-bottom: 0;
 `;
 

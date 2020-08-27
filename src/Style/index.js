@@ -4,6 +4,7 @@ export {
     FONTS,
     Container,
     Heading,
+    MediumHeading,
     SmallHeading,
     Paragraph,
     Inner,
