@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {WelcomeText} from "../../../PagesContents/WelcomePage/style";
+import {WelcomeText} from "../../WelcomePage/style";
 
 export const ArtistWrapper = styled.div`
     width: 100%;

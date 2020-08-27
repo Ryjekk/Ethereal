@@ -5,12 +5,12 @@ import { Container, Inner } from '../Style';
 //Components
 import NavBar from '../Components/Contents/NavBar';
 import WelcomePage from '../Components/PagesContents/WelcomePage';
-import WelcomePageParallax from '../Components/Contents/WelcomePageParallax';
-import ArtistContent from '../Components/Contents/ArtistContent'
+import WelcomePageParallax from '../Components/PagesContents/WelcomePage/WelcomePageParallax';
+import ArtistContent from '../Components/PagesContents/Artist/ArtistContent'
 import FaqContent from '../Components/PagesContents/Faq/FaqContent'
 import MapsGoogle from "../Components/Contents/MapsGoogle";
 import FooterContent from '../Components/Contents/FooterContent'
-import ArtistHead from "../Components/Contents/ArtistContent/ArtistHead";
+import ArtistHead from "../Components/PagesContents/Artist/ArtistHead";
 import FaqHead from "../Components/PagesContents/Faq/FaqHead";
 
 function App() {

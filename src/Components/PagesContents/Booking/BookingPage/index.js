@@ -1,11 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {Inner} from "../../../Style";
-import {OptionsLink} from "../NotFoundPage/style";
+import {Inner} from "../../../../Style";
+import {OptionsLink} from "../../NotFoundPage/style";
 import {BtnWrapper, TextBox} from "./style";
-import BookingForm from '../../Contents/BookingForm/'
-import DivBtn from "../../UI/DivBtn";
-import {WelcomeText} from "../WelcomePage/style";
+import BookingForm from '../BookingForm'
+import DivBtn from "../../../UI/DivBtn";
+import {WelcomeText} from "../../WelcomePage/style";
 
 const BookingPage = () => {
     return (

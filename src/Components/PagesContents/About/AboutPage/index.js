@@ -1,6 +1,6 @@
 import React from "react";
 import { InnerRow, AboutImg, AboutBox, AboutHeading } from './style';
-import {Paragraph} from "../../../Style";
+import {Paragraph} from "../../../../Style";
 
 const AboutPage = () => {
     return (

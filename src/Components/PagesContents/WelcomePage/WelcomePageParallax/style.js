@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import {COLORS, Paragraph, QUERIES} from '../../../Style';
-import {FooterHeading} from "../FooterContent/style";
-import {Btn} from "../../UI/DivBtn/style";
-import bg from '../../../Assets/stars.jpg'
+import {COLORS, Paragraph, QUERIES} from '../../../../Style';
+import {FooterHeading} from "../../../Contents/FooterContent/style";
+import {Btn} from "../../../UI/DivBtn/style";
+import bg from '../../../../Assets/stars.jpg'
 
 // TODO if you want paralax
 

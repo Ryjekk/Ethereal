@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {QUERIES, Inner} from "../../../Style";
-import {FooterHeading} from "../../Contents/FooterContent/style";
-import aboutImg from '../../../Assets/aboutImg.jpg';
+import {QUERIES, Inner} from "../../../../Style";
+import {FooterHeading} from "../../../Contents/FooterContent/style";
+import aboutImg from '../../../../Assets/aboutImg.jpg';
 
 
 export const InnerRow = styled(Inner)`

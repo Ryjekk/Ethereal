@@ -1,13 +1,13 @@
 import React from "react";
-import {FooterHeading} from "../FooterContent/style";
+import {FooterHeading} from "../../../Contents/FooterContent/style";
 import {ArtistBox, ArtistImage, ArtistWrap, ArtistButtonWrapper} from "./style";
-import {Paragraph} from "../../../Style";
-import DivBtn from "../../UI/DivBtn";
+import {Paragraph} from "../../../../Style";
+import DivBtn from "../../../UI/DivBtn";
 import {Link} from "react-router-dom";
-import {OptionsLink} from "../../PagesContents/NotFoundPage/style";
+import {OptionsLink} from "../../NotFoundPage/style";
 
-import ProfileImg from '../../../Assets/Profile/profile1.jpg'
-import ProfileImgSoon from '../../../Assets/Profile/profile4.jpg'
+import ProfileImg from '../../../../Assets/Profile/profile1.jpg'
+import ProfileImgSoon from '../../../../Assets/Profile/profile4.jpg'
 
 const ArtistContent = () => {
 

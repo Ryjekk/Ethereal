@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {QUERIES} from "../../../Style";
+import {QUERIES} from "../../../../Style";
 
-import bookingImg from '../../../Assets/Panorama/panoOne.jpg';
+import bookingImg from '../../../../Assets/Panorama/panoOne.jpg';
 
 
 // TODO same wrappers for pictures

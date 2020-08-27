@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {COLORS, QUERIES, FONTS} from "../../../Style";
+import {COLORS, QUERIES, FONTS} from "../../../../Style";
 
 export const FormWrapper = styled.div`
     display: flex;

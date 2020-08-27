@@ -2,7 +2,7 @@ import React from "react";
 import {BottomBox, Container} from "../../Style";
 import Navbar from "../../Components/Contents/NavBar";
 import FooterContent from "../../Components/Contents/FooterContent";
-import ArtistPage from "../../Components/PagesContents/ArtistPage";
+import ArtistPage from "../../Components/PagesContents/Artist/ArtistPage";
 
 function Artist() {
     return (
