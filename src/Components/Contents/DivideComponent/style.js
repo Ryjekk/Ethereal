@@ -8,5 +8,7 @@ export const DivideWrapper = styled.div`
     width: 100%;
     height: 40vh;
     background-color: #0d0d0d;
+    
+    background-position: top left;
+    background-attachment: fixed;
 `;
-

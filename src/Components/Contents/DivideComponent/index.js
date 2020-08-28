@@ -6,10 +6,13 @@ import DivBtn from "../../UI/DivBtn";
 import {DivideWrapper} from "./style";
 import {Paragraph, Heading, OptionsLink} from "../../../Style";
 import {FaqButtonWrapper} from "../../PagesContents/Faq/FaqContent/style";
+// Assets
+import backPic from '../../../Assets/AnnBg1.jpg'
 
 class DivideComponent extends Component{
     render() {
         let faqBtn = null;
+        let bgImg = null;
         if (this.props.text === "FAQ") {
             faqBtn =  (
                 <FaqButtonWrapper>
@@ -24,11 +27,15 @@ class DivideComponent extends Component{
             )
         }
 
+        if (this.props.text === "Anna") {
+            bgImg = backPic
+        }
+
         return(
-            <DivideWrapper>
-            <Heading>{this.props.text}</Heading>
-            <Paragraph>{this.props.paragraph}</Paragraph>
-            {faqBtn}
+            <DivideWrapper style={{backgroundImage: `url(${bgImg})`}}>
+                <Heading>{this.props.text}</Heading>
+                <Paragraph>{this.props.paragraph}</Paragraph>
+                {faqBtn}
             </DivideWrapper>
         )
     }
