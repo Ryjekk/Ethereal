@@ -1,11 +1,8 @@
 import styled from "styled-components";
-import {COLORS, QUERIES, FONTS} from "../../../../Style";
+import {COLORS, QUERIES, FONTS, CenterBox} from "../../../../Style";
 
-export const FormWrapper = styled.div`
+export const FormWrapper = styled(CenterBox)`
     font-family: Arial;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
     @media (${QUERIES.medium}) {
         padding: 0 15%;

@@ -1,36 +1,21 @@
 import styled from 'styled-components';
-import {COLORS, Paragraph, QUERIES, MediumHeading} from '../../../../Style';
+import {Paragraph, QUERIES, MediumHeading, ParallaxBox, CenterBox} from '../../../../Style';
 import {Btn} from "../../../UI/DivBtn/style";
-import bg from '../../../../Assets/stars.jpg'
+import bg from '../../../../Assets/AnnBg2.jpg'
 
-// TODO if you want paralax
-
-export const WelcomeCont = styled.div`
-    background-color: ${COLORS.black};
-    display: flex;
-    justify-content: center;
-    align-items: center;
+export const WelcomeCont = styled(ParallaxBox)`
     width: 100vw;
     height: 100vh;
     padding: 100px 0 50px 0;
-    
-    // TODO if you want paralax
     background-image: url(${bg});
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
    
     @media (${QUERIES.medium}) {
         padding: 100px 0;
     }
 `;
 
-export const WelcomeBox = styled.div`
-    display: flex;
+export const WelcomeBox = styled(CenterBox)`
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(12, 12, 12, .7);
     padding: 25px 10px;
    

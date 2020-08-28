@@ -26,7 +26,7 @@ export const FONTS = {
 
 // Text
 export const Heading = styled.div`
-    font-family: 'bebas-neue-by-fontfabric';
+    font-family: ${FONTS.fontTwo};
     font-size: 45px;
     width: 100%;
     line-height: 149%;
@@ -56,11 +56,6 @@ export const SmallHeading = styled.h2`
     align-items: left;
     text-align: left;
     letter-spacing: 0.1em;
-
-    @media (${QUERIES.medium}) {
-        // align-items: center;
-        // text-align: center;
-    }
 `;
 
 export const Paragraph = styled.p`
@@ -95,13 +90,6 @@ export const Inner = styled.div`
     }
 `;
 
-export const BtnWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 35px 0;
-`;
-
 export const BottomBox = styled(Inner)`
     width: 100%;
     bottom: 0;
@@ -112,6 +100,23 @@ export const BottomBox = styled(Inner)`
         padding: 50px 8%;
         // position: absolute;
     }
+`;
+
+export const CenterBox = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const ParallaxBox = styled(CenterBox)`
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+`;
+
+export const BtnWrapper = styled(CenterBox)`
+    margin: 35px 0;
 `;
 
 // Links

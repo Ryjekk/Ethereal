@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {QUERIES, Inner, MediumHeading} from "../../../../Style";
+import {QUERIES, Inner, MediumHeading, ParallaxBox} from "../../../../Style";
 import aboutImg from '../../../../Assets/aboutImg.jpg';
 
 
@@ -11,14 +11,11 @@ export const InnerRow = styled(Inner)`
     }
 `;
 
-export const AboutImg = styled.div` 
+export const AboutImg = styled(ParallaxBox)` 
     background-image: url(${aboutImg});
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
     height: 35vh;
     margin-top: 35px;
+    background-attachment: inherit;
     
     @media (${QUERIES.medium}) {
         height:80vh;

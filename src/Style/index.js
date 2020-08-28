@@ -8,6 +8,8 @@ export {
     SmallHeading,
     Paragraph,
     Inner,
+    ParallaxBox,
+    CenterBox,
     BtnWrapper,
     BottomBox,
     Options,

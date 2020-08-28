@@ -20,7 +20,7 @@ function App() {
               </ParallaxLayer >
           </Parallax>
           <WelcomePageParallax/>
-          <DivideComponent text={"OUR CREW"}/>
+          <DivideComponent text={"OUR CREW"} paragraph={"Best artist in town"}/>
           <Inner>
               <ArtistContent/>
           </Inner>

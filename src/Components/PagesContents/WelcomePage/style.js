@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { COLORS, ColorSlide, TrackBallSlide, NudgeMouse } from "../../../Style";
+import { COLORS, ColorSlide, TrackBallSlide, NudgeMouse, CenterBox } from "../../../Style";
 
 export const VideoEl = styled.video`
     width: 100%;
@@ -8,15 +8,12 @@ export const VideoEl = styled.video`
     filter: grayscale(70%);
 `;
 
-export const Overlay = styled.div`
+export const Overlay = styled(CenterBox)`
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 `;
 

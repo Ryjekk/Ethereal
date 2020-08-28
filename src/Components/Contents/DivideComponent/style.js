@@ -1,14 +1,9 @@
 import styled from "styled-components";
+import {ParallaxBox} from "../../../Style";
 
-export const DivideWrapper = styled.div`
-    display: flex;
+export const DivideWrapper = styled(ParallaxBox)`
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 40vh;
     background-color: #0d0d0d;
-    
-    background-position: top left;
-    background-attachment: fixed;
 `;

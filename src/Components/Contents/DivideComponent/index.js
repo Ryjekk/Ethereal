@@ -7,7 +7,8 @@ import {DivideWrapper} from "./style";
 import {Paragraph, Heading, OptionsLink} from "../../../Style";
 import {FaqButtonWrapper} from "../../PagesContents/Faq/FaqContent/style";
 // Assets
-import backPic from '../../../Assets/AnnBg1.jpg'
+import backPicArtist from '../../../Assets/AnnBg1.jpg'
+import backPicFaq from '../../../Assets/AnnBg2.jpg'
 
 class DivideComponent extends Component{
     render() {
@@ -28,7 +29,9 @@ class DivideComponent extends Component{
         }
 
         if (this.props.text === "Anna") {
-            bgImg = backPic
+            bgImg = backPicArtist
+        } else if (this.props.text === "FAQ") {
+            bgImg = backPicFaq
         }
 
         return(
