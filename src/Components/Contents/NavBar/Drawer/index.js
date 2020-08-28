@@ -13,9 +13,6 @@ const Drawer = () => {
             <Link to='/artist'>
                 <Options>一 Artist</Options>
             </Link>
-            <Link to='/worked'>
-                <Options>一 We Worked</Options>
-            </Link>
             <Link to='/faq'>
                 <Options>一 Faq</Options>
             </Link>
