@@ -2,9 +2,7 @@ import styled from "styled-components";
 import {FONTS, Paragraph, QUERIES, FaqAnimation, MediumHeading} from "../../../../Style";
 
 export const InnerFaq = styled.div`
-    margin-right: auto;
-    margin-left: auto;
-    
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -14,13 +12,8 @@ export const InnerFaq = styled.div`
     }
 `;
 
-export const FaqBox = styled.div`
-    display: block
-`;
-
 export const FaqHeading = styled(MediumHeading)`
     font-size: 40px;
-    padding: 0;
 `;
 
 export const Question = styled.h3`
@@ -33,6 +26,5 @@ export const Question = styled.h3`
 export const Answer = styled(Paragraph)`
     padding-left: 28px;
     display: none;
-    font-family: ${FONTS.fontThree};
     animation: ${FaqAnimation} 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 `;

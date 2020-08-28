@@ -1,8 +1,9 @@
 import React from "react";
+// Style
 import {Inner, SmallHeading} from "../../../../Style";
-import { InnerFaq, FaqBox, FaqHeading, Question, Answer } from './style'
+import { InnerFaq, FaqHeading, Question, Answer } from './style'
 import '../../../../index.css'
-
+// Assets
 import { FaqPageData } from '../../../../Data/faqData'
 
 const {useState} = React;
@@ -20,13 +21,13 @@ const FaqPage = () => {
             <InnerFaq>
                 <FaqHeading>FAQ's</FaqHeading>
                 {faqs.map(( { question, answer, answer1, answer2, answer3  }, index) => (
-                    <FaqBox key={`${index}`}>
+                    <div key={`${index}`}>
                         <Question onClick={() => openQuestion(index)}>{question}</Question>
                         <Answer className={`${selectedQuestion === index ? 'faqOpenQuestion' : ''}`}>{answer}</Answer>
                         <Answer className={`${selectedQuestion === index ? 'faqOpenQuestion' : ''}`}>{answer1}</Answer>
                         <Answer className={`${selectedQuestion === index ? 'faqOpenQuestion' : ''}`}>{answer2}</Answer>
                         <Answer className={`${selectedQuestion === index ? 'faqOpenQuestion' : ''}`}>{answer3}</Answer>
-                    </FaqBox>
+                    </div>
                 ))}
                 <SmallHeading style={{fontWeight: '400'}}>Have more questions? Feel free to email us at <br/> exampletattoo@gmail.com</SmallHeading>
             </InnerFaq>

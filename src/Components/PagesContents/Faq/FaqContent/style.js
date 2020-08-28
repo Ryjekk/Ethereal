@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Paragraph, FONTS, QUERIES, MediumHeading} from "../../../../Style";
+import {BtnWrapper, QUERIES} from "../../../../Style";
 
 export const FaqWrapper = styled.div`
     @media (${QUERIES.medium}) {
@@ -27,26 +27,13 @@ export const RightColumn = styled.div`
     }
 `;
 
-export const FaqQ = styled(MediumHeading)`
-    text-transform: uppercase;
-    white-space: pre-wrap;
-`;
-
-export const FaqA = styled(Paragraph)`
-    font-family: ${FONTS.fontThree};
-    white-space: pre-wrap;
-`;
-
 export const ColWrapper = styled.div`
     padding-left: 17px;
     padding-right: 17px;
 `;
 
-export const FaqButtonWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-        
+export const FaqButtonWrapper = styled(BtnWrapper)`
+    margin: 0;
     @media (${QUERIES.small}) {
         display: none;
     }
