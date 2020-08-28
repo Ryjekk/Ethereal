@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import {ArtistButtonWrapper} from "../ArtistContent/style";
+import {QUERIES, BtnWrapper} from "../../../../Style";
 
-// TODO make universal parring 34px ?
-
-export const ArtBtnWrap = styled(ArtistButtonWrapper)`
-    justify-content: center;
-    padding-top: 34px;
+export const ArtBtnWrap = styled(BtnWrapper)`
+    margin-bottom: -20px;
+    
+    @media(${QUERIES.medium}) {
+        margin-bottom: -70px;
+    }
 `;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {COLORS, QUERIES, FONTS} from "../../../../Style";
 
 export const FormWrapper = styled.div`
+    font-family: Arial;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,13 +26,11 @@ export const FormFieldset = styled.fieldset`
     legend {
         color: ${COLORS.darkGray};
         padding: 0 20px;
-        font-family: Arial;
     }
     
     label {
         color: ${COLORS.darkGray};
         padding-right: 15px;
-        font-family: Arial;
     }
     
     input {
@@ -41,7 +40,6 @@ export const FormFieldset = styled.fieldset`
 
 export const FormLabel = styled.label`
     color: ${COLORS.darkGray};
-    font-family: Arial;
     padding-bottom: 10px;
 `;
 
@@ -53,7 +51,6 @@ export const FormInput = styled.input`
     border: none;
     border-bottom: 1px solid ${COLORS.darkestGray};
     outline: none;
-    // background: transparent;
     background: rgba(255,255,255, .01);
     border-radius: 5px;
     padding-left: 15px;
@@ -73,7 +70,6 @@ export const FormTextarea = styled.textarea`
     width: 100%;
     min-height: 100px;
     resize: none;
-    // background: transparent;
     background: rgba(255,255,255, .01);
     outline: none;
     border-radius: 5px;
@@ -108,7 +104,6 @@ export const FormSection = styled.div`
 
 export const ErrorSpan = styled.p`
     color: red;
-    font-family: Arial;
     font-size: 14px;
     color: orangered;
 `;

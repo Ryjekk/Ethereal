@@ -8,6 +8,7 @@ export {
     SmallHeading,
     Paragraph,
     Inner,
+    BtnWrapper,
     BottomBox,
     Options,
     OptionsLink,

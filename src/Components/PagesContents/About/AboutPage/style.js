@@ -29,8 +29,6 @@ export const AboutImg = styled.div`
 `;
 
 export const AboutBox = styled.div`
-    max-width: auto; 
-    
     @media (${QUERIES.medium}) {
         max-width: 50%; 
         margin-left: 17px;
@@ -38,10 +36,6 @@ export const AboutBox = styled.div`
 `;
 
 export const AboutHeading = styled(MediumHeading)`
-    text-transform: uppercase;
-    white-space: pre-wrap;
-    margin-top: 34px;
-    
     @media (${QUERIES.medium}) { 
         margin-top: 0;
     } 

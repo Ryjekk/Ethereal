@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {QUERIES} from "../../../../Style";
-
+// Assets
 import bookingImg from '../../../../Assets/Panorama/panoOne.jpg';
 
 
@@ -19,16 +19,6 @@ export const BookingImg = styled.div`
         background-size: cover;
         background-position: center;
     }
-`;
-
-export const BtnWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 35px 0;
 `;
 
 export const TextBox = styled.div`

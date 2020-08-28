@@ -1,8 +1,8 @@
 import React from "react";
+import {Link} from "react-router-dom";
 //Style
-import { Options } from "../../../../Style";
-import { LinkList } from './style'
-import { Link } from "react-router-dom";
+import {Options} from "../../../../Style";
+import {LinkList} from '../style'
 
 const Drawer = () => {
     return (

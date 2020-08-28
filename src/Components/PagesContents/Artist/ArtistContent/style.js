@@ -21,10 +21,6 @@ export const ArtistBox = styled.div`
         max-width: 50%;
         padding: 0 17px;
    }
-   
-   @media (${QUERIES.medium}) {
-        width: 50%;
-   }
 `;
 
 export const ArtistImage = styled.img`

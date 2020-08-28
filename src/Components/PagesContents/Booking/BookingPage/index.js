@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 import BookingForm from '../BookingForm'
 import DivBtn from "../../../UI/DivBtn";
 // Style
-import {Inner, OptionsLink, Heading} from "../../../../Style";
-import {BtnWrapper, TextBox} from "./style";
+import {Inner, OptionsLink, Heading, BtnWrapper} from "../../../../Style";
+import {TextBox} from "./style";
 
 const BookingPage = () => {
     return (

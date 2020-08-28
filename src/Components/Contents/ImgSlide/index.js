@@ -19,7 +19,7 @@ function ImgSlide() {
     };
     return (
         <div>
-            <Gallery photos={photos} onClick={openLightbox} margin={7} targetRowHeight={250}/>
+            <Gallery photos={photos} onClick={openLightbox} margin={7} targetRowHeight={280}/>
             <ModalGateway>
                 {viewerIsOpen ? (
                     <Modal onClose={closeLightbox}>

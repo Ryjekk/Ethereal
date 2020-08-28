@@ -1,9 +1,11 @@
 import React from "react";
-import ArtistHead from "../../../Contents/DivideComponent";
 import {Link} from "react-router-dom";
-import DivBtn from "../../../UI/DivBtn";
-import {ArtBtnWrap} from "./style";
+// Components
+import ArtistHead from "../../../Contents/DivideComponent";
 import ImgSlide from "../../../Contents/ImgSlide";
+import DivBtn from "../../../UI/DivBtn";
+// Style
+import {ArtBtnWrap} from "./style";
 import {Inner, OptionsLink} from "../../../../Style";
 
 const ArtistPage = () => {

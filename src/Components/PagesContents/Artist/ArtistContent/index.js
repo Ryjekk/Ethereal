@@ -1,9 +1,11 @@
 import React from "react";
+import {Link} from "react-router-dom";
+// Components
+import DivBtn from "../../../UI/DivBtn";
+// Style
 import {ArtistBox, ArtistImage, ArtistWrap, ArtistButtonWrapper} from "./style";
 import {Paragraph, MediumHeading, OptionsLink} from "../../../../Style";
-import DivBtn from "../../../UI/DivBtn";
-import {Link} from "react-router-dom";
-
+// Assets
 import {ArtistData} from "../../../../Data/artistData";
 
 const ArtistContent = () => {
@@ -33,7 +35,6 @@ const ArtistContent = () => {
                     </Paragraph>
                 </ArtistBox>
             ))}
-
         </ArtistWrap>
     )
 }

@@ -95,6 +95,13 @@ export const Inner = styled.div`
     }
 `;
 
+export const BtnWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+`;
+
 export const BottomBox = styled(Inner)`
     width: 100%;
     bottom: 0;
