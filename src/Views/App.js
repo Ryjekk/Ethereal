@@ -8,14 +8,14 @@ import React from 'react';
 // import MapsGoogle from "../Components/Contents/MapsGoogle";
 // import FooterContent from '../Components/Contents/FooterContent'
 // import DivideComponent from "../Components/Contents/DivideComponent";
-import { Container, Inner } from '../Style';
+import ComingSoon from "../Components/PagesContents/ComingSoon";
+import { Container } from '../Style';
+// import { Inner } from '../Style';
 
 function App() {
   return (
       <Container>
-          <Inner>
-              <h1 style={{margin: "0 auto", paddingTop: "25%", fontSize: "3rem"}}>AURA REYKJAVIK INK COMING SOON...</h1>
-          </Inner>
+          <ComingSoon/>
           {/* TODO uncoment */}
           {/* <NavBar/>
           <Parallax pages={2} className="ClearSearchbar">
