@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 import {
     FormInput,
     FormLabel,
@@ -11,11 +11,12 @@ import {
 
 const emailRegex = RegExp(/^[a-zA-Z0-9.!#%&'*/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
 
-const formValid = formErrors => {
-    let valid = true;
-    Object.values(formErrors).forEach(el => el.length > 0 && (valid = false));
-    return valid;
-}
+// TODO COMENT OUT
+// const formValid = formErrors => {
+//     let valid = true;
+//     Object.values(formErrors).forEach(el => el.length > 0 && (valid = false));
+//     return valid;
+// }
 
 class BookingForm extends Component {
     constructor(props) {
