@@ -13,7 +13,11 @@ import { Container, Inner } from '../Style';
 function App() {
   return (
       <Container>
-          <NavBar/>
+          <Inner>
+              <h1 style={{margin: "0 auto", paddingTop: "25%", fontSize: "3rem"}}>AURA REYKJAVIK INK COMING SOON...</h1>
+          </Inner>
+          {/* TODO uncoment */}
+          {/* <NavBar/>
           <Parallax pages={2} className="ClearSearchbar">
               <ParallaxLayer speed={0.5}>
                   <WelcomePage />
@@ -29,7 +33,7 @@ function App() {
               <FaqContent />
               <MapsGoogle/>
               <FooterContent/>
-          </Inner>
+          </Inner> */}
       </Container>
   );
 }

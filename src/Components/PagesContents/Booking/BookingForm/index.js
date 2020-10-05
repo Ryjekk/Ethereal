@@ -59,24 +59,25 @@ class BookingForm extends Component {
         this.setState({formErrors, [name]: value})
     }
 
-    sendEmail = (e) => {
-        if (formValid(this.state.formErrors)) {
-            const apiKey = process.env.REACT_APP_API_KEY;
-            e.preventDefault();
-            emailjs.sendForm('etherealtattoo', 'etheraltattoo', e.target, `${apiKey}`)
-                .then((result) => {
-                    console.log(result.text);
-                }, (error) => {
-                    alert(`🤯 There was problem with submitting your form, please try again. SERVER ERROR`)
-                    console.log(error.text);
-                });
-            e.target.reset();
-        } else {
-            e.preventDefault();
-            // TODO display message : please fill required fields
-            alert(`🤯 There was problem with submitting your form, please try again`)
-        }
-    }
+    // UNCOMENT  TODO
+    // sendEmail = (e) => {
+    //     if (formValid(this.state.formErrors)) {
+    //         const apiKey = process.env.REACT_APP_API_KEY;
+    //         e.preventDefault();
+    //         emailjs.sendForm('etherealtattoo', 'etheraltattoo', e.target, `${apiKey}`)
+    //             .then((result) => {
+    //                 console.log(result.text);
+    //             }, (error) => {
+    //                 alert(`🤯 There was problem with submitting your form, please try again. SERVER ERROR`)
+    //                 console.log(error.text);
+    //             });
+    //         e.target.reset();
+    //     } else {
+    //         e.preventDefault();
+    //         // TODO display message : please fill required fields
+    //         alert(`🤯 There was problem with submitting your form, please try again`)
+    //     }
+    // }
 
     render() {
         const {formErrors} = this.state;
