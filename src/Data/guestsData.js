@@ -3,7 +3,7 @@ import ProfileImgg from '../Assets/Profile/profile4.jpg'
 export const GuestData = [
     {
         "ima": `${ProfileImgg}`,
-        "heading": "Kreski_Anny Tatto",
+        "heading": "Kreski_Anny",
         "btn_text": "Require Booking",
         'btn_link': '/booking',
         'paragraph_one': 'Are You Looking for job/working experience?',
