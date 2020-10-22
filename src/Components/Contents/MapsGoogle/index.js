@@ -7,7 +7,7 @@ const MapsGoogle = () => {
         <MapWrapper>
             <MapIframe
                 scrolling="no"
-                src="https://maps.google.com/maps?q=Reykjavik%20Laugavegur&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                src="https://maps.google.com/maps?q=Reykjavik%28Borgartún&t=&z=13&ie=UTF8&iwloc=&output=embed">
             </MapIframe>
         </MapWrapper>
     )

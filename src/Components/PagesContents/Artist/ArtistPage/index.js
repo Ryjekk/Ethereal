@@ -1,30 +1,31 @@
 import React from "react";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 // Components
-import ArtistHead from "../../../Contents/DivideComponent";
-import ImgSlide from "../../../Contents/ImgSlide";
-import DivBtn from "../../../UI/DivBtn";
+// import ArtistHead from "../../../Contents/DivideComponent";
+// import ImgSlide from "../../../Contents/ImgSlide";
+// import DivBtn from "../../../UI/DivBtn";
 // Style
-import {ArtBtnWrap} from "./style";
-import {Inner, OptionsLink} from "../../../../Style";
+// import {ArtBtnWrap} from "./style";
+// import {Inner, OptionsLink} from "../../../../Style";
 
 const ArtistPage = () => {
     return (
-        <div>
-            <ArtistHead text={'Anna'}/>
-            <ArtBtnWrap>
-                <DivBtn>
-                    <Link to='/booking'>
-                        <OptionsLink>
-                            Make an appointment
-                        </OptionsLink>
-                    </Link>
-                </DivBtn>
-            </ArtBtnWrap>
-            <Inner>
-                <ImgSlide/>
-            </Inner>
-        </div>
+        // <div>
+        //     <ArtistHead text={'Anna'}/>
+        //     <ArtBtnWrap>
+        //         <DivBtn>
+        //             <Link to='/booking'>
+        //                 <OptionsLink>
+        //                     Make an appointment
+        //                 </OptionsLink>
+        //             </Link>
+        //         </DivBtn>
+        //     </ArtBtnWrap>
+        //     <Inner>
+        //         <ImgSlide/>
+        //     </Inner>
+        // </div>
+        <p>this page should take you to artist in main</p>
     )
 }
 

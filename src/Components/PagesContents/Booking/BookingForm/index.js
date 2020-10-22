@@ -109,6 +109,51 @@ class BookingForm extends Component {
                     {/* Phone */}
                     <FormLabel htmlFor="phone"/>
                     <FormInput name="phone" type="text" placeholder="Phone Number"/>
+                    {/* From */}
+                    <FormLabel htmlFor="etnicity"/>
+                    <FormInput name="etnicity" type="text" placeholder="Are you Local or Tourist"/>
+                    {/* Artist */}
+                    <FormFieldset>
+                        <legend> Select Artist </legend>
+                        <label>
+                            <input type="radio"
+                                   value="Anna"
+                                   name="artist"/>
+                            Anna
+                        </label>
+                        <label>
+                            <input type="radio"
+                                   value="Deborah"
+                                   name="artist"/>
+                            Deborah
+                        </label>
+                        <label>
+                            <input type="radio"
+                                   value="Myrra"
+                                   name="artist"/>
+                            Myrra
+                        </label>
+                    </FormFieldset>
+                    {/* Availability Date */}
+                    {/* Availability time */}
+                    <FormLabel htmlFor="dates"> Please provide date and time. We are open 10:00-19:00
+                        </FormLabel>
+                    <FormSection>
+                        <FormInput
+                            style={{marginRight: '10px'}}
+                            name="dates"
+                            type="date"
+                            min="2020-08-01"
+                            required/>
+                        <FormLabel htmlFor="time"/>
+                        <FormInput
+                            style={{marginLeft: '10px'}}
+                            name="time"
+                            type="time"
+                            min="10:00"
+                            max="19:00"
+                            required/>
+                    </FormSection>
                     {/* Design */}
                     <FormFieldset>
                         <legend> Flashwork or custom design? </legend>
@@ -126,42 +171,6 @@ class BookingForm extends Component {
                             Custom Design
                         </label>
                     </FormFieldset>
-                    {/* Description */}
-                    <FormLabel htmlFor="description"/>
-                    <FormTextarea
-                        style={formErrors.description.length > 0 ? {borderBottom: "2px solid orangered"} : null}
-                        name="description"
-                        type="text"
-                        placeholder="Tattoo Description. Please send link to chosen Flashwork, or describe a custom design. [you can provide links to inspiration] *"
-                        required
-                        onChange={this.handleChange}/>
-                    {formErrors.description.length > 0 && (<ErrorSpan>{formErrors.description}</ErrorSpan>)}
-                    {/* Artist */}
-                    <FormFieldset>
-                        <legend> Select Artist </legend>
-                        <label>
-                            <input type="radio"
-                                   value="Anna"
-                                   name="artist"/>
-                            Anna
-                        </label>
-                        <label>
-                            <input type="radio"
-                                   value="Anna2"
-                                   name="artist"/>
-                            Anna2
-                        </label>
-                    </FormFieldset>
-                    {/* Size */}
-                    <FormLabel htmlFor="size"/>
-                    <FormInput
-                        style={formErrors.size.length > 0 ? {borderBottom: "2px solid orangered"} : null}
-                        name="size"
-                        type="text"
-                        placeholder="Approximate Size (in cm) *"
-                        required
-                        onChange={this.handleChange}/>
-                    {formErrors.size.length > 0 && (<ErrorSpan>{formErrors.size}</ErrorSpan>)}
                     {/* Placement */}
                     <FormLabel htmlFor="placement"/>
                     <FormInput
@@ -172,43 +181,33 @@ class BookingForm extends Component {
                         required
                         onChange={this.handleChange}/>
                     {formErrors.placement.length > 0 && (<ErrorSpan>{formErrors.placement}</ErrorSpan>)}
-                    {/* Colour */}
-                    <FormFieldset>
-                        <legend> Tattoo Colour </legend>
-                        <label>
-                            <input type="radio"
-                                   value="Colour"
-                                   name="color"/>
-                            Colour
-                        </label>
-                        <label>
-                            <input type="radio"
-                                   value="Black & Gray"
-                                   name="color"/>
-                            Black & Gray
-                        </label>
-                    </FormFieldset>
-                    {/* Availability Date */}
-                    {/* Availability time */}
-                    <FormLabel htmlFor="dates"> Please provide date and time. We are open 09:00-18:00 </FormLabel>
-                    <FormSection>
+                    {/* Size */}
+                    <FormLabel htmlFor="size"/>
                     <FormInput
-                        style={{marginRight: '10px'}}
-                        name="dates"
-                        type="date"
-                        min="2020-08-01"
-                        required/>
-                    <FormLabel htmlFor="time"/>
-                    <FormInput
-                        style={{marginLeft: '10px'}}
-                        name="time"
-                        type="time"
-                        min="09:00"
-                        max="18:00"
-                        required/>
-                    </FormSection>
+                        style={formErrors.size.length > 0 ? {borderBottom: "2px solid orangered"} : null}
+                        name="size"
+                        type="text"
+                        placeholder="Approximate Size (in cm) *"
+                        required
+                        onChange={this.handleChange}/>
+                    {formErrors.size.length > 0 && (<ErrorSpan>{formErrors.size}</ErrorSpan>)}
+                    {/* Description */}
+                    <FormLabel htmlFor="description"/>
+                    <FormTextarea
+                        style={formErrors.description.length > 0 ? {borderBottom: "2px solid orangered"} : null}
+                        name="description"
+                        type="text"
+                        placeholder="Tattoo Description. Please send link to chosen Flashwork, or describe a custom design. [you can provide links to inspiration] *"
+                        required
+                        onChange={this.handleChange}/>
+                    {formErrors.description.length > 0 && (<ErrorSpan>{formErrors.description}</ErrorSpan>)}
+                    {/* Phone */}
+                    <FormLabel htmlFor="source"/>
+                    <FormInput name="cource" type="text" placeholder="hHow do you heard about us?"/>
+                    <FormLabel>Please not that provided time is just an suggestion. Artist will send you an conformation by email.</FormLabel>
                     {/* Button */}
                     <FormButton value="submit" type="submit"> Book Appointment </FormButton>
+
                 </FormStyled>
             </FormWrapper>
         )

@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import {QUERIES} from "../../../../Style";
+import {QUERIES} from "../../../Style";
+
+// ARTIST CONTENT + GUEST CONTENT STYLE
 
 export const ArtistWrap = styled.div`
     display: flex;
@@ -18,6 +20,8 @@ export const ArtistBox = styled.div`
     flex-direction: column;
     
     @media (${QUERIES.small}) {
+        // TODO change for more pictures
+        width: 33%;
         max-width: 50%;
         padding: 0 17px;
    }

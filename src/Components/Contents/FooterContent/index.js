@@ -24,26 +24,33 @@ const FooterContent = () => {
                     <Link to={el.btn_link}>
                         <Options style={{textDecoration: "underline"}}>{el.btn_text}</Options>
                     </Link>
+                    <br/>
+                    <Link to={el.btn_link_COVID}>
+                        <Options style={{textDecoration: "underline"}}>{el.btn_text_COVID}</Options>
+                    </Link>
                     {/* For Contact*/}
                     <Paragraph>
                         <a href={el.a_href} style={{textDecoration: "underline", color: "#f9f8f8"}}>{el.a_text}</a>
+                    </Paragraph>
+                    <Paragraph>
+                        <a href={el.a_href_two} style={{textDecoration: "underline", color: "#f9f8f8"}}>{el.a_text_two}</a>
                     </Paragraph>
                 </div>
             ))}
             <div>
                 <MediumHeading>Follow</MediumHeading>
                 <Social>
-                    <SocialLink href="https://www.facebook.com/" target="_blank">
+                    <SocialLink href="https://www.facebook.com/anikawr" target="_blank">
                         <svg>
                             <use xlinkHref={sprite + "#fb"}></use>
                         </svg>
                     </SocialLink>
-                    <SocialLink href="https://www.instagram.com/" target="_blank">
+                    <SocialLink href="https://www.instagram.com/aura.reykjavik//" target="_blank">
                         <svg>
                             <use xlinkHref={sprite + "#ig"}></use>
                         </svg>
                     </SocialLink>
-                    <SocialLink href="https://mail.google.com/" target="_blank">
+                    <SocialLink href="mailto:aura.reykjavik@gmail.com" target="_blank">
                         <svg>
                             <use xlinkHref={sprite + "#mail"}></use>
                         </svg>

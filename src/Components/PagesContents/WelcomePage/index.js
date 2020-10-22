@@ -22,10 +22,10 @@ const WelcomePage = () => {
             </VideoEl>
             <Overlay>
                 <Heading>
-                    ETHRERAL TOTTOO
+                    AURA TATTOO
                 </Heading>
                 <Paragraph style={{textDecoration: 'underline'}}>
-                    Laugavegur 105, Reykjavik IS
+                    Borgartún 28 , 105 Reykjavik Iceland
                 </Paragraph>
                 <Scroller/>
             </Overlay>

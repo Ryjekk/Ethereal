@@ -62,10 +62,10 @@ export const NavBotR = styled.div`
 `;
 
 export const Logo = styled.img`
-    height: 30px;
+    height: 50px;
     
     @media (${QUERIES.medium}) {
-        height: 45px;
+        height: 90px;
     }
 `;
 

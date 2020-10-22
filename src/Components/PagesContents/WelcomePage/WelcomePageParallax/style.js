@@ -32,8 +32,20 @@ export const WelcomeHeading = styled(MediumHeading)`
 export const WelcomeParagraph = styled(Paragraph)`
     padding: 0 10px;
     text-align:center;
-    @media (${QUERIES.medium}) {
+    display: none;
+    @media (min-width: 1300px) {
         margin-top: 30px;
+        display: block;
+    }
+`;
+
+export const WelcomeParagraphSmall = styled(Paragraph)`
+    padding: 0 10px;
+    text-align:center;
+    
+    @media (min-width: 1300px) {
+        margin-top: 30px;
+        display: none;
     }
 `;
 

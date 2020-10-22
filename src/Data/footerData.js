@@ -2,21 +2,25 @@
 export const FooterData = [
     {
         "heading": "Location",
-        'paragraph_one': 'Laugavegur 105',
-        'paragraph_two': 'Reykjavik 101',
+        'paragraph_one': 'Borgartún 28',
+        'paragraph_two': 'Reykjavik 105',
     },
     {
         "heading": "Hours",
-        'paragraph_one': 'Open 5 days 10am to 5pm',
-        'paragraph_two': 'SATURDAY, SUNDAY CLOSED',
+        'paragraph_one': 'Open 6 days 10am to 7pm',
+        'paragraph_two': 'SUNDAY CLOSED',
         'btn_link': '/booking',
         'btn_text': 'Link to booking',
+        'btn_link_COVID': '/covid-19',
+        'btn_text_COVID': 'COVID-19'
     },
     {
         "heading": "Contact",
-        'paragraph_one': '+354 776 32 41',
+        'paragraph_one': '+354 793 2134',
         'paragraph_two': '',
-        'a_href': 'mailto:webmaster@example.com',
-        'a_text': 'example@gmail.com'
+        'a_href': 'mailto:aura.reykjavik@gmail.com',
+        'a_text': 'aura.reykjavik@gmail.com',
+        'a_href_two': 'mailto:aura.reykjavik@gmail.com',
+        'a_text_two': 'Join Team'
     },
 ]

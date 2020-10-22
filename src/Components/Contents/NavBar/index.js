@@ -6,7 +6,7 @@ import Drawer from "./Drawer";
 import { Navigation, NavTopL, NavTopR, NavBotL, NavBotR, Logo } from './style'
 import { Options } from '../../../Style'
 //Asets
-import LogoImg from '../../../Assets/logo.svg'
+import LogoImg from '../../../Assets/logo.png'
 
 // TODO ADD text on :hoover animation
 
@@ -38,11 +38,11 @@ class Navbar extends React.Component {
                     <Options onClick={ShowDrawer}>三</Options>
                 </NavTopR>
                     {linkDrawer}
-                <NavBotL>
-                    <Link to='/about'>
-                        <Options>三 About</Options>
-                    </Link>
-                </NavBotL>
+                {/*<NavBotL>*/}
+                {/*    <Link to='/about'>*/}
+                {/*        <Options>三 About</Options>*/}
+                {/*    </Link>*/}
+                {/*</NavBotL>*/}
                 <NavBotR>
                     <Link to='/booking'>
                         <Options>二 Booking</Options>

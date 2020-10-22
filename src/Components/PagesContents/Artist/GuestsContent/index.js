@@ -3,17 +3,18 @@ import {Link} from "react-router-dom";
 // Components
 import DivBtn from "../../../UI/DivBtn";
 // Style
-import {ArtistBox, ArtistImage, ArtistWrap, ArtistButtonWrapper} from "../style";
+import {GuestBox} from "./style"
+import {ArtistImage, ArtistWrap, ArtistButtonWrapper} from "../style";
 import {Paragraph, MediumHeading, OptionsLink} from "../../../../Style";
 // Assets
-import {ArtistData} from "../../../../Data/artistData";
+import {GuestData} from '../../../../Data/guestsData'
 
-const ArtistContent = () => {
+const GuestsContent = () => {
 
     return (
         <ArtistWrap>
-            {ArtistData.map((el) => (
-                <ArtistBox>
+            {GuestData.map((el) => (
+                <GuestBox>
                     <ArtistImage src={el.ima}/>
                     <MediumHeading>
                         {el.heading}
@@ -36,10 +37,10 @@ const ArtistContent = () => {
                     <Paragraph>
                         {el.paragraph_three}
                     </Paragraph>
-                </ArtistBox>
+                </GuestBox>
             ))}
         </ArtistWrap>
     )
 }
 
-export default ArtistContent;
+export default GuestsContent;

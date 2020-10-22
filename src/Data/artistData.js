@@ -1,21 +1,37 @@
 import ProfileImg from '../Assets/Profile/profile1.jpg'
-import ProfileImgg from '../Assets/Profile/profile4.jpg'
 
 export const ArtistData = [
     {
         "ima": `${ProfileImg}`,
         "heading": "Anna",
         "btn_text": "View gallery",
-        'btn_link': '/artist',
-        'paragraph_one': 'Specializes in single needle and fine line.',
-        "paragraph_two": "She started her career as a tattoo artist in Poland. With a following that is inspired by her designs, the passion she started with still holds true. She says, “It’s hard work, a lot of focus and a lot of trial and error. When I decided to grab a machine for the first time, I never wanted to stop.”"
+        'btn_link': '/anna',
+        'paragraph_one': 'ʏᴏᴜ ᴄᴀɴ ᴋɴᴏᴡ ᴍᴇ ᴀʟʀᴇᴀᴅʏ ᴀs @ᴇᴛʜᴇʀᴇᴀʟ.ᴛᴀᴛᴛᴏᴏ ᴏʀ “ᴋʀᴇsᴋɪ ᴀɴɴʏ ᴛᴀᴛᴛᴏᴏ”',
+        "paragraph_two": "ɪ ᴀᴍ ᴛʜᴇ ᴄʀᴇᴀᴛᴏʀ ᴏғ ᴛʜɪs ᴘʟᴀᴄᴇ \"ᴀᴜʀᴀ\". ᴀ ᴘʟᴀᴄᴇ ᴛʜᴀᴛ ɪ ʀᴇᴀʟʟʏ ᴡᴀɴᴛ ᴛᴏ ʙᴇ ᴀ ᴡᴀʀᴍ ᴀɴᴅ ʟᴏᴠɪɴɢ ᴘʟᴀᴄᴇ ᴡʜᴇʀᴇ ᴡᴇ ᴡɪʟʟ ᴄʀᴇᴀᴛᴇ ᴠᴀʀɪᴏᴜs ɪɴᴛᴇʀᴇsᴛɪɴɢ ᴀɴᴅʙᴇᴀᴜᴛɪғᴜʟ ᴛʜɪɴɢs.  ᴀ ᴘʟᴀᴄᴇ ᴡʜᴇʀᴇ ᴡᴇ ᴡɪʟʟ sʜᴀʀᴇ ᴇɴᴇʀɢʏ. ɪ ᴀᴍ ᴀ ᴢᴏᴅɪᴀᴄ ᴠɪʀɢᴏ, ᴀɴ ᴇᴀʀᴛʜ sɪɢɴ. ᴇᴠᴇɴ ɪғ ɪ ʟᴏᴏᴋ ᴀᴛ ʟɪғᴇ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴘʀɪsᴍ ᴏғ ᴘᴏᴇᴛʀʏ ɪ ᴛʀʏ ᴛᴏ ᴋᴇᴇᴘ ᴍʏ ғᴇᴇᴛ ғɪʀᴍʟʏ ᴏɴ ᴛʜᴇ ɢʀᴏᴜɴᴅ ᴀɴᴅ ᴛʜɪs ɪs ᴡʜᴀᴛ ɪ ᴡᴀɴᴛ ᴛᴏ ᴄᴏɴᴠᴇʏ ɪɴ ᴍʏ ᴀʀᴛ. ʙᴇᴀᴜᴛʏ ᴡɪᴛʜ ᴀʟʟ ᴋɪɴᴅs ᴏғ ᴄʀᴀᴄᴋs.  ᴛʜᴇ ᴛʀᴜᴛʜ ɪɴ ᴀʟʟ ɪᴛs ɢʟᴏʀʏ. ɪ ᴀᴍ ɪɴsᴘɪʀᴇᴅ ʙʏ ɴᴀᴛᴜʀᴇ ᴀɴᴅ ғᴇᴇʟɪɴɢs. ᴡʜɪᴄʜ ʏᴏᴜ ᴡɪʟʟ sᴇᴇ ɪɴ ᴍʏ ᴡᴏʀᴋs.",
+        "paragraph_three": "ɪ ᴡᴏʀᴋ ᴍᴀɪɴʟʏ ᴡɪᴛʜ ʙʟᴀᴄᴋ ɪɴᴋ, ғɪɴᴇ ʟɪɴᴇs ᴀɴᴅ ᴅᴏᴛᴡᴏʀᴋ. ɪ ʟᴏᴠᴇ ɪʟʟᴜsᴛʀᴀᴛɪᴠᴇ sᴛʏʟᴇ ᴏғ ᴛᴀᴛᴛᴏᴏɪɴɢ ᴀɴᴅ ᴅᴇᴛᴀɪʟs ɪɴ ᴅᴇsɪɢɴs. sᴏᴍᴇᴛɪᴍᴇs, ғᴏʀ ʀᴇǫᴜᴇsᴛ ɪ ᴅᴏ ᴛɪɴʏ, ғʀᴀɢɪʟᴇ ғʟᴏʀᴀʟ ᴛᴀᴛᴛᴏᴏs ɪɴ ᴄᴏʟᴏᴜʀ."
+    },
+    // {
+    //     "ima": `${ProfileImgg}`,
+    //     "heading": "Coming Soon...",
+    //     "btn_text": "Contact",
+    //     'btn_link': '/booking',
+    //     'paragraph_one': 'Are You Looking for job/working experience?',
+    //     "paragraph_two": "Don't hesitate and slide into our DM's"
+    // },
+    {
+        "ima": `${ProfileImg}`,
+        "heading": "Deborah",
+        "btn_text": "View gallery",
+        'btn_link': '/deborah',
+        'paragraph_one': 'ʏᴏᴜ ᴄᴀɴ ᴋɴᴏᴡ ᴍᴇ ᴀʟʀᴇᴀᴅʏ ᴀs ᴛʀᴇᴇ sᴘɪʀɪᴛs ᴛᴀᴛᴛᴏᴏ',
+        "paragraph_two": `ɪ’ᴍ ᴀɴ ᴀᴘᴘʀᴇɴᴛɪᴄᴇ ᴀᴛ ᴛʜᴇ sᴛᴜᴅɪᴏ. ɪ’ᴍ ᴠᴇʀʏ ᴘᴀssɪᴏɴᴀᴛᴇ ᴀʙᴏᴜᴛ ᴛᴀᴛᴛᴏᴏs ʙᴜᴛ ɪ ᴀʟsᴏ ᴅᴏ ᴏᴛʜᴇʀ ᴀʀᴛ ᴘʀᴏᴊᴇᴄᴛs sᴜᴄʜ ᴀs ɪʟʟᴜsᴛʀᴀᴛɪᴏɴs ᴀɴᴅ ᴀɴɪᴍᴀᴛɪᴏɴ ᴄʟɪᴘs. ᴍʏ ᴛᴀᴛᴛᴏᴏɪɴɢ sᴛʏʟᴇ ɪs ǫᴜɪᴛᴇ ᴅᴇᴠᴇʀsᴇ, ɪ ᴡᴏᴜʟᴅ sᴀʏ ɪᴛs ᴍᴏsᴛʟʏ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇ, ᴍɪɴɪᴍᴀʟɪsᴍ, ʟɪɴᴇᴡᴏʀᴋ, ʙʟᴀᴄᴋᴡᴏʀᴋ, ᴅᴏᴛᴡᴏʀᴋ ᴀɴᴅ ʙᴏᴛᴀɴɪᴄᴀʟ. ɪ ᴀʟsᴏ ᴅᴏ sᴏᴍᴇ ʜᴀɴᴅᴘᴏᴋᴇᴅ ᴘɪᴇᴄᴇs (ᴡʜɪᴄʜ ɪs ᴛʜᴇ ᴍᴀᴄʜɪɴᴇ-ғʀᴇᴇ ᴡᴀʏ ᴏғ ᴛᴀᴛᴛᴏᴏɪɴɢ). ʜᴏᴘɪɴɢ ᴛᴏ ɢᴇᴛ ᴛᴏ ᴋɴᴏᴡ ʏᴏᴜ ᴀɴᴅ ᴛʜᴀᴛ ᴡᴇ ᴄᴀɴ sʜᴀʀᴇ sᴏᴍᴇ ɢʀᴇᴀᴛ ᴛᴀᴛᴛᴏᴏ ɪᴅᴇᴀs ᴛᴏɢᴇᴛʜᴇʀ! (ᴏ˘◡˘ᴏ)”`,
     },
     {
-        "ima": `${ProfileImgg}`,
-        "heading": "Coming Soon...",
-        "btn_text": "Contact",
-        'btn_link': '/booking',
-        'paragraph_one': 'Are You Looking for job/working experience?',
-        "paragraph_two": "Don't hesitate and slide into our DM's"
-    }
+        "ima": `${ProfileImg}`,
+        "heading": "Myrra",
+        "btn_text": "View gallery",
+        'btn_link': '/myrra',
+        'paragraph_one': 'ʏᴏᴜ ᴄᴀɴ ᴋɴᴏᴡ ᴍᴇ ᴀʟʀᴇᴀᴅʏ ᴀs ᴍʏʀᴋ.ɪɴᴋ',
+        "paragraph_two": "ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴘᴀsᴛ ʏᴇᴀʀs ɪ ʜᴀᴠᴇ ʙᴇᴇɴ ᴀ ᴍᴜsɪᴄɪᴀɴ, ᴀ ᴡᴏᴏᴅᴡᴏʀᴋɪɴɢ ᴀʀᴛɪsᴛ ғᴏʀ ᴍʏ sᴍᴀʟʟ ʙʀᴀɴᴅ ғᴊᴀðʀᴀғᴏᴋ ᴀɴᴅ ᴀɴ ɪʟʟᴜsᴛʀᴀᴛᴏʀ ᴏғ ᴍᴀɴʏ ʏᴇᴀʀs. ɪ ʜᴀᴠᴇ ʙᴇᴇɴ ᴏɴ ᴛʜᴇ ᴡᴀʏ ᴛᴏ ʟᴇᴀʀɴ ᴛʜᴇ ᴛʀᴀᴅᴇ ᴏғ ᴛᴀᴛᴛᴏᴏɪɴɢ ғᴏʀ ʏᴇᴀʀs ᴀɴᴅ ɪ ᴅᴇᴄɪᴅᴇᴅ ɴᴏᴡ ɪs ᴛʜᴇ ʀɪɢʜᴛ ᴛɪᴍᴇ ᴛᴏ ɪɴᴄʟᴜᴅᴇ ᴛᴀᴛᴛᴏᴏɪɴɢ ᴀs ᴀ ᴘᴀʀᴛ ᴏғ ᴍʏ ᴄʀᴀғᴛsᴍᴀɴsʜɪᴘ. ᴍʏ ᴍᴀɪɴ ғᴏᴄᴜs ɪs ʙʟᴀᴄᴋ & ɢʀᴀʏ ɪʟʟᴜsᴛʀᴀᴛɪᴠᴇ ᴘɪᴇᴄᴇs ᴡɪᴛʜ ғᴏᴄᴜs ᴏɴ ʟɪɴᴇᴡᴏʀᴋ ᴀɴᴅ ᴅᴏᴛᴡᴏʀᴋ ᴛᴏᴄʀᴇᴀᴛᴇ ᴍʏ ᴅᴇsɪɢɴs. ɪ ᴀᴍ ᴇxɪᴛᴇᴅ ᴛᴏ ᴍᴇᴇᴛ ᴀʟʟ ᴏғ ʏᴏᴜ ᴀᴛ ᴀᴜʀᴀ ʀᴇʏᴋᴊᴀᴠɪᴋ ᴀɴᴅ ʜᴏᴘᴇ ᴛᴏ ʙᴇ ᴀʙʟᴇ ᴛᴏ ᴘʀᴏᴅᴜᴄᴇʙᴇᴀᴜᴛɪғᴜʟ, ᴜɴɪǫᴜᴇ ᴀʀᴛ ғᴏʀ ʏᴏᴜ ɢᴜʏs ɪɴ ᴛʜᴇ ғᴜᴛᴜʀᴇ!"
+    },
 ]

@@ -8,8 +8,14 @@ import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
 import App from './Views/App';
 import About from './Views/Pages/About'
 import Artist from './Views/Pages/Artist'
+import AnnaPage from './Components/PagesContents/Artist/PagesArtists/AnnaPage'
+import DeborahPage from "./Components/PagesContents/Artist/PagesArtists/DeborahPage";
+import MyrraPage from "./Components/PagesContents/Artist/PagesArtists/MyrraPage";
+import Guests from "./Components/PagesContents/Guests";
+import Join from "./Components/PagesContents/Join";
 import Booking from './Views/Pages/Booking'
 import Faq from './Views/Pages/Faq'
+import Covid from './Views/Pages/Covid'
 import NotFound from './Views/Pages/NotFound'
 
 const routing = (
@@ -19,8 +25,14 @@ const routing = (
                 <Route exact path='/' component={App} />
                 <Route exact path='/about' component={About} />
                 <Route exact path='/artist' component={Artist} />
+                <Route exact path='/anna' component={AnnaPage} />
+                <Route exact path='/deborah' component={DeborahPage} />
+                <Route exact path='/myrra' component={MyrraPage} />
+                <Route exact path='/guests' component={Guests} />
+                <Route exact path='/join' component={Join} />
                 <Route exact path='/booking' component={Booking} />
                 <Route exact path='/faq' component={Faq} />
+                <Route exact path='/covid-19' component={Covid} />
                 <Route path="/404" component={NotFound} />
                 <Redirect to="/404" />
             </Switch>

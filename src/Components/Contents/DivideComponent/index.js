@@ -14,6 +14,7 @@ class DivideComponent extends Component{
     render() {
         let faqBtn = null;
         let bgImg = null;
+        let guestHeight = null;
         if (this.props.text === "FAQ") {
             faqBtn =  (
                 <FaqButtonWrapper>
@@ -28,14 +29,22 @@ class DivideComponent extends Component{
             )
         }
 
+        // TODO BGM FOR EACH ARIST + DEFAULT
         if (this.props.text === "Anna") {
+            bgImg = backPicArtist
+        } else if  (this.props.text === "Deborah") {
+            bgImg = backPicArtist
+        } else if (this.props.text === "Myrra") {
             bgImg = backPicArtist
         } else if (this.props.text === "FAQ") {
             bgImg = backPicFaq
         }
 
+        if (this.props.text === "OUR GUESTS") {
+            guestHeight = "20vh"
+        }
         return(
-            <DivideWrapper style={{backgroundImage: `url(${bgImg})`}}>
+            <DivideWrapper style={{backgroundImage: `url(${bgImg})`, height: `${guestHeight}`}}>
                 <Heading>{this.props.text}</Heading>
                 <Paragraph>{this.props.paragraph}</Paragraph>
                 {faqBtn}
