@@ -45,7 +45,7 @@ const FooterContent = () => {
                             <use xlinkHref={sprite + "#fb"}></use>
                         </svg>
                     </SocialLink>
-                    <SocialLink href="https://www.instagram.com/aura.reykjavik//" target="_blank">
+                    <SocialLink href="https://www.instagram.com/aura.reykjavik/" target="_blank">
                         <svg>
                             <use xlinkHref={sprite + "#ig"}></use>
                         </svg>
