@@ -62,10 +62,10 @@ export const NavBotR = styled.div`
 `;
 
 export const Logo = styled.img`
-    height: 50px;
+    height: 70px;
     
     @media (${QUERIES.medium}) {
-        height: 90px;
+        height: 120px;
     }
 `;
 
@@ -75,7 +75,7 @@ export const LinkList = styled(NavTopR)`
     top: 60px;
 
     @media (${QUERIES.medium}) {
-       right: 40px;
-       top: 65px;
+       right: 50px;
+       top: 70px;
     }
 `;

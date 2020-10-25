@@ -126,7 +126,7 @@ export const Options = styled.div`
     cursor: pointer;
     
     @media (${QUERIES.medium}) {
-        font-size: 13px;
+        font-size: 18px;
     }
 `;
 
