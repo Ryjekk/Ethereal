@@ -29,7 +29,7 @@ const FaqPage = () => {
                         <Answer className={`${selectedQuestion === index ? 'faqOpenQuestion' : ''}`}>{answer3}</Answer>
                     </div>
                 ))}
-                <SmallHeading style={{fontWeight: '400'}}>Have more questions? Feel free to email us at <br/> auraartistswanted@gmail.com</SmallHeading>
+                <SmallHeading style={{fontWeight: '400'}}>Have more questions? Feel free to email us at <br/>aura.reykjavik@gmail.com</SmallHeading>
             </InnerFaq>
         </Inner>
     )
