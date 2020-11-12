@@ -15,6 +15,7 @@ class DivideComponent extends Component{
         let faqBtn = null;
         let bgImg = null;
         let guestHeight = null;
+
         if (this.props.text === "FAQ") {
             faqBtn =  (
                 <FaqButtonWrapper>
@@ -46,7 +47,7 @@ class DivideComponent extends Component{
         return(
             <DivideWrapper style={{backgroundImage: `url(${bgImg})`, height: `${guestHeight}`}}>
                 <Heading>{this.props.text}</Heading>
-                <Paragraph>{this.props.paragraph}</Paragraph>
+                <Paragraph style={{textAlign: "center", padding: "0 20px"}}>{this.props.paragraph}</Paragraph>
                 {faqBtn}
             </DivideWrapper>
         )

@@ -24,7 +24,7 @@ function App() {
               </ParallaxLayer >
           </Parallax>
           <WelcomePageParallax/>
-          <DivideComponent text={"OUR CREW"} paragraph={"Best artist in town"}/>
+          <DivideComponent text={"OUR CREW"} paragraph={"Book an appointment with one of our artists and get awesome custom-designed tattoo!"}/>
           <Inner>
               <ArtistContent/>
           </Inner>
