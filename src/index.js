@@ -12,7 +12,7 @@ import AnnaPage from './Components/PagesContents/Artist/PagesArtists/AnnaPage'
 import DeborahPage from "./Components/PagesContents/Artist/PagesArtists/DeborahPage";
 import MyrraPage from "./Components/PagesContents/Artist/PagesArtists/MyrraPage";
 import Guests from "./Components/PagesContents/Guests";
-import Join from "./Components/PagesContents/Join";
+import Join from "./Views/Pages/Join";
 import Booking from './Views/Pages/Booking'
 import Faq from './Views/Pages/Faq'
 import Covid from './Views/Pages/Covid'
