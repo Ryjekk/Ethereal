@@ -34,7 +34,7 @@ const MyrraPage = () => {
                 </DivBtn>
             </ArtBtnWrap>
             <Inner>
-                <ImgSlide/>
+                <ImgSlide person="myrra"/>
             </Inner>
             <BottomBox>
                 <FooterContent/>

@@ -33,7 +33,7 @@ const AnnaPage = () => {
                 </DivBtn>
             </ArtBtnWrap>
             <Inner>
-                <ImgSlide/>
+                <ImgSlide person="anna"/>
             </Inner>
             <BottomBox>
                 <FooterContent/>

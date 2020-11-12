@@ -1,6 +1,6 @@
-import AnnaImg from '../Assets/Profile/AnnaImg.jpg'
-import MyraImg from '../Assets/Profile/MyraImg.jpg'
-import DebImg from '../Assets/Profile/DebImg.jpg'
+import AnnaImg from '../Assets/Profile/Anna/AnnaImg.jpg'
+import MyraImg from '../Assets/Profile/Myrra/MyraImg.jpg'
+import DebImg from '../Assets/Profile/Deb/DebImg.jpg'
 
 export const ArtistData = [
     {

@@ -34,7 +34,7 @@ const DeborahPage = () => {
                 </DivBtn>
             </ArtBtnWrap>
             <Inner>
-                <ImgSlide/>
+                <ImgSlide person="deb"/>
             </Inner>
             <BottomBox>
                 <FooterContent/>
