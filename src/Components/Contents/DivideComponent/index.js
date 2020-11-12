@@ -32,7 +32,6 @@ class DivideComponent extends Component{
             )
         }
 
-        // TODO BGM FOR EACH ARIST + DEFAULT
         if (this.props.text === "Anna") {
             bgImg = backPicAnna
         } else if  (this.props.text === "Deborah") {

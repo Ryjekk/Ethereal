@@ -136,7 +136,7 @@ class BookingForm extends Component {
                     </FormFieldset>
                     {/* Availability Date */}
                     {/* Availability time */}
-                    <FormLabel htmlFor="dates"> Please provide date and time. We are open 10:00-19:00
+                    <FormLabel htmlFor="dates"> Please provide date.
                         </FormLabel>
                     <FormSection>
                         <FormInput
@@ -145,14 +145,13 @@ class BookingForm extends Component {
                             type="date"
                             min="2020-08-01"
                             required/>
-                        <FormLabel htmlFor="time"/>
-                        <FormInput
-                            style={{marginLeft: '10px'}}
-                            name="time"
-                            type="time"
-                            min="10:00"
-                            max="19:00"
-                            required/>
+                        {/*<FormLabel htmlFor="time"/>*/}
+                        {/*<FormInput*/}
+                        {/*    style={{marginLeft: '10px'}}*/}
+                        {/*    name="dates"*/}
+                        {/*    type="date"*/}
+                        {/*    min="2020-08-01"*/}
+                        {/*    required/>*/}
                     </FormSection>
                     {/* Design */}
                     <FormFieldset>
@@ -203,7 +202,7 @@ class BookingForm extends Component {
                     {formErrors.description.length > 0 && (<ErrorSpan>{formErrors.description}</ErrorSpan>)}
                     {/* Phone */}
                     <FormLabel htmlFor="source"/>
-                    <FormInput name="cource" type="text" placeholder="hHow do you heard about us?"/>
+                    <FormInput name="cource" type="text" placeholder="How do you heard about us?"/>
                     <FormLabel>Please not that provided time is just an suggestion. Artist will send you an conformation by email.</FormLabel>
                     {/* Button */}
                     <FormButton value="submit" type="submit"> Book Appointment </FormButton>
