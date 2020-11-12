@@ -133,6 +133,12 @@ class BookingForm extends Component {
                                    name="artist"/>
                             Myrra
                         </label>
+                        <label>|||</label>
+                        <label>
+                            <input type="text"
+                                   placeholder="Guest name"
+                                   name="artist"/>
+                        </label>
                     </FormFieldset>
                     {/* Availability Date */}
                     {/* Availability time */}
