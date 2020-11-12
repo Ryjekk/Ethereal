@@ -18,7 +18,7 @@ function ImgSlide(props) {
         } else if (person === 'myrra') {
             setGallery(tattooMyrra)
         }
-    }, [])
+    }, [person])
 
     const openLightbox = useCallback((event, { photo, index }) => {
         setCurrentImage(index);

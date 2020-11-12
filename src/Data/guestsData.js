@@ -1,7 +1,7 @@
 import MartaImg from '../Assets/Profile/Guests/Marta/MartaImg.JPG'
 import RomanImg from '../Assets/Profile/Guests/Roman/RomanImg.jpg'
 import OakImg from '../Assets/Profile/Guests/Oakbranch/OakImg.jpg'
-import TempImg from '../Assets/Profile/Guests/temp.jpg'
+// import TempImg from '../Assets/Profile/Guests/temp.jpg'
 
 export const GuestData = [
     {
