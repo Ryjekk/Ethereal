@@ -10,9 +10,9 @@ const Drawer = () => {
             <Link to='/'>
                 <Options>一 Home</Options>
             </Link>
-            <Link to='/artist'>
-                <Options>一 Artist</Options>
-            </Link>
+            {/*<Link to='/artist'>*/}
+            {/*    <Options>一 Artist</Options>*/}
+            {/*</Link>*/}
             <Link to='/guests'>
                 <Options>一 Guest Spots</Options>
             </Link>

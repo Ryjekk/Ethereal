@@ -7,7 +7,9 @@ import {DivideWrapper} from "./style";
 import {Paragraph, Heading, OptionsLink} from "../../../Style";
 import {FaqButtonWrapper} from "../../PagesContents/Faq/FaqContent/style";
 // Assets
-import backPicArtist from '../../../Assets/AnnBg1.jpg'
+import backPicAnna from '../../../Assets/Profile/Anna/AnnaBg1.jpg'
+import backPicDeb from '../../../Assets/Profile/Deb/DebBg1.jpg'
+import backPicMyrr from '../../../Assets/Profile/Myrra/MyrrBg1.jpg'
 import backPicFaq from '../../../Assets/Backgrounds/b1.jpg'
 
 class DivideComponent extends Component{
@@ -32,11 +34,11 @@ class DivideComponent extends Component{
 
         // TODO BGM FOR EACH ARIST + DEFAULT
         if (this.props.text === "Anna") {
-            bgImg = backPicArtist
+            bgImg = backPicAnna
         } else if  (this.props.text === "Deborah") {
-            bgImg = backPicArtist
+            bgImg = backPicDeb
         } else if (this.props.text === "Myrra") {
-            bgImg = backPicArtist
+            bgImg = backPicMyrr
         } else if (this.props.text === "FAQ") {
             bgImg = backPicFaq
         }
