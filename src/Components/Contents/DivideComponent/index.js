@@ -8,7 +8,7 @@ import {Paragraph, Heading, OptionsLink} from "../../../Style";
 import {FaqButtonWrapper} from "../../PagesContents/Faq/FaqContent/style";
 // Assets
 import backPicArtist from '../../../Assets/AnnBg1.jpg'
-import backPicFaq from '../../../Assets/AnnBg2.jpg'
+import backPicFaq from '../../../Assets/Backgrounds/b1.jpg'
 
 class DivideComponent extends Component{
     render() {
