@@ -1,37 +1,34 @@
-import ProfileImg from '../Assets/Profile/profile1.jpg'
+import AnnaImg from '../Assets/Profile/AnnaImg.jpg'
+import MyraImg from '../Assets/Profile/MyraImg.jpg'
+import DebImg from '../Assets/Profile/DebImg.jpg'
 
 export const ArtistData = [
     {
-        "ima": `${ProfileImg}`,
+        "ima": `${AnnaImg}`,
         "heading": "Anna",
         "btn_text": "View gallery",
         'btn_link': '/anna',
-        'paragraph_one': 'ʏᴏᴜ ᴄᴀɴ ᴋɴᴏᴡ ᴍᴇ ᴀʟʀᴇᴀᴅʏ ᴀs @ᴇᴛʜᴇʀᴇᴀʟ.ᴛᴀᴛᴛᴏᴏ ᴏʀ “ᴋʀᴇsᴋɪ ᴀɴɴʏ ᴛᴀᴛᴛᴏᴏ”',
-        "paragraph_two": "ɪ ᴀᴍ ᴛʜᴇ ᴄʀᴇᴀᴛᴏʀ ᴏғ ᴛʜɪs ᴘʟᴀᴄᴇ \"ᴀᴜʀᴀ\". ᴀ ᴘʟᴀᴄᴇ ᴛʜᴀᴛ ɪ ʀᴇᴀʟʟʏ ᴡᴀɴᴛ ᴛᴏ ʙᴇ ᴀ ᴡᴀʀᴍ ᴀɴᴅ ʟᴏᴠɪɴɢ ᴘʟᴀᴄᴇ ᴡʜᴇʀᴇ ᴡᴇ ᴡɪʟʟ ᴄʀᴇᴀᴛᴇ ᴠᴀʀɪᴏᴜs ɪɴᴛᴇʀᴇsᴛɪɴɢ ᴀɴᴅʙᴇᴀᴜᴛɪғᴜʟ ᴛʜɪɴɢs.  ᴀ ᴘʟᴀᴄᴇ ᴡʜᴇʀᴇ ᴡᴇ ᴡɪʟʟ sʜᴀʀᴇ ᴇɴᴇʀɢʏ. ɪ ᴀᴍ ᴀ ᴢᴏᴅɪᴀᴄ ᴠɪʀɢᴏ, ᴀɴ ᴇᴀʀᴛʜ sɪɢɴ. ᴇᴠᴇɴ ɪғ ɪ ʟᴏᴏᴋ ᴀᴛ ʟɪғᴇ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴘʀɪsᴍ ᴏғ ᴘᴏᴇᴛʀʏ ɪ ᴛʀʏ ᴛᴏ ᴋᴇᴇᴘ ᴍʏ ғᴇᴇᴛ ғɪʀᴍʟʏ ᴏɴ ᴛʜᴇ ɢʀᴏᴜɴᴅ ᴀɴᴅ ᴛʜɪs ɪs ᴡʜᴀᴛ ɪ ᴡᴀɴᴛ ᴛᴏ ᴄᴏɴᴠᴇʏ ɪɴ ᴍʏ ᴀʀᴛ. ʙᴇᴀᴜᴛʏ ᴡɪᴛʜ ᴀʟʟ ᴋɪɴᴅs ᴏғ ᴄʀᴀᴄᴋs.  ᴛʜᴇ ᴛʀᴜᴛʜ ɪɴ ᴀʟʟ ɪᴛs ɢʟᴏʀʏ. ɪ ᴀᴍ ɪɴsᴘɪʀᴇᴅ ʙʏ ɴᴀᴛᴜʀᴇ ᴀɴᴅ ғᴇᴇʟɪɴɢs. ᴡʜɪᴄʜ ʏᴏᴜ ᴡɪʟʟ sᴇᴇ ɪɴ ᴍʏ ᴡᴏʀᴋs.",
-        "paragraph_three": "ɪ ᴡᴏʀᴋ ᴍᴀɪɴʟʏ ᴡɪᴛʜ ʙʟᴀᴄᴋ ɪɴᴋ, ғɪɴᴇ ʟɪɴᴇs ᴀɴᴅ ᴅᴏᴛᴡᴏʀᴋ. ɪ ʟᴏᴠᴇ ɪʟʟᴜsᴛʀᴀᴛɪᴠᴇ sᴛʏʟᴇ ᴏғ ᴛᴀᴛᴛᴏᴏɪɴɢ ᴀɴᴅ ᴅᴇᴛᴀɪʟs ɪɴ ᴅᴇsɪɢɴs. sᴏᴍᴇᴛɪᴍᴇs, ғᴏʀ ʀᴇǫᴜᴇsᴛ ɪ ᴅᴏ ᴛɪɴʏ, ғʀᴀɢɪʟᴇ ғʟᴏʀᴀʟ ᴛᴀᴛᴛᴏᴏs ɪɴ ᴄᴏʟᴏᴜʀ."
+        'paragraph_one': 'You may know me under the artistic pseudonym Ethereal tattoo.',
+        "paragraph_two": "I am the owner of AURA and one of the tattoo artists in the studio. I have been creating since I remember ( painting, drawing, making graphic designs), and I have translated my curiosity and desire to develop into tattoos. So 4 years ago my adventure with this type of art started for good. My works are illustrative, delicate, focused in detailes. I use extreme fine lines and dotwork for give the character to them. Sometimes I also tattoo tiny, colorful botanical designes, although I mainly work in black colour.",
+        "paragraph_three": "I create my own flashes and customize designs as well Nature, emotions and spirituality are my great inspiration. I will be glad to get to know your vision for next tattoo and I will try to meet your expectations as best as I can. :)"
     },
-    // {
-    //     "ima": `${ProfileImgg}`,
-    //     "heading": "Coming Soon...",
-    //     "btn_text": "Contact",
-    //     'btn_link': '/booking',
-    //     'paragraph_one': 'Are You Looking for job/working experience?',
-    //     "paragraph_two": "Don't hesitate and slide into our DM's"
-    // },
     {
-        "ima": `${ProfileImg}`,
+        "ima": `${DebImg}`,
         "heading": "Deborah",
         "btn_text": "View gallery",
         'btn_link': '/deborah',
-        'paragraph_one': 'ʏᴏᴜ ᴄᴀɴ ᴋɴᴏᴡ ᴍᴇ ᴀʟʀᴇᴀᴅʏ ᴀs ᴛʀᴇᴇ sᴘɪʀɪᴛs ᴛᴀᴛᴛᴏᴏ',
-        "paragraph_two": `ɪ’ᴍ ᴀɴ ᴀᴘᴘʀᴇɴᴛɪᴄᴇ ᴀᴛ ᴛʜᴇ sᴛᴜᴅɪᴏ. ɪ’ᴍ ᴠᴇʀʏ ᴘᴀssɪᴏɴᴀᴛᴇ ᴀʙᴏᴜᴛ ᴛᴀᴛᴛᴏᴏs ʙᴜᴛ ɪ ᴀʟsᴏ ᴅᴏ ᴏᴛʜᴇʀ ᴀʀᴛ ᴘʀᴏᴊᴇᴄᴛs sᴜᴄʜ ᴀs ɪʟʟᴜsᴛʀᴀᴛɪᴏɴs ᴀɴᴅ ᴀɴɪᴍᴀᴛɪᴏɴ ᴄʟɪᴘs. ᴍʏ ᴛᴀᴛᴛᴏᴏɪɴɢ sᴛʏʟᴇ ɪs ǫᴜɪᴛᴇ ᴅᴇᴠᴇʀsᴇ, ɪ ᴡᴏᴜʟᴅ sᴀʏ ɪᴛs ᴍᴏsᴛʟʏ ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇ, ᴍɪɴɪᴍᴀʟɪsᴍ, ʟɪɴᴇᴡᴏʀᴋ, ʙʟᴀᴄᴋᴡᴏʀᴋ, ᴅᴏᴛᴡᴏʀᴋ ᴀɴᴅ ʙᴏᴛᴀɴɪᴄᴀʟ. ɪ ᴀʟsᴏ ᴅᴏ sᴏᴍᴇ ʜᴀɴᴅᴘᴏᴋᴇᴅ ᴘɪᴇᴄᴇs (ᴡʜɪᴄʜ ɪs ᴛʜᴇ ᴍᴀᴄʜɪɴᴇ-ғʀᴇᴇ ᴡᴀʏ ᴏғ ᴛᴀᴛᴛᴏᴏɪɴɢ). ʜᴏᴘɪɴɢ ᴛᴏ ɢᴇᴛ ᴛᴏ ᴋɴᴏᴡ ʏᴏᴜ ᴀɴᴅ ᴛʜᴀᴛ ᴡᴇ ᴄᴀɴ sʜᴀʀᴇ sᴏᴍᴇ ɢʀᴇᴀᴛ ᴛᴀᴛᴛᴏᴏ ɪᴅᴇᴀs ᴛᴏɢᴇᴛʜᴇʀ! (ᴏ˘◡˘ᴏ)”`,
+        'paragraph_one': 'My name is Deborah and I am an appretnice at the studio.',
+        "paragraph_two": `I am very passionate about tattoos but I also do other art projects such as illustrations and animation clips.
+My tattooing style is quiet deverse, I would say it is mostly alternative, minimalism, linework, blackwork, dotwork and botanical.
+I also do some handpoked pieces (which is the machine-free way of tattooing).
+Hoping to get to know you and that we can share some great tattoo ideas together!  (ᴏ˘◡˘ᴏ)`,
     },
     {
-        "ima": `${ProfileImg}`,
+        "ima": `${MyraImg}`,
         "heading": "Myrra",
         "btn_text": "View gallery",
         'btn_link': '/myrra',
-        'paragraph_one': 'ʏᴏᴜ ᴄᴀɴ ᴋɴᴏᴡ ᴍᴇ ᴀʟʀᴇᴀᴅʏ ᴀs ᴍʏʀᴋ.ɪɴᴋ',
-        "paragraph_two": "ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ᴘᴀsᴛ ʏᴇᴀʀs ɪ ʜᴀᴠᴇ ʙᴇᴇɴ ᴀ ᴍᴜsɪᴄɪᴀɴ, ᴀ ᴡᴏᴏᴅᴡᴏʀᴋɪɴɢ ᴀʀᴛɪsᴛ ғᴏʀ ᴍʏ sᴍᴀʟʟ ʙʀᴀɴᴅ ғᴊᴀðʀᴀғᴏᴋ ᴀɴᴅ ᴀɴ ɪʟʟᴜsᴛʀᴀᴛᴏʀ ᴏғ ᴍᴀɴʏ ʏᴇᴀʀs. ɪ ʜᴀᴠᴇ ʙᴇᴇɴ ᴏɴ ᴛʜᴇ ᴡᴀʏ ᴛᴏ ʟᴇᴀʀɴ ᴛʜᴇ ᴛʀᴀᴅᴇ ᴏғ ᴛᴀᴛᴛᴏᴏɪɴɢ ғᴏʀ ʏᴇᴀʀs ᴀɴᴅ ɪ ᴅᴇᴄɪᴅᴇᴅ ɴᴏᴡ ɪs ᴛʜᴇ ʀɪɢʜᴛ ᴛɪᴍᴇ ᴛᴏ ɪɴᴄʟᴜᴅᴇ ᴛᴀᴛᴛᴏᴏɪɴɢ ᴀs ᴀ ᴘᴀʀᴛ ᴏғ ᴍʏ ᴄʀᴀғᴛsᴍᴀɴsʜɪᴘ. ᴍʏ ᴍᴀɪɴ ғᴏᴄᴜs ɪs ʙʟᴀᴄᴋ & ɢʀᴀʏ ɪʟʟᴜsᴛʀᴀᴛɪᴠᴇ ᴘɪᴇᴄᴇs ᴡɪᴛʜ ғᴏᴄᴜs ᴏɴ ʟɪɴᴇᴡᴏʀᴋ ᴀɴᴅ ᴅᴏᴛᴡᴏʀᴋ ᴛᴏᴄʀᴇᴀᴛᴇ ᴍʏ ᴅᴇsɪɢɴs. ɪ ᴀᴍ ᴇxɪᴛᴇᴅ ᴛᴏ ᴍᴇᴇᴛ ᴀʟʟ ᴏғ ʏᴏᴜ ᴀᴛ ᴀᴜʀᴀ ʀᴇʏᴋᴊᴀᴠɪᴋ ᴀɴᴅ ʜᴏᴘᴇ ᴛᴏ ʙᴇ ᴀʙʟᴇ ᴛᴏ ᴘʀᴏᴅᴜᴄᴇʙᴇᴀᴜᴛɪғᴜʟ, ᴜɴɪǫᴜᴇ ᴀʀᴛ ғᴏʀ ʏᴏᴜ ɢᴜʏs ɪɴ ᴛʜᴇ ғᴜᴛᴜʀᴇ!"
+        'paragraph_one': 'Hi! I am Myrra Rós of MYRK INK. Through the past years I have been a musician, a woodworking artist for my small brand Fjaðrafok and an illustrator of many years.',
+        "paragraph_two": "I have been on the way to learn the trade of tattooing for years and I decided now is the right time to include tattooing as a part of my craftsmanship. My main focus is black & gray illustrative pieces with focus on linework and dotwork to create my designs. I am exited to meet all of you at Aura Reykjavík and hope to be able to produce beautiful, unique art for you guys in the future!\n"
     },
 ]
