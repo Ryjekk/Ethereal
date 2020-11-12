@@ -28,7 +28,7 @@ function App() {
           <Inner>
               <ArtistContent/>
           </Inner>
-          <DivideComponent text={"OUR GUESTS"}/>
+          <DivideComponent text={"OUR GUESTS"} paragraph={"Meet Our Guests"}/>
           <Inner>
               <GuestsContent/>
           </Inner>
