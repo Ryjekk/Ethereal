@@ -14,7 +14,7 @@ export const GuestData = [
     },
     {
         "ima": `${OakImg}`,
-        "heading": "Roman",
+        "heading": "Oakbranch",
         "btn_text": "Require Booking",
         'btn_link': '/booking',
         'paragraph_one': 'If you want know more about me check guest tab',
@@ -22,7 +22,7 @@ export const GuestData = [
     },
     {
         "ima": `${RomanImg}`,
-        "heading": "Oakbranch",
+        "heading": "Roman",
         "btn_text": "Require Booking",
         'btn_link': '/booking',
         'paragraph_one': 'If you want know more about me check guest tab',
