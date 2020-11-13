@@ -2,7 +2,7 @@ import React, {useState, useCallback, useEffect} from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Gallery from "react-photo-gallery";
 // Assets
-import { tattooAnna, tattooDeb, tattooMyrra } from '../../../Data/ImgSlideData'
+import { tattooAnna, tattooMyrra } from '../../../Data/ImgSlideData'
 
 function ImgSlide(props) {
     const {person} = props;
@@ -13,8 +13,6 @@ function ImgSlide(props) {
     useEffect(() => {
         if (person === 'anna') {
             setGallery(tattooAnna)
-        } else if (person === 'deb') {
-            setGallery(tattooDeb)
         } else if (person === 'myrra') {
             setGallery(tattooMyrra)
         }

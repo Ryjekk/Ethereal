@@ -8,7 +8,6 @@ import {Paragraph, Heading, OptionsLink} from "../../../Style";
 import {FaqButtonWrapper} from "../../PagesContents/Faq/FaqContent/style";
 // Assets
 import backPicAnna from '../../../Assets/Profile/Anna/AnnaBg1.jpg'
-import backPicDeb from '../../../Assets/Profile/Deb/DebBg1.jpg'
 import backPicMyrr from '../../../Assets/Profile/Myrra/MyrrBg1.jpg'
 import backPicFaq from '../../../Assets/Backgrounds/b1.jpg'
 
@@ -34,8 +33,6 @@ class DivideComponent extends Component{
 
         if (this.props.text === "Anna") {
             bgImg = backPicAnna
-        } else if  (this.props.text === "Deborah") {
-            bgImg = backPicDeb
         } else if (this.props.text === "Myrra") {
             bgImg = backPicMyrr
         } else if (this.props.text === "FAQ") {

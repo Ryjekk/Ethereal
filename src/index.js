@@ -9,7 +9,6 @@ import App from './Views/App';
 import About from './Views/Pages/About'
 import Artist from './Views/Pages/Artist'
 import AnnaPage from './Components/PagesContents/Artist/PagesArtists/AnnaPage'
-import DeborahPage from "./Components/PagesContents/Artist/PagesArtists/DeborahPage";
 import MyrraPage from "./Components/PagesContents/Artist/PagesArtists/MyrraPage";
 import Guests from "./Components/PagesContents/Guests";
 import Join from "./Views/Pages/Join";
@@ -26,7 +25,6 @@ const routing = (
                 <Route exact path='/about' component={About} />
                 <Route exact path='/artist' component={Artist} />
                 <Route exact path='/anna' component={AnnaPage} />
-                <Route exact path='/deborah' component={DeborahPage} />
                 <Route exact path='/myrra' component={MyrraPage} />
                 <Route exact path='/guests' component={Guests} />
                 <Route exact path='/join' component={Join} />

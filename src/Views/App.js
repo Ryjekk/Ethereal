@@ -27,7 +27,7 @@ class App extends React.Component {
                 setTimeout(() => {
                     // remove from DOM
                     el.outerHTML = ''
-                }, 2000)
+                }, 2500)
             }
         })
     }

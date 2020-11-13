@@ -24,21 +24,6 @@ import pic22 from '../Assets/Profile/Anna/Tattoo/22.jpeg'
 import pic23 from '../Assets/Profile/Anna/Tattoo/23.jpeg'
 import pic24 from '../Assets/Profile/Anna/Tattoo/24.jpeg'
 
-// Deb
-import pic1d from '../Assets/Profile/Deb/Tattoo/1.jpg'
-import pic2d from '../Assets/Profile/Deb/Tattoo/2.jpg'
-import pic3d from '../Assets/Profile/Deb/Tattoo/3.jpg'
-import pic4d from '../Assets/Profile/Deb/Tattoo/4.jpg'
-import pic5d from '../Assets/Profile/Deb/Tattoo/5.jpg'
-import pic6d from '../Assets/Profile/Deb/Tattoo/6.jpg'
-import pic7d from '../Assets/Profile/Deb/Tattoo/7.jpg'
-import pic8d from '../Assets/Profile/Deb/Tattoo/8.jpg'
-import pic9d from '../Assets/Profile/Deb/Tattoo/9.jpg'
-import pic10d from '../Assets/Profile/Deb/Tattoo/10.JPG'
-import pic11d from '../Assets/Profile/Deb/Tattoo/11.JPG'
-import pic12d from '../Assets/Profile/Deb/Tattoo/12.JPG'
-import pic13d from '../Assets/Profile/Deb/Tattoo/13.JPG'
-
 // Myrra
 import pic1m from '../Assets/Profile/Myrra/Tattoo/1.jpg'
 import pic2m from '../Assets/Profile/Myrra/Tattoo/2.jpg'
@@ -183,74 +168,6 @@ export const tattooAnna = [
     },
     {
         src: `${pic24}`,
-        width: 1,
-        height: 1
-    },
-]
-
-export const tattooDeb = [
-    {
-        src: `${pic1d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic2d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic3d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic4d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic5d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic6d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic7d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic8d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic9d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic10d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic11d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic12d}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic13d}`,
         width: 1,
         height: 1
     },
