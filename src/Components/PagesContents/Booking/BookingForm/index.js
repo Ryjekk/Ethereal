@@ -123,12 +123,6 @@ class BookingForm extends Component {
                         </label>
                         <label>
                             <input type="radio"
-                                   value="Deborah"
-                                   name="artist"/>
-                            Deborah
-                        </label>
-                        <label>
-                            <input type="radio"
                                    value="Myrra"
                                    name="artist"/>
                             Myrra
