@@ -14,23 +14,23 @@ import { Container, Inner } from '../Style';
 
 class App extends React.Component {
     // fake authentication Promise
-    // authenticate(){
-    //     return new Promise(resolve => setTimeout(resolve, 2500)) // 2 seconds
-    // }
-    //
-    // componentDidMount(){
-    //     this.authenticate().then(() => {
-    //         const el = document.getElementById('ipl-progress-indicator')
-    //         if(el){
-    //             // fade out
-    //             el.classList.add('available')
-    //             setTimeout(() => {
-    //                 // remove from DOM
-    //                 el.outerHTML = ''
-    //             }, 2500)
-    //         }
-    //     })
-    // }
+    authenticate(){
+        return new Promise(resolve => setTimeout(resolve, 2500)) // 2 seconds
+    }
+
+    componentDidMount(){
+        this.authenticate().then(() => {
+            const el = document.getElementById('ipl-progress-indicator')
+            if(el){
+                // fade out
+                el.classList.add('available')
+                setTimeout(() => {
+                    // remove from DOM
+                    el.outerHTML = ''
+                }, 2500)
+            }
+        })
+    }
 
     render() {
         return (
