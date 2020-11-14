@@ -20,8 +20,7 @@ export const COLORS = {
 
 export const FONTS = {
     fontOne: 'Space Mono',
-    fontTwo: 'Libre Baskerville',
-    // fontTwo: 'bebas-neue-by-fontfabric',
+    fontTwo: 'bebas-neue-by-fontfabric',
     fontThree: 'droid-sans-mono'
 };
 
