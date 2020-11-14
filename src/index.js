@@ -10,8 +10,8 @@ import About from './Views/Pages/About'
 import Artist from './Views/Pages/Artist'
 import AnnaPage from './Components/PagesContents/Artist/PagesArtists/AnnaPage'
 import MyrraPage from "./Components/PagesContents/Artist/PagesArtists/MyrraPage";
-import Guests from "./Components/PagesContents/Guests";
 import Join from "./Views/Pages/Join";
+import Guests from "./Views/Pages/Guests";
 import Booking from './Views/Pages/Booking'
 import Faq from './Views/Pages/Faq'
 import Covid from './Views/Pages/Covid'

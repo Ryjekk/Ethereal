@@ -4,7 +4,7 @@ import NavBar from '../Components/Contents/NavBar';
 import WelcomePage from '../Components/PagesContents/WelcomePage';
 import WelcomePageParallax from '../Components/PagesContents/WelcomePage/WelcomePageParallax';
 import ArtistContent from '../Components/PagesContents/Artist/ArtistContent'
-import GuestsContent from "../Components/PagesContents/Artist/GuestsContent";
+import GuestsContent from "../Components/PagesContents/Guests/GuestsContent";
 import FaqContent from '../Components/PagesContents/Faq/FaqContent'
 import MapsGoogle from "../Components/Contents/MapsGoogle";
 import FooterContent from '../Components/Contents/FooterContent'
@@ -14,23 +14,23 @@ import { Container, Inner } from '../Style';
 
 class App extends React.Component {
     // fake authentication Promise
-    authenticate(){
-        return new Promise(resolve => setTimeout(resolve, 2500)) // 2 seconds
-    }
-
-    componentDidMount(){
-        this.authenticate().then(() => {
-            const el = document.getElementById('ipl-progress-indicator')
-            if(el){
-                // fade out
-                el.classList.add('available')
-                setTimeout(() => {
-                    // remove from DOM
-                    el.outerHTML = ''
-                }, 2500)
-            }
-        })
-    }
+    // authenticate(){
+    //     return new Promise(resolve => setTimeout(resolve, 2500)) // 2 seconds
+    // }
+    //
+    // componentDidMount(){
+    //     this.authenticate().then(() => {
+    //         const el = document.getElementById('ipl-progress-indicator')
+    //         if(el){
+    //             // fade out
+    //             el.classList.add('available')
+    //             setTimeout(() => {
+    //                 // remove from DOM
+    //                 el.outerHTML = ''
+    //             }, 2500)
+    //         }
+    //     })
+    // }
 
     render() {
         return (

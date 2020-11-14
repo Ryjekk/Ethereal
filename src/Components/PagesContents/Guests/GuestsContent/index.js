@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import DivBtn from "../../../UI/DivBtn";
 // Style
 import {GuestBox} from "./style"
-import {ArtistImage, ArtistWrap, ArtistButtonWrapper} from "../style";
+import {ArtistImage, ArtistWrap, ArtistButtonWrapper} from "../../Artist/style";
 import {Paragraph, MediumHeading, OptionsLink} from "../../../../Style";
 // Assets
 import {GuestData} from '../../../../Data/guestsData'
