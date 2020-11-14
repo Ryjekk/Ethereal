@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {ParallaxBox, QUERIES} from "../../../../Style";
-import bg from '../../../../Assets/Backgrounds/bg3.jpg'
+import bg from '../../../../Assets/Backgrounds/b5.jpg'
 
 export const JoinCont = styled(ParallaxBox)`
     display: flex;

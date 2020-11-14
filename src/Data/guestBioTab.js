@@ -18,7 +18,7 @@ export const GuestBioTab = [
         "guestDates": "11/11/2020",
         "guestParagraph1": "After more than one decade tattooing I can say I'm still learning day by day, as I used to do when I started. I continue to look for my personal identity as a tattoo artist, however my inclination is to the black&white realism.",
         "guestParagraph2": "My philosophy towards the composition, the technique process and the approach to the client is something more than shallow, I try to achieve a connection between my client, the design and myself, on each and every piece.",
-        "guestIg": "https://www.instagram.com/aura.reykjavik/",
+        "guestIg": "https://www.instagram.com/romanxcanalestattoo/",
         "guestGalleryName": "roman"
     },
     {

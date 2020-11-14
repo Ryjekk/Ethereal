@@ -7,25 +7,25 @@ export const GuestData = [
     {
         "ima": `${MartaImg}`,
         "heading": "Bymosler",
-        "btn_text": "Require Booking",
-        'btn_link': '/booking',
-        'paragraph_one': 'If you want know more about me check guest tab',
+        "btn_text": "check artist",
+        'btn_link': '/guests',
+        'paragraph_one': '',
         "paragraph_two": ""
     },
     {
         "ima": `${OakImg}`,
         "heading": "Oakbranch",
-        "btn_text": "Require Booking",
-        'btn_link': '/booking',
-        'paragraph_one': 'If you want know more about me check guest tab',
+        "btn_text": "check artist",
+        'btn_link': '/guests',
+        'paragraph_one': '',
         "paragraph_two": ""
     },
     {
         "ima": `${RomanImg}`,
         "heading": "Roman",
-        "btn_text": "Require Booking",
-        'btn_link': '/booking',
-        'paragraph_one': 'If you want know more about me check guest tab',
+        "btn_text": "check artist",
+        'btn_link': '/guests',
+        'paragraph_one': '',
         "paragraph_two": ""
     },
     // {

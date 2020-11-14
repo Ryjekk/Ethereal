@@ -5,7 +5,7 @@ import DivBtn from "../../../UI/DivBtn";
 // Style
 import {GuestBox} from "./style"
 import {ArtistImage, ArtistWrap, ArtistButtonWrapper} from "../../Artist/style";
-import {Paragraph, MediumHeading, OptionsLink} from "../../../../Style";
+import {MediumHeading, OptionsLink} from "../../../../Style";
 // Assets
 import {GuestData} from '../../../../Data/guestsData'
 
@@ -28,15 +28,15 @@ const GuestsContent = () => {
                             </Link>
                         </DivBtn>
                     </ArtistButtonWrapper>
-                    <Paragraph>
-                        {el.paragraph_one}
-                    </Paragraph>
-                    <Paragraph>
-                        {el.paragraph_two}
-                    </Paragraph>
-                    <Paragraph>
-                        {el.paragraph_three}
-                    </Paragraph>
+                    {/*<Paragraph>*/}
+                    {/*    {el.paragraph_one}*/}
+                    {/*</Paragraph>*/}
+                    {/*<Paragraph>*/}
+                    {/*    {el.paragraph_two}*/}
+                    {/*</Paragraph>*/}
+                    {/*<Paragraph>*/}
+                    {/*    {el.paragraph_three}*/}
+                    {/*</Paragraph>*/}
                 </GuestBox>
             ))}
         </ArtistWrap>
