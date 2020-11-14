@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {Paragraph, QUERIES, MediumHeading, ParallaxBox, CenterBox} from '../../../../Style';
 import {Btn} from "../../../UI/DivBtn/style";
-import bg from '../../../../Assets/Backgrounds/b0.png'
+import bg from '../../../../Assets/Backgrounds/b0.jpg'
 
 export const WelcomeCont = styled(ParallaxBox)`
     width: 100vw;
