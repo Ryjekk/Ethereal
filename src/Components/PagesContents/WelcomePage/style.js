@@ -11,7 +11,7 @@ export const VideoEl = styled.video`
 
 export const Overlay = styled(CenterBox)`
     background-image: url(${bg});
-    filter: grayscale(50%);
+    filter: grayscale(30%);
     background-size: cover;
     position: absolute;
     top: 0;
