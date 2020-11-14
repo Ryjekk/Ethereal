@@ -9,7 +9,7 @@ import {FaqButtonWrapper} from "../../PagesContents/Faq/FaqContent/style";
 // Assets
 import backPicAnna from '../../../Assets/Profile/Anna/AnnaBg1.jpg'
 import backPicMyrr from '../../../Assets/Profile/Myrra/MyrrBg1.jpg'
-import backPicFaq from '../../../Assets/Backgrounds/b1.jpg'
+import backPicFaq from '../../../Assets/Backgrounds/b2c.jpg'
 
 class DivideComponent extends Component{
     render() {
