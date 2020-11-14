@@ -9,6 +9,6 @@ export const GuestTextBox = styled.div`
     //
     @media (${QUERIES.medium}) {
         margin: 0 auto;
-        width: 70%;
+        width: 85%;
     }
 `;

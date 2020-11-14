@@ -50,6 +50,28 @@ import pic22m from '../Assets/Profile/Myrra/Tattoo/22.jpg'
 import pic23m from '../Assets/Profile/Myrra/Tattoo/23.jpg'
 import pic24m from '../Assets/Profile/Myrra/Tattoo/24.jpg'
 
+// GUESTS
+// MARTA
+import pic1gm from '../Assets/Profile/Guests/Marta/Tattoo/01.JPEG'
+import pic2gm from '../Assets/Profile/Guests/Marta/Tattoo/02.JPEG'
+import pic3gm from '../Assets/Profile/Guests/Marta/Tattoo/03.JPEG'
+import pic4gm from '../Assets/Profile/Guests/Marta/Tattoo/04.JPEG'
+import pic5gm from '../Assets/Profile/Guests/Marta/Tattoo/05.JPEG'
+
+// ROMAN
+import pic1gr from '../Assets/Profile/Guests/Roman/Tattoo/1.jpeg'
+import pic2gr from '../Assets/Profile/Guests/Roman/Tattoo/2.jpeg'
+import pic3gr from '../Assets/Profile/Guests/Roman/Tattoo/3.jpeg'
+import pic4gr from '../Assets/Profile/Guests/Roman/Tattoo/4.jpeg'
+import pic5gr from '../Assets/Profile/Guests/Roman/Tattoo/5.jpeg'
+
+// OAK
+import pic1go from '../Assets/Profile/Guests/Oakbranch/Tattoo/1.jpeg'
+import pic2go from '../Assets/Profile/Guests/Oakbranch/Tattoo/2.jpeg'
+import pic3go from '../Assets/Profile/Guests/Oakbranch/Tattoo/3.jpeg'
+import pic4go from '../Assets/Profile/Guests/Oakbranch/Tattoo/4.jpeg'
+import pic5go from '../Assets/Profile/Guests/Oakbranch/Tattoo/6.jpeg'
+
 export const tattooAnna = [
     {
         src: `${pic1}`,
@@ -291,6 +313,90 @@ export const tattooMyrra = [
     },
     {
         src: `${pic24m}`,
+        width: 1,
+        height: 1
+    },
+]
+
+export const tattooMarta = [
+    {
+        src: `${pic1gm}`,
+        width: .5,
+        height: .5,
+    },
+    {
+        src: `${pic2gm}`,
+        width: .5,
+        height: .5,
+    },
+    {
+        src: `${pic3gm}`,
+        width: .5,
+        height: .5,
+    },
+    {
+        src: `${pic4gm}`,
+        width: .5,
+        height: .5,
+    },
+    {
+        src: `${pic5gm}`,
+        width: .5,
+        height: .5,
+    },
+]
+
+export const tattooRoman = [
+    {
+        src: `${pic1gr}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic2gr}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic3gr}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic4gr}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic5gr}`,
+        width: 1,
+        height: 1
+    },
+]
+
+export const tattooOak = [
+    {
+        src: `${pic1go}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic2go}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic3go}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic4go}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic5go}`,
         width: 1,
         height: 1
     },

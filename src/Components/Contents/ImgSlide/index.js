@@ -2,19 +2,31 @@ import React, {useState, useCallback, useEffect} from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Gallery from "react-photo-gallery";
 // Assets
-import { tattooAnna, tattooMyrra } from '../../../Data/ImgSlideData'
+import {tattooAnna, tattooMarta, tattooMyrra, tattooOak, tattooRoman} from '../../../Data/ImgSlideData'
 
 function ImgSlide(props) {
     const {person} = props;
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
     const [photoGallery, setGallery] = useState(null);
+    const [rowHeight, setRowHeight] = useState(null)
 
     useEffect(() => {
         if (person === 'anna') {
             setGallery(tattooAnna)
+            setRowHeight(280)
         } else if (person === 'myrra') {
             setGallery(tattooMyrra)
+            setRowHeight(280)
+        } else if (person === 'marta') {
+            setGallery(tattooMarta)
+            setRowHeight(100)
+        } else if (person === 'roman') {
+            setGallery(tattooRoman)
+            setRowHeight(100)
+        } else if (person === 'oak') {
+            setGallery(tattooOak)
+            setRowHeight(100)
         }
     }, [person])
 
@@ -30,7 +42,7 @@ function ImgSlide(props) {
 
     return (
         <div>
-            <Gallery photos={photoGallery} onClick={openLightbox} margin={7} targetRowHeight={280}/>
+            <Gallery photos={photoGallery} onClick={openLightbox} margin={7} targetRowHeight={rowHeight}/>
             <ModalGateway>
                 {viewerIsOpen ? (
                     <Modal onClose={closeLightbox}>
