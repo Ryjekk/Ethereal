@@ -3,8 +3,8 @@ import {Link} from "react-router-dom";
 // Components
 import DivBtn from "../../../UI/DivBtn";
 // Style
-import {GuestBox} from "./style"
-import {ArtistImage, ArtistWrap, ArtistButtonWrapper} from "../../Artist/style";
+import {GuestBox, GuestWrap, GuestImage, GuestTextBox} from "./style"
+import {ArtistButtonWrapper} from "../../Artist/style";
 import {MediumHeading, OptionsLink} from "../../../../Style";
 // Assets
 import {GuestData} from '../../../../Data/guestsData'
@@ -12,22 +12,24 @@ import {GuestData} from '../../../../Data/guestsData'
 const GuestsContent = () => {
 
     return (
-        <ArtistWrap>
+        <GuestWrap>
             {GuestData.map((el) => (
                 <GuestBox>
-                    <ArtistImage src={el.ima}/>
-                    <MediumHeading>
-                        {el.heading}
-                    </MediumHeading>
-                    <ArtistButtonWrapper>
-                        <DivBtn>
-                            <Link to={el.btn_link}>
-                                <OptionsLink>
-                                    {el.btn_text}
-                                </OptionsLink>
-                            </Link>
-                        </DivBtn>
-                    </ArtistButtonWrapper>
+                    <GuestImage src={el.ima}/>
+                    <GuestTextBox>
+                        <MediumHeading>
+                            {el.heading}
+                        </MediumHeading>
+                        <ArtistButtonWrapper>
+                            <DivBtn>
+                                <Link to={el.btn_link}>
+                                    <OptionsLink>
+                                        {el.btn_text}
+                                    </OptionsLink>
+                                </Link>
+                            </DivBtn>
+                        </ArtistButtonWrapper>
+                    </GuestTextBox>
                     {/*<Paragraph>*/}
                     {/*    {el.paragraph_one}*/}
                     {/*</Paragraph>*/}
@@ -39,7 +41,7 @@ const GuestsContent = () => {
                     {/*</Paragraph>*/}
                 </GuestBox>
             ))}
-        </ArtistWrap>
+        </GuestWrap>
     )
 }
 

@@ -1,5 +1,5 @@
 import martaImg from '../Assets/Profile/Guests/Marta/MartaImg.JPG'
-import romanImg from '../Assets/Profile/Guests/Roman/RomanImg.jpg'
+import romanImg from '../Assets/Profile/Guests/Roman/RomanImg.jpeg'
 import oakImg from '../Assets/Profile/Guests/Oakbranch/OakImg.jpg'
 
 export const GuestBioTab = [
