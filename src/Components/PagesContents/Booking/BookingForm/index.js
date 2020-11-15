@@ -1,216 +1,191 @@
-import React, {Component} from "react";
-// import emailjs from 'emailjs-com';
+import React from "react";
+import { Formik, ErrorMessage } from "formik";
+import FormikControll from "./components/FormikContoll";
+import * as Yup from 'yup'
+import emailjs from 'emailjs-com';
 import {
     FormInput,
     FormLabel,
-    FormTextarea,
     FormWrapper,
     FormButton,
-    FormFieldset, FormStyled, FormSection, ErrorSpan
+    FormFieldset, FormStyled, ErrorSpan
 } from "./stye";
+import './style.css'
 
-const emailRegex = RegExp(/^[a-zA-Z0-9.!#%&'*/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
+const design = [
+    {key: 'Flashworks', value: 'Flashworks'},
+    {key: 'Custom Design', value: 'Custom Design'}
+]
 
-// TODO COMENT OUT
-// const formValid = formErrors => {
-//     let valid = true;
-//     Object.values(formErrors).forEach(el => el.length > 0 && (valid = false));
-//     return valid;
-// }
+const artist = [
+    {key: 'Anna', value: 'Anna'},
+    {key: 'Myrra', value: 'Myrra'}
+]
 
-class BookingForm extends Component {
-    constructor(props) {
-        super(props);
+const guests = [
+    {key: 'Roman', value: 'Roman'},
+    {key: 'Marta', value: 'Marta'},
+    {key: 'Oakbranch', value: 'Oakbranch'}
+]
 
-        this.state = {
-            name: null,
-            email: null,
-            description: null,
-            size: null,
-            placement: null,
-            formErrors: {
-                name: "",
-                email: "",
-                description: "",
-                size: "",
-                placement: "",
-            }
-        }
-    }
+const initialValues = {
+    name: '',
+    email: '',
+    phone: '',
+    etnicity: '',
+    placement: '',
+    size: '',
+    description: '',
+    design: '',
+    artist: [],
+    guests: [],
+    howyoufindus: '',
+    date: null
+}
+// todo api key
+function sendEmail(data) {
+    emailjs.send('etherealtattoo', 'etheraltattoo', data, `APIKEY HERE`)
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            alert(`🤯 There was problem with submitting your form, please try again. SERVER ERROR`)
+            console.log(error.text);
+        });
+}
 
-    handleChange = (e) => {
-        e.preventDefault();
-        const {name, value} = e.target;
-        let formErrors = this.state.formErrors;
+const onSubmit = (values, onSubmitProps) => {
+    // console.log(values)
+    const data = JSON.parse(JSON.stringify(values))
+    sendEmail(data)
+    onSubmitProps.resetForm()
+}
 
-        if(name === 'name') {
-            formErrors.name = value.length < 3 ? 'Insert Name' : '';
-        } else if (name === "email") {
-            formErrors.email = emailRegex.test(value) ? '' : 'Invalid Email Address';
-        } else if (name === 'description') {
-            formErrors.description = value.length < 5 ? 'Please Provide Description Or Links To Design' : '';
-        } else if (name === 'size') {
-            formErrors.size = value.length < 2 ? 'Please Provide Size Of Tattoo' : '';
-        } else if (name === "placement") {
-            formErrors.placement = value.length < 2 ? 'Please Provide Placement Of Tattoo' : '';
-        } else {
-            return
-        }
+const validationSchema = Yup.object({
+    name: Yup.string().required('Required'),
+    email: Yup.string().email('Invalid email format').required('Required'),
+    placement: Yup.string().required('Required'),
+    size: Yup.string().required('Required'),
+    design: Yup.string().required('Required'),
+    artist: Yup.array().required('Required'),
+    date: Yup.date().required('Required').nullable(),
+})
 
-        this.setState({formErrors, [name]: value})
-    }
+const BookingForm = () => {
 
-    // UNCOMENT  TODO
-    // sendEmail = (e) => {
-    //     if (formValid(this.state.formErrors)) {
-    //         const apiKey = process.env.REACT_APP_API_KEY;
-    //         e.preventDefault();
-    //         emailjs.sendForm('etherealtattoo', 'etheraltattoo', e.target, `${apiKey}`)
-    //             .then((result) => {
-    //                 console.log(result.text);
-    //             }, (error) => {
-    //                 alert(`🤯 There was problem with submitting your form, please try again. SERVER ERROR`)
-    //                 console.log(error.text);
-    //             });
-    //         e.target.reset();
-    //     } else {
-    //         e.preventDefault();
-    //         // TODO display message : please fill required fields
-    //         alert(`🤯 There was problem with submitting your form, please try again`)
-    //     }
-    // }
-
-    render() {
-        const {formErrors} = this.state;
-
-        return (
-            <FormWrapper>
-                <FormStyled onSubmit={this.sendEmail}>
+    return (
+        <FormWrapper>
+            <Formik
+                initialValues={initialValues}
+                validationSchema={validationSchema}
+                onSubmit={onSubmit}
+            >
+                <FormStyled>
                     {/* Name */}
                     <FormLabel htmlFor="name"/>
                     <FormInput
-                        style={formErrors.name.length > 0 ? {borderBottom: "2px solid orangered"} : null}
+                        id="name"
                         name="name"
                         type="text"
                         placeholder="Full Name *"
-                        required
-                        onChange={this.handleChange}/>
-                    {formErrors.name.length > 0 && (<ErrorSpan>{formErrors.name}</ErrorSpan>)}
+                    />
+                    <ErrorMessage name="name" component={ErrorSpan}/>
                     {/* Email */}
                     <FormLabel htmlFor="email"/>
                     <FormInput
-                        style={formErrors.email.length > 0 ? {borderBottom: "2px solid orangered"} : null}
+                        id="email"
                         name="email"
                         type="text"
                         placeholder="Your email *"
-                        required
-                        onChange={this.handleChange}/>
-                    {formErrors.email.length > 0 && (<ErrorSpan>{formErrors.email}</ErrorSpan>)}
+                    />
+                    <ErrorMessage name='email' component={ErrorSpan}/>
                     {/* Phone */}
                     <FormLabel htmlFor="phone"/>
-                    <FormInput name="phone" type="text" placeholder="Phone Number"/>
+                    <FormInput
+                        id="phone"
+                        name="phone"
+                        type="text"
+                        placeholder="Phone Number"
+                    />
                     {/* From */}
                     <FormLabel htmlFor="etnicity"/>
-                    <FormInput name="etnicity" type="text" placeholder="Are you Local or Tourist"/>
-                    {/* Artist */}
+                    <FormInput
+                        id="etnicity"
+                        name="etnicity"
+                        type="text"
+                        placeholder="Are you Local or Tourist"
+                    />
+                    {/* Artist*/}
                     <FormFieldset>
-                        <legend> Select Artist </legend>
-                        <label>
-                            <input type="radio"
-                                   value="Anna"
-                                   name="artist"/>
-                            Anna
-                        </label>
-                        <label>
-                            <input type="radio"
-                                   value="Myrra"
-                                   name="artist"/>
-                            Myrra
-                        </label>
-                        <label>|||</label>
-                        <label>
-                            <input type="text"
-                                   placeholder="Guest name"
-                                   name="artist"/>
-                        </label>
+                        <FormikControll
+                            control="checkbox"
+                            label='Select Artists *'
+                            name='artist'
+                            options={artist}
+                        />
                     </FormFieldset>
-                    {/* Availability Date */}
-                    {/* Availability time */}
-                    <FormLabel htmlFor="dates"> Please provide date.
-                        </FormLabel>
-                    <FormSection>
-                        <FormInput
-                            style={{marginRight: '10px'}}
-                            name="dates"
-                            type="date"
-                            min="2020-08-01"
-                            required/>
-                        {/*<FormLabel htmlFor="time"/>*/}
-                        {/*<FormInput*/}
-                        {/*    style={{marginLeft: '10px'}}*/}
-                        {/*    name="dates"*/}
-                        {/*    type="date"*/}
-                        {/*    min="2020-08-01"*/}
-                        {/*    required/>*/}
-                    </FormSection>
-                    {/* Design */}
+                    {/* Guests*/}
                     <FormFieldset>
-                        <legend> Flashwork or custom design? </legend>
-                        <label>
-                            <input type="radio"
-                                   value="Flashworks"
-                                   name="design"
-                                   required/>
-                            Flashworks
-                        </label>
-                        <label>
-                            <input type="radio"
-                                   value="Custom Design"
-                                   name="design"/>
-                            Custom Design
-                        </label>
+                        <FormikControll
+                            control="checkbox"
+                            label='Select Guests'
+                            name='guests'
+                            options={guests}
+                        />
                     </FormFieldset>
                     {/* Placement */}
                     <FormLabel htmlFor="placement"/>
                     <FormInput
-                        style={formErrors.placement.length > 0 ? {borderBottom: "2px solid orangered"} : null}
+                        id="placement"
                         name="placement"
                         type="text"
                         placeholder="Placement on your Body *"
-                        required
-                        onChange={this.handleChange}/>
-                    {formErrors.placement.length > 0 && (<ErrorSpan>{formErrors.placement}</ErrorSpan>)}
+                    />
+                    <ErrorMessage name='placement' component={ErrorSpan}/>
                     {/* Size */}
                     <FormLabel htmlFor="size"/>
                     <FormInput
-                        style={formErrors.size.length > 0 ? {borderBottom: "2px solid orangered"} : null}
+                        id="size"
                         name="size"
                         type="text"
                         placeholder="Approximate Size (in cm) *"
-                        required
-                        onChange={this.handleChange}/>
-                    {formErrors.size.length > 0 && (<ErrorSpan>{formErrors.size}</ErrorSpan>)}
-                    {/* Description */}
-                    <FormLabel htmlFor="description"/>
-                    <FormTextarea
-                        style={formErrors.description.length > 0 ? {borderBottom: "2px solid orangered"} : null}
-                        name="description"
-                        type="text"
-                        placeholder="Tattoo Description. Please send link to chosen Flashwork, or describe a custom design. [you can provide links to inspiration] *"
-                        required
-                        onChange={this.handleChange}/>
-                    {formErrors.description.length > 0 && (<ErrorSpan>{formErrors.description}</ErrorSpan>)}
-                    {/* Phone */}
+                    />
+                    <ErrorMessage name='size' component={ErrorSpan}/>
+                    {/* Design */}
+                    <FormFieldset>
+                        <FormikControll
+                            control='radio'
+                            label='Flashwork or custom design? *'
+                            name='design'
+                            options={design}
+                        />
+                    </FormFieldset>
+                    {/* Date */}
+                    <FormFieldset>
+                        <FormikControll
+                            control="date"
+                            label="Pick a date *"
+                            name="date"
+                        />
+                    </FormFieldset>
+                    {/* Desc */}
+                    <FormikControll
+                        control='textarea'
+                        name='description'
+                        placeholder="Tattoo Description. Please send link to chosen Flashwork, or describe a custom design. [you can provide links to inspiration]"
+                    />
+                    {/* How */}
                     <FormLabel htmlFor="source"/>
-                    <FormInput name="cource" type="text" placeholder="How do you heard about us?"/>
+                    <FormInput
+                        id="howyoufindus"
+                        name="howyoufindus"
+                        type="text"
+                        placeholder="How do you heard about us?"/>
                     <FormLabel>Please not that provided time is just an suggestion. Artist will send you an conformation by email.</FormLabel>
-                    {/* Button */}
                     <FormButton value="submit" type="submit"> Book Appointment </FormButton>
-
                 </FormStyled>
-            </FormWrapper>
-        )
-    }
+            </Formik>
+        </FormWrapper>
+    )
 }
 
 export default BookingForm;

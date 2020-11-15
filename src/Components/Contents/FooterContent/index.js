@@ -7,8 +7,6 @@ import {Options, Paragraph, MediumHeading} from "../../../Style";
 import sprite from '../../../Assets/Icons/sprite.svg'
 import {FooterData} from "../../../Data/footerData";
 
-// TODO add links to <a>
-
 const FooterContent = () => {
     return (
         <InnerWrapper>

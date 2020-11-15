@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import {COLORS, QUERIES, FONTS, CenterBox} from "../../../../Style";
+import {Form, Field } from "formik";
 
 export const FormWrapper = styled(CenterBox)`
     font-family: Arial;
-    
+
     @media (${QUERIES.medium}) {
         padding: 0 15%;
     }
 `;
-export const FormStyled = styled.form`
+export const FormStyled = styled(Form)`
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,20 +20,20 @@ export const FormFieldset = styled.fieldset`
     border: 1px solid ${COLORS.darkestGray};
     border-radius: 5px;
     margin 20px 0;
-    
+
     legend {
         color: ${COLORS.darkGray};
-        padding: 0 20px;
+        padding: 10px 20px;
     }
-    
+
     label {
         color: ${COLORS.darkGray};
         padding-right: 15px;
     }
-    
+
     input {
         margin-right: 10px;
-    }    
+    }
 `;
 
 export const FormLabel = styled.label`
@@ -40,7 +41,7 @@ export const FormLabel = styled.label`
     padding-bottom: 10px;
 `;
 
-export const FormInput = styled.input`
+export const FormInput = styled(Field)`
     color: ${COLORS.darkGray};
     padding: 10px 0;
     font-size: 16px;
@@ -52,7 +53,7 @@ export const FormInput = styled.input`
     border-radius: 5px;
     padding-left: 15px;
     width: 100%;
-    
+
     &::after {
         color: orangered;
         content: "*";
@@ -61,33 +62,19 @@ export const FormInput = styled.input`
     }
 `;
 
-export const FormTextarea = styled.textarea`
-    font-family: Arial;
-    color: ${COLORS.darkGray};
-    width: 100%;
-    min-height: 100px;
-    resize: none;
-    background: rgba(255,255,255, .01);
-    outline: none;
-    border-radius: 5px;
-    font-size: 16px;
-    padding: 15px;
-    border-radius: 5px;
-`;
-
 export const FormButton = styled.button`
     align-self: center;
     text-transform: uppercase;
-    font-family: ${FONTS.fontThree};    
+    font-family: ${FONTS.fontThree};
     border-color: #4CAF50;
     color: ${COLORS.gray};
     border: 2px solid;
-    background-color: transparent;    
+    background-color: transparent;
     padding: 14px 28px;
     margin-top: 35px;
     font-size: 16px;
     cursor: pointer;
-    
+
     :hover {
         background-color: ${COLORS.gray};
         transition: 0.1s background-color linear, 0.1s color linear;
@@ -95,12 +82,9 @@ export const FormButton = styled.button`
     }
 `;
 
-export const FormSection = styled.div`
-    display: flex;
-`;
-
 export const ErrorSpan = styled.p`
-    color: red;
     font-size: 14px;
     color: orangered;
+    margin-top: 10px;
+    margin-bottom: 10px;
 `;
