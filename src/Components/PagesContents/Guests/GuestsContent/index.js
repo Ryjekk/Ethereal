@@ -5,7 +5,7 @@ import DivBtn from "../../../UI/DivBtn";
 // Style
 import {GuestBox, GuestWrap, GuestImage, GuestTextBox} from "./style"
 import {ArtistButtonWrapper} from "../../Artist/style";
-import {MediumHeading, OptionsLink} from "../../../../Style";
+import {OptionsLink} from "../../../../Style";
 // Assets
 import {GuestData} from '../../../../Data/guestsData'
 
