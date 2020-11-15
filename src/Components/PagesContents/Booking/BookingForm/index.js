@@ -165,7 +165,7 @@ const BookingForm = () => {
                     <FormFieldset>
                         <FormikControll
                             control="date"
-                            label="Pick a date *"
+                            label="Pick a date * [for the guest spot artist you will be subscribed to the waiting list]"
                             name="date"
                         />
                     </FormFieldset>
