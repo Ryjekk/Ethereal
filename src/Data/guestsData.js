@@ -7,40 +7,40 @@ import SiankoImg from '../Assets/Profile/Guests/Sianko/SiankoImg.jpg'
 export const GuestData = [
     {
         "ima": `${MartaImg}`,
-        "heading": "Bymosler",
-        "btn_text": "check artist",
+        // "heading": "Bymosler",
+        "btn_text": "Bymosler",
         'btn_link': '/guests',
         'paragraph_one': '',
         "paragraph_two": ""
     },
     {
         "ima": `${OakImg}`,
-        "heading": "Oakbranch",
-        "btn_text": "check artist",
+        // "heading": "Oakbranch",
+        "btn_text": "Oakbranch",
         'btn_link': '/guests',
         'paragraph_one': '',
         "paragraph_two": ""
     },
     {
         "ima": `${RomanImg}`,
-        "heading": "Roman",
-        "btn_text": "check artist",
+        // "heading": "Roman",
+        "btn_text": "Roman",
         'btn_link': '/guests',
         'paragraph_one': '',
         "paragraph_two": ""
     },
     {
         "ima": `${ProstolinijnaImg}`,
-        "heading": "Prostolinijna",
-        "btn_text": "check artist",
+        // "heading": "Prostolinijna",
+        "btn_text": "Prostolinijna",
         'btn_link': '/guests',
         'paragraph_one': 'Are You Looking for job/working experience?',
         "paragraph_two": "Don't hesitate and slide into our DM's"
     },
     {
         "ima": `${SiankoImg}`,
-        "heading": "Sianko",
-        "btn_text": "check artist",
+        // "heading": "Sianko",
+        "btn_text": "Sianko",
         'btn_link': '/guests',
         'paragraph_one': 'Are You Looking for job/working experience?',
         "paragraph_two": "Don't hesitate and slide into our DM's"

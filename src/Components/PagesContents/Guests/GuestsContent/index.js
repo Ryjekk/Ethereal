@@ -17,9 +17,9 @@ const GuestsContent = () => {
                 <GuestBox>
                     <GuestImage src={el.ima}/>
                     <GuestTextBox>
-                        <MediumHeading>
-                            {el.heading}
-                        </MediumHeading>
+                        {/*<MediumHeading>*/}
+                        {/*    {el.heading}*/}
+                        {/*</MediumHeading>*/}
                         <ArtistButtonWrapper>
                             <DivBtn>
                                 <Link to={el.btn_link}>

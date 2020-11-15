@@ -38,7 +38,7 @@ class DivideComponent extends Component{
                     <DivBtn>
                         <Link to='/guests'>
                             <OptionsLink>
-                                Our Guests
+                                Check Artists
                             </OptionsLink>
                         </Link>
                     </DivBtn>

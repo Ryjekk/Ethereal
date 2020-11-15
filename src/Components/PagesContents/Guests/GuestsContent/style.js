@@ -37,7 +37,8 @@ export const GuestImage = styled.img`
    }
  `;
 
-export const GuestTextBox = styled.div`
+export const GuestTextBox = styled.div` 
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
