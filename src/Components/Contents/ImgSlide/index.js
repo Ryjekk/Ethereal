@@ -2,7 +2,7 @@ import React, {useState, useCallback, useEffect} from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Gallery from "react-photo-gallery";
 // Assets
-import {tattooAnna, tattooMarta, tattooMyrra, tattooOak, tattooRoman} from '../../../Data/ImgSlideData'
+import {tattooAnna, tattooMarta, tattooMyrra, tattooOak, tattooRoman, tattooProstolinijna, tattooSianko} from '../../../Data/ImgSlideData'
 
 function ImgSlide(props) {
     const {person} = props;
@@ -26,6 +26,12 @@ function ImgSlide(props) {
             setRowHeight(100)
         } else if (person === 'oak') {
             setGallery(tattooOak)
+            setRowHeight(100)
+        } else if (person === 'prostolinijna') {
+            setGallery(tattooProstolinijna)
+            setRowHeight(100)
+        } else if (person === 'sianko') {
+            setGallery(tattooSianko)
             setRowHeight(100)
         }
     }, [person])

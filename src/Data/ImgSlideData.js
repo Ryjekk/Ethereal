@@ -72,6 +72,20 @@ import pic3go from '../Assets/Profile/Guests/Oakbranch/Tattoo/3.jpeg'
 import pic4go from '../Assets/Profile/Guests/Oakbranch/Tattoo/4.jpeg'
 import pic5go from '../Assets/Profile/Guests/Oakbranch/Tattoo/6.jpeg'
 
+// PROSTOLNIJNA
+import pic1gp from '../Assets/Profile/Guests/Prostolinijna/Tattoo/1.jpg'
+import pic2gp from '../Assets/Profile/Guests/Prostolinijna/Tattoo/2.jpg'
+import pic3gp from '../Assets/Profile/Guests/Prostolinijna/Tattoo/3.jpg'
+import pic4gp from '../Assets/Profile/Guests/Prostolinijna/Tattoo/4.jpg'
+import pic5gp from '../Assets/Profile/Guests/Prostolinijna/Tattoo/5.jpg'
+
+// SIANKO
+import pic1gs from '../Assets/Profile/Guests/Sianko/Tattoo/1.jpg'
+import pic2gs from '../Assets/Profile/Guests/Sianko/Tattoo/2.jpg'
+import pic3gs from '../Assets/Profile/Guests/Sianko/Tattoo/3.jpg'
+import pic4gs from '../Assets/Profile/Guests/Sianko/Tattoo/4.jpg'
+import pic5gs from '../Assets/Profile/Guests/Sianko/Tattoo/5.jpg'
+
 export const tattooAnna = [
     {
         src: `${pic1}`,
@@ -397,6 +411,62 @@ export const tattooOak = [
     },
     {
         src: `${pic5go}`,
+        width: 1,
+        height: 1
+    },
+]
+
+export const tattooProstolinijna = [
+    {
+        src: `${pic1gp}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic2gp}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic3gp}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic4gp}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic5gp}`,
+        width: 1,
+        height: 1
+    },
+]
+
+export const tattooSianko = [
+    {
+        src: `${pic1gs}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic2gs}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic3gs}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic4gs}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic5gs}`,
         width: 1,
         height: 1
     },
