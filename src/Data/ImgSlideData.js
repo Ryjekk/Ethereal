@@ -52,11 +52,11 @@ import pic24m from '../Assets/Profile/Myrra/Tattoo/24.jpg'
 
 // GUESTS
 // MARTA
-import pic1gm from '../Assets/Profile/Guests/Marta/Tattoo/01.JPEG'
-import pic2gm from '../Assets/Profile/Guests/Marta/Tattoo/02.JPEG'
-import pic3gm from '../Assets/Profile/Guests/Marta/Tattoo/03.JPEG'
-import pic4gm from '../Assets/Profile/Guests/Marta/Tattoo/04.JPEG'
-import pic5gm from '../Assets/Profile/Guests/Marta/Tattoo/05.JPEG'
+import pic1gm from '../Assets/Profile/Guests/Marta/Tattoo/1.JPG'
+import pic2gm from '../Assets/Profile/Guests/Marta/Tattoo/2.jpeg'
+import pic3gm from '../Assets/Profile/Guests/Marta/Tattoo/3.jpeg'
+import pic4gm from '../Assets/Profile/Guests/Marta/Tattoo/4.jpeg'
+import pic5gm from '../Assets/Profile/Guests/Marta/Tattoo/5.jpeg'
 
 // ROMAN
 import pic1gr from '../Assets/Profile/Guests/Roman/Tattoo/1.jpeg'
@@ -70,7 +70,7 @@ import pic1go from '../Assets/Profile/Guests/Oakbranch/Tattoo/1.jpeg'
 import pic2go from '../Assets/Profile/Guests/Oakbranch/Tattoo/2.jpeg'
 import pic3go from '../Assets/Profile/Guests/Oakbranch/Tattoo/3.jpeg'
 import pic4go from '../Assets/Profile/Guests/Oakbranch/Tattoo/4.jpeg'
-import pic5go from '../Assets/Profile/Guests/Oakbranch/Tattoo/6.jpeg'
+import pic5go from '../Assets/Profile/Guests/Oakbranch/Tattoo/5.jpeg'
 
 // PROSTOLNIJNA
 import pic1gp from '../Assets/Profile/Guests/Prostolinijna/Tattoo/1.jpg'
