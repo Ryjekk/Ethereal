@@ -17,5 +17,6 @@ export {
     TrackBallSlide,
     ColorSlide,
     NudgeMouse,
-    FaqAnimation
+    FaqAnimation,
+    SMButtonWrapper
 } from './styles';

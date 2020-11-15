@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 import DivBtn from "../../UI/DivBtn";
 // Style
 import {DivideWrapper} from "./style";
-import {Paragraph, Heading, OptionsLink} from "../../../Style";
-import {FaqButtonWrapper} from "../../PagesContents/Faq/FaqContent/style";
+import {Paragraph, Heading, OptionsLink, SMButtonWrapper} from "../../../Style";
+
 // Assets
 import backPicAnna from '../../../Assets/Profile/Anna/AnnaBg1.jpg'
 import backPicMyrr from '../../../Assets/Profile/Myrra/MyrrBg1.jpg'
@@ -14,12 +14,13 @@ import backPicFaq from '../../../Assets/Backgrounds/b2c.jpg'
 class DivideComponent extends Component{
     render() {
         let faqBtn = null;
+        let guestBtn = null;
         let bgImg = null;
         let guestHeight = null;
 
         if (this.props.text === "FAQ") {
             faqBtn =  (
-                <FaqButtonWrapper>
+                <SMButtonWrapper>
                     <DivBtn>
                         <Link to='/faq'>
                             <OptionsLink>
@@ -27,7 +28,21 @@ class DivideComponent extends Component{
                             </OptionsLink>
                         </Link>
                     </DivBtn>
-                </FaqButtonWrapper>
+                </SMButtonWrapper>
+            )
+        }
+
+        if (this.props.text === "OUR GUESTS") {
+            guestBtn = (
+                <SMButtonWrapper>
+                    <DivBtn>
+                        <Link to='/guests'>
+                            <OptionsLink>
+                                Our Guests
+                            </OptionsLink>
+                        </Link>
+                    </DivBtn>
+                </SMButtonWrapper>
             )
         }
 
@@ -40,12 +55,13 @@ class DivideComponent extends Component{
         }
 
         if (this.props.text === "OUR GUESTS") {
-            guestHeight = "20vh"
+            guestHeight = "30vh"
         }
         return(
             <DivideWrapper style={{backgroundImage: `url(${bgImg})`, height: `${guestHeight}`}}>
                 <Heading>{this.props.text}</Heading>
                 <Paragraph style={{textAlign: "center", padding: "0 20px"}}>{this.props.paragraph}</Paragraph>
+                {guestBtn}
                 {faqBtn}
             </DivideWrapper>
         )

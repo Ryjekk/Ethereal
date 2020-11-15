@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {BtnWrapper, QUERIES} from "../../../../Style";
+import {QUERIES} from "../../../../Style";
 
 export const FaqWrapper = styled.div`
     @media (${QUERIES.medium}) {
@@ -30,11 +30,4 @@ export const RightColumn = styled.div`
 export const ColWrapper = styled.div`
     padding-left: 17px;
     padding-right: 17px;
-`;
-
-export const FaqButtonWrapper = styled(BtnWrapper)`
-    margin: 0;
-    @media (${QUERIES.small}) {
-        display: none;
-    }
 `;

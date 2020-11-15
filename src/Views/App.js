@@ -49,9 +49,9 @@ class App extends React.Component {
                     <ArtistContent/>
                 </Inner>
                 <DivideComponent text={"OUR GUESTS"} paragraph={"Meet Our Guests. (Guests Spots are time-framed events)"}/>
-                <Inner>
+                {/*<Inner>*/}
                     <GuestsContent/>
-                </Inner>
+                {/*</Inner>*/}
                 <DivideComponent text={"FAQ"} paragraph={"Frequently Asked Questions"}/>
                 <Inner>
                     <FaqContent />

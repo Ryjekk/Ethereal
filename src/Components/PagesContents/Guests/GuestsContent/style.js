@@ -15,13 +15,14 @@ export const GuestBox = styled.div`
 `;
 
 export const GuestWrap = styled.div`
-    display: flex;
+    margin-top: 50px;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-
+    display: none;
    @media (${QUERIES.small}) {
         padding: 0 8%;
+        display: flex;
         flex-direction: row;
    }
 `;

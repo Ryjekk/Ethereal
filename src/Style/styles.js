@@ -119,6 +119,13 @@ export const BtnWrapper = styled(CenterBox)`
     margin: 35px 0;
 `;
 
+export const SMButtonWrapper = styled(BtnWrapper)`
+    margin: 0;
+    @media (${QUERIES.small}) {
+        display: none;
+    }
+`;
+
 // Links
 export const Options = styled.div`
     text-transform: uppercase;
