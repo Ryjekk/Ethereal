@@ -182,7 +182,7 @@ const BookingForm = () => {
                         name="howyoufindus"
                         type="text"
                         placeholder="How do you heard about us?"/>
-                    <FormLabel>Please not that provided time is just an suggestion. Artist will send you an conformation by email.</FormLabel>
+                    <FormLabel>Please note that provided time is just an suggestion. Artist will send you an conformation by email.</FormLabel>
                     <FormButton value="submit" type="submit"> Book Appointment </FormButton>
                 </FormStyled>
             </Formik>
