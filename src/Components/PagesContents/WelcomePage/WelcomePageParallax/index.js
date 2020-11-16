@@ -10,7 +10,7 @@ function WelcomePageParallax() {
             <WelcomeBox>
                 <WelcomeHeading>Hello</WelcomeHeading>
                 <WelcomeParagraph>
-                    A friendly private tattoo studio located in the heart of  Reykjavik with a very relaxing atmosphere.
+                    Aura is a friendly private tattoo studio located in the heart of  Reykjavik with a very relaxing atmosphere.
                     <br/>
                     We do believe that getting a tattoo is not only getting a piece of art but also a unique experience. AURA is for the people and the priority of the studio is creating stunning tattoos in warm, welcoming environment.
                     <br/>
@@ -22,7 +22,7 @@ function WelcomePageParallax() {
                 </WelcomeParagraph>
 
                 <WelcomeParagraphSmall>
-                    A friendly private tattoo studio located in the heart of  Reykjavik with a very relaxing atmosphere.
+                    Aura is a friendly private tattoo studio located in the heart of  Reykjavik with a very relaxing atmosphere.
                     <br/>
                     We are an APPOINTMENT based studio. Creating custom work and taking our time, and putting in effort to make the best possible tattoo for your enjoyment.
                     <br/>

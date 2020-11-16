@@ -86,6 +86,13 @@ import pic3gs from '../Assets/Profile/Guests/Sianko/Tattoo/3.jpg'
 import pic4gs from '../Assets/Profile/Guests/Sianko/Tattoo/4.jpg'
 import pic5gs from '../Assets/Profile/Guests/Sianko/Tattoo/5.jpg'
 
+// SZTUKA
+import pic1gsz from '../Assets/Profile/Guests/SztukaWojny/Tattoo/1.JPG'
+import pic2gsz from '../Assets/Profile/Guests/SztukaWojny/Tattoo/2.JPG'
+import pic3gsz from '../Assets/Profile/Guests/SztukaWojny/Tattoo/3.JPG'
+import pic4gsz from '../Assets/Profile/Guests/SztukaWojny/Tattoo/4.JPG'
+import pic5gsz from '../Assets/Profile/Guests/SztukaWojny/Tattoo/5.JPG'
+
 export const tattooAnna = [
     {
         src: `${pic1}`,
@@ -467,6 +474,34 @@ export const tattooSianko = [
     },
     {
         src: `${pic5gs}`,
+        width: 1,
+        height: 1
+    },
+]
+
+export const tattooSztuka = [
+    {
+        src: `${pic1gsz}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic2gsz}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic3gsz}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic4gsz}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic5gsz}`,
         width: 1,
         height: 1
     },

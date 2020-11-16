@@ -5,7 +5,7 @@ import Placeholder from '../Assets/Backgrounds/b00.jpg'
 export const ArtistData = [
     {
         "ima": `${AnnaImg}`,
-        "heading": "Anna",
+        "heading": "Ethereal.tattoo",
         "btn_text": "View gallery",
         'btn_link': '/anna',
         'paragraph_one': 'You may know me under the artistic pseudonym Ethereal tattoo.',
@@ -14,7 +14,7 @@ export const ArtistData = [
     },
     {
         "ima": `${MyraImg}`,
-        "heading": "Myrra",
+        "heading": "Myrk.ink",
         "btn_text": "View gallery",
         'btn_link': '/myrra',
         'paragraph_one': 'Hi! I am Myrra Rós of MYRK INK. Through the past years I have been a musician, a woodworking artist for my small brand Fjaðrafok and an illustrator of many years.',
