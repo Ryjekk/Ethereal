@@ -46,7 +46,8 @@ const initialValues = {
 }
 // todo api key
 function sendEmail(data) {
-    emailjs.send('etherealtattoo', 'etheraltattoo', data, `APIKEY HERE`)
+    const apiKey = process.env.REACT_APP_API_KEY;
+    emailjs.send('etherealtattoo', 'etheraltattoo', data, `${apiKey}`)
         .then((result) => {
             console.log(result.text);
         }, (error) => {

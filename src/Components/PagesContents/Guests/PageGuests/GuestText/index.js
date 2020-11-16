@@ -13,7 +13,7 @@ const GuestText = () => {
                 Here you will find what tattoo artists will be visiting our studio in the future.
             </Paragraph>
             <Paragraph>
-                We will keep you informed about when a given artist will available at the studio. In the meantime, you can subscribe to the waiting list.
+                We will keep you informed about when a given artist will be available at the studio. In the meantime, you can subscribe to the waiting list.
             </Paragraph>
         </GuestTextBox>
     )
