@@ -25,6 +25,15 @@ export const GuestBioTab = [
         "guestGalleryName": "oak"
     },
     {
+        "guestImg": `${SztukaImg}`,
+        "guestName": "Sztuka Wojny",
+        "guestDates": "...Coming Soon",
+        "guestParagraph1": "Jérôme is tattooing for 12 years but he dedicated himself into tattooing in 100% 4 years ago. This amazing artist is based in Barcelona, SPAIN. His works are dusty and dark but mysteriously beautiful.",
+        "guestParagraph2": " We encourage you to see the tattoo gallery. :)",
+        "guestIg": "https://www.instagram.com/sztuka_wojny/",
+        "guestGalleryName": "sztuka"
+    },
+    {
         "guestImg": `${romanImg}`,
         "guestName": "Romanxcanales",
         "guestDates": "...Coming Soon",
@@ -50,14 +59,5 @@ export const GuestBioTab = [
         "guestParagraph2": "He spends his free time relaxing by working in the garden. An exceptional man of exceptional modesty. He calls himself an \"ordinary guy\". :)",
         "guestIg": "https://www.instagram.com/_sianko_/",
         "guestGalleryName": "sianko"
-    },
-    {
-        "guestImg": `${SztukaImg}`,
-        "guestName": "Sztuka Wojny",
-        "guestDates": "...Coming Soon",
-        "guestParagraph1": "Jérôme is tattooing for 12 years but he dedicated himself into tattooing in 100% 4 years ago. This amazing artist is based in Barcelona, SPAIN. His works are dusty and dark but mysteriously beautiful.",
-        "guestParagraph2": " We encourage you to see the tattoo gallery. :)",
-        "guestIg": "https://www.instagram.com/sztuka_wojny/",
-        "guestGalleryName": "sztuka"
     }
 ]
