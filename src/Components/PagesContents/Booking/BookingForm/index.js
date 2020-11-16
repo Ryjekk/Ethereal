@@ -24,10 +24,11 @@ const artist = [
 
 const guests = [
     {key: 'Roman', value: 'Roman'},
-    {key: 'Marta', value: 'Marta'},
+    {key: 'Bymosler', value: 'Bymosler'},
     {key: 'Oakbranch', value: 'Oakbranch'},
     {key: 'Prostolinijna', value: 'Prostolinijna'},
-    {key: 'Sianko', value: 'Sianko'}
+    {key: 'Sianko', value: 'Sianko'},
+    {key: 'SztukaWojny', value: 'SztukaWojny'}
 ]
 
 const initialValues = {

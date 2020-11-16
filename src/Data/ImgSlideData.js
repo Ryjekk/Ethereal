@@ -14,15 +14,6 @@ import pic12 from '../Assets/Profile/Anna/Tattoo/12.jpeg'
 import pic13 from '../Assets/Profile/Anna/Tattoo/13.jpeg'
 import pic14 from '../Assets/Profile/Anna/Tattoo/14.jpeg'
 import pic15 from '../Assets/Profile/Anna/Tattoo/15.jpeg'
-import pic16 from '../Assets/Profile/Anna/Tattoo/16.jpeg'
-import pic17 from '../Assets/Profile/Anna/Tattoo/17.jpeg'
-import pic18 from '../Assets/Profile/Anna/Tattoo/18.jpeg'
-import pic19 from '../Assets/Profile/Anna/Tattoo/19.jpeg'
-import pic20 from '../Assets/Profile/Anna/Tattoo/20.jpeg'
-import pic21 from '../Assets/Profile/Anna/Tattoo/21.jpeg'
-import pic22 from '../Assets/Profile/Anna/Tattoo/22.jpeg'
-import pic23 from '../Assets/Profile/Anna/Tattoo/23.jpeg'
-import pic24 from '../Assets/Profile/Anna/Tattoo/24.jpeg'
 
 // Myrra
 import pic1m from '../Assets/Profile/Myrra/Tattoo/1.jpg'
@@ -168,52 +159,7 @@ export const tattooAnna = [
         src: `${pic15}`,
         width: 1,
         height: 1
-    },
-    {
-        src: `${pic16}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic17}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic18}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic19}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic20}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic21}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic22}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic23}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic24}`,
-        width: 1,
-        height: 1
-    },
+    }
 ]
 
 export const tattooMyrra = [
