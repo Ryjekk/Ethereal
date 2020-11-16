@@ -34,7 +34,7 @@ const Join = () => {
                         <li>Desired date of visit</li>
                         <li>Why would you like to guest spot at Aura</li>
                         <li>Do you already have clients in Iceland / Have you been to Iceland before</li>
-                        <li>Tell as a bit about yourself (tattoo style, artistic background, guest experience etc.)</li>
+                        <li>Tell us a bit about yourself (tattoo style, artistic background, guest experience etc.)</li>
                     </ul>
                 </Paragraph>
             </JoinBox>

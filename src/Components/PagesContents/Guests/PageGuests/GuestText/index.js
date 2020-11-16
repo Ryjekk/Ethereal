@@ -7,13 +7,13 @@ const GuestText = () => {
         <GuestTextBox>
             <Heading style={{textAlign: "center"}}>Guest Spots</Heading>
             <Paragraph>
-                At Aura Tattoo we want to bring you some of the best tattoo artists in the business. They are specialise in a chosen style of tattooing. It is a privilege for us to be able to bring them to our studio in Reykjavik.
+                At Aura Tattoo we want to bring you some of the best tattoo artists in the business. They are specialise in a specific style of tattooing. It is a privilege for us to be able to bring them to our studio in Reykjavik.
             </Paragraph>
             <Paragraph>
                 Here you will find what tattoo artists will be visiting our studio in the future.
             </Paragraph>
             <Paragraph>
-                We will keep you informed about when a given artist will appear in the studio.  In the meantime, you can subscribe to the waiting list.
+                We will keep you informed about when a given artist will available at the studio. In the meantime, you can subscribe to the waiting list.
             </Paragraph>
         </GuestTextBox>
     )
