@@ -20,7 +20,7 @@ export const GuestBioTab = [
         "guestName": "November Oakbranch",
         "guestDates": "...Coming Soon",
         "guestParagraph1": "Fabrizio is tattooing since 5 years Basen in Turyn, ITALY.",
-        "guestParagraph2": "The tattoos he creates look delicate, romantic and mysterious. Thin lines and artwork elements, sophisticated words woven into the picture perfectly harmonize with each other, creating a composition that is unique.",
+        "guestParagraph2": "The tattoos he creates look delicate, romantic and mysterious. Thin lines and dotwork elements, sophisticated words woven into the picture perfectly harmonize with each other, creating a composition that is unique.",
         "guestIg": "https://www.instagram.com/novemberoakbranch/",
         "guestGalleryName": "oak"
     },
