@@ -1,26 +1,29 @@
+# Web Scrapper - Client Site [![Netlify Status](https://api.netlify.com/api/v1/badges/0666032a-5fec-4524-b57e-6da3943739d7/deploy-status)](https://app.netlify.com/sites/aurareykjavik/deploys)
+
+[Live Site](https://www.aurareykjavik.com/) 
+
+| Project for AuraTattoo studio based in Reykjavik Iceland.
+
+### Stack: 
+
+- ReactJS 16.13.x
+- Styled-components 5.1.x
+- Formik 2.2.x
+- Yup 0.29.x
+- React-photo-gallery 8.0.x
+- React-datepicker 3.3.x
+- React-spring 8.0.x
+- EmailJS 2.6.x
+
 ## Available Scripts
 
-In the project directory, you can run:
+To install locally follow the directions in the MongoDB documentation.
 
-##### `npm start`
+`npm install`
 
-##### `npm test`
+To run server
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npm start`
 
-##### `npm run build`
+![aura](/aura.png)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-http://neptunian.github.io/react-photo-gallery/api.html
-
-https://www.npmjs.com/package/react-photo-gallery
-
-https://github.com/neptunian/react-photo-gallery
