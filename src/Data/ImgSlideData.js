@@ -31,15 +31,6 @@ import pic12m from '../Assets/Profile/Myrra/Tattoo/12.jpg'
 import pic13m from '../Assets/Profile/Myrra/Tattoo/13.jpg'
 import pic14m from '../Assets/Profile/Myrra/Tattoo/14.jpg'
 import pic15m from '../Assets/Profile/Myrra/Tattoo/15.jpg'
-import pic16m from '../Assets/Profile/Myrra/Tattoo/16.jpg'
-import pic17m from '../Assets/Profile/Myrra/Tattoo/17.jpg'
-import pic18m from '../Assets/Profile/Myrra/Tattoo/18.jpg'
-import pic19m from '../Assets/Profile/Myrra/Tattoo/19.jpg'
-import pic20m from '../Assets/Profile/Myrra/Tattoo/20.jpg'
-import pic21m from '../Assets/Profile/Myrra/Tattoo/21.jpg'
-import pic22m from '../Assets/Profile/Myrra/Tattoo/22.jpg'
-import pic23m from '../Assets/Profile/Myrra/Tattoo/23.jpg'
-import pic24m from '../Assets/Profile/Myrra/Tattoo/24.jpg'
 
 // GUESTS
 // MARTA
@@ -237,52 +228,7 @@ export const tattooMyrra = [
         src: `${pic15m}`,
         width: 1,
         height: 1
-    },
-    {
-        src: `${pic16m}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic17m}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic18m}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic19m}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic20m}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic21m}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic22m}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic23m}`,
-        width: 1,
-        height: 1
-    },
-    {
-        src: `${pic24m}`,
-        width: 1,
-        height: 1
-    },
+    }
 ]
 
 export const tattooMarta = [
