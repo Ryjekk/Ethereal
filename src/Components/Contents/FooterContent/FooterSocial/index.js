@@ -7,7 +7,7 @@ import sprite from "../../../../Assets/Icons/sprite.svg";
 
 const FooterSocial = () => {
     return (
-        <>
+        <div>
             <MediumHeading>Follow</MediumHeading>
             <Social>
                 <SocialLink href="https://www.facebook.com/anikawr" target="_blank">
@@ -26,7 +26,7 @@ const FooterSocial = () => {
                     </svg>
                 </SocialLink>
             </Social>
-        </>
+        </div>
     )
 }
 

@@ -11,7 +11,7 @@ const FooterContent = () => {
     return (
         <InnerWrapper>
             {FooterData.map((el) => (
-                <>
+                <div>
                     <MediumHeading>{el.heading}</MediumHeading>
                     <Paragraph>
                         {el.paragraph_one}
@@ -33,7 +33,7 @@ const FooterContent = () => {
                     <Paragraph>
                         <a href={el.a_href_two} style={{textDecoration: "underline", color: "#f9f8f8"}}>{el.a_text_two}</a>
                     </Paragraph>
-                </>
+                </div>
             ))}
             <FooterSocial/>
         </InnerWrapper>
