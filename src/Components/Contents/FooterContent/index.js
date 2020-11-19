@@ -1,17 +1,17 @@
 import React from "react";
 import {Link}  from "react-router-dom";
 //Style
-import {InnerWrapper, Social, SocialLink} from './style';
+import {InnerWrapper} from './style';
 import {Options, Paragraph, MediumHeading} from "../../../Style";
-//Assets
-import sprite from '../../../Assets/Icons/sprite.svg'
+//Data
 import {FooterData} from "../../../Data/footerData";
+import FooterSocial from "./FooterSocial";
 
 const FooterContent = () => {
     return (
         <InnerWrapper>
             {FooterData.map((el) => (
-                <div>
+                <>
                     <MediumHeading>{el.heading}</MediumHeading>
                     <Paragraph>
                         {el.paragraph_one}
@@ -33,28 +33,9 @@ const FooterContent = () => {
                     <Paragraph>
                         <a href={el.a_href_two} style={{textDecoration: "underline", color: "#f9f8f8"}}>{el.a_text_two}</a>
                     </Paragraph>
-                </div>
+                </>
             ))}
-            <div>
-                <MediumHeading>Follow</MediumHeading>
-                <Social>
-                    <SocialLink href="https://www.facebook.com/anikawr" target="_blank">
-                        <svg>
-                            <use xlinkHref={sprite + "#fb"}></use>
-                        </svg>
-                    </SocialLink>
-                    <SocialLink href="https://www.instagram.com/aura.reykjavik/" target="_blank">
-                        <svg>
-                            <use xlinkHref={sprite + "#ig"}></use>
-                        </svg>
-                    </SocialLink>
-                    <SocialLink href="mailto:aura.reykjavik@gmail.com" target="_blank">
-                        <svg>
-                            <use xlinkHref={sprite + "#mail"}></use>
-                        </svg>
-                    </SocialLink>
-                </Social>
-            </div>
+            <FooterSocial/>
         </InnerWrapper>
     )
 };
