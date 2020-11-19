@@ -1,71 +1,63 @@
-import React, {Component} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 // Components
 import DivBtn from "../../UI/DivBtn";
 // Style
 import {DivideWrapper} from "./style";
 import {Paragraph, Heading, OptionsLink, SMButtonWrapper} from "../../../Style";
-
 // Assets
 import backPicAnna from '../../../Assets/Profile/Anna/AnnaBg1.jpg'
 import backPicMyrr from '../../../Assets/Profile/Myrra/MyrrBg1.jpg'
 import backPicFaq from '../../../Assets/Backgrounds/b2c.jpg'
 
-class DivideComponent extends Component{
-    render() {
-        let faqBtn = null;
-        let guestBtn = null;
-        let bgImg = null;
-        let guestHeight = null;
+const DivideComponent = props => {
+    const {text, paragraph} = props;
 
-        if (this.props.text === "FAQ") {
-            faqBtn =  (
-                <SMButtonWrapper>
-                    <DivBtn>
-                        <Link to='/faq'>
-                            <OptionsLink>
-                                FAQ
-                            </OptionsLink>
-                        </Link>
-                    </DivBtn>
-                </SMButtonWrapper>
-            )
-        }
+    let bgImg = null;
+    let guestHeight = null;
+    let mobileBtn = null
 
-        if (this.props.text === "OUR GUESTS") {
-            guestBtn = (
-                <SMButtonWrapper>
-                    <DivBtn>
-                        <Link to='/guests'>
-                            <OptionsLink>
-                                Check Artists
-                            </OptionsLink>
-                        </Link>
-                    </DivBtn>
-                </SMButtonWrapper>
-            )
-        }
-
-        if (this.props.text === "Anna") {
-            bgImg = backPicAnna
-        } else if (this.props.text === "Myrra") {
-            bgImg = backPicMyrr
-        } else if (this.props.text === "FAQ") {
-            bgImg = backPicFaq
-        }
-
-        if (this.props.text === "OUR GUESTS") {
-            guestHeight = "30vh"
-        }
-        return(
-            <DivideWrapper style={{backgroundImage: `url(${bgImg})`, height: `${guestHeight}`}}>
-                <Heading>{this.props.text}</Heading>
-                <Paragraph style={{textAlign: "center", padding: "0 20px"}}>{this.props.paragraph}</Paragraph>
-                {guestBtn}
-                {faqBtn}
-            </DivideWrapper>
+    const makeMobileBtn = (textInner, link) => {
+        mobileBtn = (
+            <SMButtonWrapper>
+                <DivBtn>
+                    <Link to={link}>
+                        <OptionsLink>
+                            {textInner}
+                        </OptionsLink>
+                    </Link>
+                </DivBtn>
+            </SMButtonWrapper>
         )
     }
+
+    if (text === "FAQ") {makeMobileBtn('FAQ', '/faq')}
+    if (text === "OUR GUESTS") {
+        makeMobileBtn('Check Artists', '/guests')
+        guestHeight = "30vh"
+    }
+
+    switch (text) {
+        case "Anna":
+            bgImg = backPicAnna
+            break;
+        case "Myrra":
+            bgImg = backPicMyrr
+            break;
+        case "FAQ":
+            bgImg = backPicFaq
+            break;
+        default:
+            bgImg = null;
+    }
+
+    return(
+        <DivideWrapper style={{backgroundImage: `url(${bgImg})`, height: `${guestHeight}`}}>
+            <Heading>{text}</Heading>
+            <Paragraph style={{textAlign: "center", padding: "0 20px"}}>{paragraph}</Paragraph>
+            {mobileBtn}
+        </DivideWrapper>
+    )
 }
 
 export default DivideComponent;
