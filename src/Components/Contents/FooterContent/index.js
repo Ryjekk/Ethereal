@@ -1,11 +1,11 @@
 import React from "react";
+import FooterSocial from "./FooterSocial";
 import {Link}  from "react-router-dom";
 //Style
 import {InnerWrapper} from './style';
 import {Options, Paragraph, MediumHeading} from "../../../Style";
 //Data
 import {FooterData} from "../../../Data/footerData";
-import FooterSocial from "./FooterSocial";
 
 const FooterContent = () => {
     return (
