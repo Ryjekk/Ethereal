@@ -7,7 +7,7 @@ import { Navigation, NavTopL, NavTopR, NavBotR, Logo } from './style'
 // import { NavBotL } from './style'
 import { Options } from '../../../Style'
 //Asets
-import LogoImg from '../../../Assets/logo.png'
+import LogoImg from '../../../Assets/Icons/logo.png'
 
 // TODO ADD text on :hoover animation
 
