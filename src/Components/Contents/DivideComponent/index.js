@@ -6,9 +6,9 @@ import DivBtn from "../../UI/DivBtn";
 import {DivideWrapper} from "./style";
 import {Paragraph, Heading, OptionsLink, SMButtonWrapper} from "../../../Style";
 // Assets
-import backPicAnna from '../../../Assets/Profile/Anna/AnnaBg1.JPG'
-import backPicMyrr from '../../../Assets/Profile/Myrra/MyrrBg1.JPG'
-import backPicFaq from '../../../Assets/Backgrounds/b2c.JPG'
+import backPicAnna from '../../../Assets/Profile/Anna/AnnaBg1.jpg'
+import backPicMyrr from '../../../Assets/Profile/Myrra/MyrrBg1.jpg'
+import backPicFaq from '../../../Assets/Backgrounds/b2c.jpg'
 
 const DivideComponent = props => {
     const {text, paragraph} = props;
