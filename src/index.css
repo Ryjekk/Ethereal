@@ -37,3 +37,8 @@ a {
 ::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
+
+/* Image galleries greyscale */
+.react-photo-gallery--gallery > div > img {
+  filter: grayscale(60%);
+}
