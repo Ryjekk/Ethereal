@@ -1,23 +1,21 @@
 import styled from "styled-components";
 import {QUERIES} from "../../../../Style";
 // Assets
-import bookingImg from '../../../../Assets/Panorama/panoOne.jpg';
+import bookingImg from '../../../../Assets/Backgrounds/b2a.JPG';
 
-
-// TODO same wrappers for pictures
+// todo fix parallax
 export const BookingImg = styled.div` 
     background-image: url(${bookingImg});
-    object-fit: cover;
-    background-attachment: fixed;
+    //object-fit: cover;
+    //background-attachment: fixed;
+    //background-size: contain;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    height: 45vh;
-    filter: grayscale(.5) brightness(.8);
+    background-position: bottom;
+    height: 35vh;
     
     @media (${QUERIES.medium}) {
         background-size: cover;
-        background-position: center;
+        height: 45vh;
     }
 `;
 

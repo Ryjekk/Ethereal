@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { COLORS, ColorSlide, TrackBallSlide, NudgeMouse, CenterBox } from "../../../Style";
-import bg from '../../../Assets/Backgrounds/b2m.jpg'
+import bg from '../../../Assets/Backgrounds/b2m.JPG'
 
 export const VideoEl = styled.video`
     width: 100%;
@@ -12,7 +12,10 @@ export const VideoEl = styled.video`
 export const Overlay = styled(CenterBox)`
     background-image: url(${bg});
     filter: grayscale(30%);
-    background-size: cover;
+    background-size: contain;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     top: 0;
     bottom: 0;
