@@ -13,6 +13,7 @@ import backPicFaq from '../../../Assets/Backgrounds/b2c.jpg'
 const DivideComponent = props => {
     const {text, paragraph} = props;
 
+    let bgPosition = null;
     let bgImg = null;
     let guestHeight = null;
     let mobileBtn = null
@@ -46,13 +47,14 @@ const DivideComponent = props => {
             break;
         case "FAQ":
             bgImg = backPicFaq
+            bgPosition = 'right'
             break;
         default:
             bgImg = null;
     }
 
     return(
-        <DivideWrapper style={{backgroundImage: `url(${bgImg})`, height: `${guestHeight}`}}>
+        <DivideWrapper style={{backgroundImage: `url(${bgImg})`,  backgroundPosition: `${bgPosition}`, height: `${guestHeight}`}}>
             <Heading>{text}</Heading>
             <Paragraph style={{textAlign: "center", padding: "0 20px"}}>{paragraph}</Paragraph>
             {mobileBtn}
