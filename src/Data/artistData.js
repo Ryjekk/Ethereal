@@ -1,11 +1,11 @@
 import AnnaImg from '../Assets/Profile/Anna/AnnaImg.jpg'
 import MyraImg from '../Assets/Profile/Myrra/MyraImg.jpg'
-import Placeholder from '../Assets/Backgrounds/b00.jpg'
+import PolaImg from '../Assets/Profile/Pola/PolaImg.jpg'
 
 export const ArtistData = [
     {
         "ima": `${AnnaImg}`,
-        "heading": "Ethereal.tattoo",
+        "heading": "ethereal.tattoo",
         "btn_text": "View gallery",
         'btn_link': '/anna',
         'paragraph_one': 'You may know me under the artistic pseudonym Ethereal tattoo.',
@@ -14,18 +14,18 @@ export const ArtistData = [
     },
     {
         "ima": `${MyraImg}`,
-        "heading": "Myrk.ink",
+        "heading": "myrk.ink",
         "btn_text": "View gallery",
         'btn_link': '/myrra',
         'paragraph_one': 'Hi! I am Myrra Rós of MYRK INK. Through the past years I have been a musician, a woodworking artist for my small brand Fjaðrafok and an illustrator of many years.',
         "paragraph_two": "I have been on the way to learn the trade of tattooing for years and I decided now is the right time to include tattooing as a part of my craftsmanship. My main focus is black & gray illustrative pieces with focus on linework and dotwork to create my designs. I am exited to meet all of you at Aura Reykjavík and hope to be able to produce beautiful, unique art for you guys in the future!\n"
     },
     {
-        "ima": `${Placeholder}`,
-        "heading": "Join Us!",
-        "btn_text": "Apply",
-        'btn_link': '/join',
-        'paragraph_one': 'Do you want to work with us?',
-        "paragraph_two": `Go ahead and send us your CV! We are waiting for you (ᴏ˘◡˘ᴏ)`,
+        "ima": `${PolaImg}`,
+        "heading": "eerie.m_tattoo",
+        "btn_text": "Gallery soon...",
+        'btn_link': '/',
+        'paragraph_one': '(ᴏ˘◡˘ᴏ)',
+        "paragraph_two": ``,
     },
 ]
