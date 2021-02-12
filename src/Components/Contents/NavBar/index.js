@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Drawer from "./Drawer";
 //Style
 import { Navigation, NavTopL, NavTopR, NavBotR, Logo } from './style'
-// import { NavBotL } from './style'
 import { Options } from '../../../Style'
 //Asets
 import LogoImg from '../../../Assets/Icons/logo.png'
@@ -40,8 +39,8 @@ class Navbar extends React.Component {
                 </NavTopR>
                     {linkDrawer}
                 {/*<NavBotL>*/}
-                {/*    <Link to='/about'>*/}
-                {/*        <Options>三 About</Options>*/}
+                {/*    <Link to='/shop'>*/}
+                {/*        <Options>三 Shop</Options>*/}
                 {/*    </Link>*/}
                 {/*</NavBotL>*/}
                 <NavBotR>

@@ -16,7 +16,7 @@ import pic14 from '../Assets/Profile/Anna/Tattoo/14.jpeg'
 import pic15 from '../Assets/Profile/Anna/Tattoo/15.jpeg'
 
 // Myrra
-import pic1m from '../Assets/Profile/Myrra/Tattoo/1.jpg'
+// import pic1m from '../Assets/Profile/Myrra/Tattoo/1.jpg'
 import pic2m from '../Assets/Profile/Myrra/Tattoo/2.jpg'
 import pic3m from '../Assets/Profile/Myrra/Tattoo/3.jpg'
 import pic4m from '../Assets/Profile/Myrra/Tattoo/4.jpg'
@@ -31,6 +31,23 @@ import pic12m from '../Assets/Profile/Myrra/Tattoo/12.jpg'
 import pic13m from '../Assets/Profile/Myrra/Tattoo/13.jpg'
 import pic14m from '../Assets/Profile/Myrra/Tattoo/14.jpg'
 import pic15m from '../Assets/Profile/Myrra/Tattoo/15.jpg'
+
+// POLA
+import pic1p from '../Assets/Profile/Pola/Tattoo/1.jpg'
+import pic2p from '../Assets/Profile/Pola/Tattoo/2.jpg'
+import pic3p from '../Assets/Profile/Pola/Tattoo/3.jpg'
+import pic4p from '../Assets/Profile/Pola/Tattoo/4.jpg'
+import pic5p from '../Assets/Profile/Pola/Tattoo/5.jpg'
+import pic6p from '../Assets/Profile/Pola/Tattoo/6.jpg'
+import pic7p from '../Assets/Profile/Pola/Tattoo/7.jpg'
+import pic8p from '../Assets/Profile/Pola/Tattoo/8.jpg'
+import pic9p from '../Assets/Profile/Pola/Tattoo/9.jpg'
+import pic10p from '../Assets/Profile/Pola/Tattoo/10.jpg'
+import pic11p from '../Assets/Profile/Pola/Tattoo/11.jpg'
+import pic12p from '../Assets/Profile/Pola/Tattoo/12.jpg'
+import pic13p from '../Assets/Profile/Pola/Tattoo/13.jpg'
+import pic14p from '../Assets/Profile/Pola/Tattoo/14.jpg'
+import pic15p from '../Assets/Profile/Pola/Tattoo/15.jpg'
 
 // GUESTS
 // MARTA
@@ -154,11 +171,11 @@ export const tattooAnna = [
 ]
 
 export const tattooMyrra = [
-    {
-        src: `${pic1m}`,
-        width: 1,
-        height: 1
-    },
+    // {
+    //     src: `${pic1m}`,
+    //     width: 1,
+    //     height: 1
+    // },
     {
         src: `${pic2m}`,
         width: 1,
@@ -230,6 +247,84 @@ export const tattooMyrra = [
         height: 1
     }
 ]
+
+export const tottooPola = [
+    {
+        src: `${pic1p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic2p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic3p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic4p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic5p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic6p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic7p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic8p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic9p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic10p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic11p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic12p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic13p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic14p}`,
+        width: 1,
+        height: 1
+    },
+    {
+        src: `${pic15p}`,
+        width: 1,
+        height: 1
+    }
+    ]
 
 export const tattooMarta = [
     {
