@@ -8,6 +8,7 @@ import {Paragraph, Heading, OptionsLink, SMButtonWrapper} from "../../../Style";
 // Assets
 import backPicAnna from '../../../Assets/Profile/Anna/AnnaBg1.jpg'
 import backPicMyrr from '../../../Assets/Profile/Myrra/MyrrBg1.jpg'
+import backPicPol from '../../../Assets/Profile/Pola/PolaBg2.jpg'
 import backPicFaq from '../../../Assets/Backgrounds/b2c.jpg'
 
 const DivideComponent = props => {
@@ -44,6 +45,9 @@ const DivideComponent = props => {
             break;
         case "Myrra":
             bgImg = backPicMyrr
+            break;
+        case 'Eerie.m':
+            bgImg = backPicPol
             break;
         case "FAQ":
             bgImg = backPicFaq

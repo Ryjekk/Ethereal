@@ -13,7 +13,7 @@ import pic11 from '../Assets/Profile/Anna/Tattoo/11.jpeg'
 import pic12 from '../Assets/Profile/Anna/Tattoo/12.jpeg'
 import pic13 from '../Assets/Profile/Anna/Tattoo/13.jpeg'
 import pic14 from '../Assets/Profile/Anna/Tattoo/14.jpeg'
-import pic15 from '../Assets/Profile/Anna/Tattoo/15.jpeg'
+// import pic15 from '../Assets/Profile/Anna/Tattoo/15.jpeg'
 
 // Myrra
 // import pic1m from '../Assets/Profile/Myrra/Tattoo/1.jpg'
@@ -47,7 +47,7 @@ import pic11p from '../Assets/Profile/Pola/Tattoo/11.jpg'
 import pic12p from '../Assets/Profile/Pola/Tattoo/12.jpg'
 import pic13p from '../Assets/Profile/Pola/Tattoo/13.jpg'
 import pic14p from '../Assets/Profile/Pola/Tattoo/14.jpg'
-import pic15p from '../Assets/Profile/Pola/Tattoo/15.jpg'
+// import pic15p from '../Assets/Profile/Pola/Tattoo/15.jpg'
 
 // GUESTS
 // MARTA
@@ -163,11 +163,11 @@ export const tattooAnna = [
         width: 1,
         height: 1
     },
-    {
-        src: `${pic15}`,
-        width: 1,
-        height: 1
-    }
+    // {
+    //     src: `${pic15}`,
+    //     width: 1,
+    //     height: 1
+    // }
 ]
 
 export const tattooMyrra = [
@@ -319,11 +319,11 @@ export const tottooPola = [
         width: 1,
         height: 1
     },
-    {
-        src: `${pic15p}`,
-        width: 1,
-        height: 1
-    }
+    // {
+    //     src: `${pic15p}`,
+    //     width: 1,
+    //     height: 1
+    // }
     ]
 
 export const tattooMarta = [
