@@ -9,8 +9,8 @@ export const ArtistData = [
         "btn_text": "View gallery",
         'btn_link': '/anna',
         'paragraph_one': 'You may know me under the artistic pseudonym Ethereal tattoo.',
-        "paragraph_two": "I am the owner of AURA and one of the tattoo artists in the studio. I have been creating since I remember ( painting, drawing, making graphic designs), and I have translated my curiosity and desire to develop into tattoos. So 4 years ago my adventure with this type of art started for good. My works are illustrative, delicate, focused in detailes. I use extreme fine lines and dotwork for give the character to them. Sometimes I also tattoo tiny, colorful botanical designes, although I mainly work in black colour.",
-        "paragraph_three": "I create my own flashes and customize designs as well Nature, emotions and spirituality are my great inspiration. I will be glad to get to know your vision for next tattoo and I will try to meet your expectations as best as I can. :)"
+        "paragraph_two": "I am the creator of AURA - a warm and loving place that was invented to bring together creative souls, share the energy and space for magic to happen. I am a zodiac Virgo, An Earth sign. Even if I look at life through the prism of poetry I try to keep my feet firmly on the ground And this is what I want to convey in my art. Beauty with all kinds of cracks. The truth in all its glory.",
+        "paragraph_three": "I have been creating since I can remember ( painting, drawing, graphic designs). I have decided to transform my curiosity and desire to develop into tattooing. And so 4 years ago my adventure with this type of art started for good. My works are illustrative, delicate and focused on details. I use extreme fine lines and dotwork to give unique character to my tattoos. I create my own flashes and customize designs. My great inspirations are nature, emotions and spirituality. I will be glad to get to know your vision for the next tattoo and I will try to meet your expectations as best as I can. :)"
     },
     {
         "ima": `${MyraImg}`,
@@ -23,9 +23,9 @@ export const ArtistData = [
     {
         "ima": `${PolaImg}`,
         "heading": "eerie.m_tattoo",
-        "btn_text": "Gallery soon...",
+        "btn_text": "View gallery",
         'btn_link': '/eerie',
-        'paragraph_one': '(ᴏ˘◡˘ᴏ)',
-        "paragraph_two": ``,
+        'paragraph_one': 'I\'m Pola Maria, known as eerie mydriasis. I am an visual artist and a handpoker. Through my art I study Planet Earth and the journey of searching souls. I find my spirit in Mother Nature, sounds of eternity, transiency of existence and antient wisdom.',
+        "paragraph_two": `I have recently began my journey with tattooing, as I decided to work with human body and soul in more direct way. In my works I mirror whats beautiful and meaningful. I am detail oriented artist who finds inspirations in what’s invisible as well as living creatures, like the ones, that come from the sea. I trust in the wisdom on the Universe, and so I am letting it guide me. As above so below.`,
     },
 ]

@@ -5,7 +5,7 @@ export const FaqPageData = [
   },
   {
     "question": "+ How does the custom design work?",
-    "answer": "Describe your idea well, with placement and size of the tattoo. You can also send us recent pictures of the tattoo. Please describe it in details !!. Artist will show you the design/sketch on the day of the session, or will draw directly on your skin following your idea."
+    "answer": "Describe your idea well, with placement and size of the tattoo. You can send us inspirations and ideas regarding the design. Please describe it in details ! Artist will show you the design/sketch on the day of the session, or will draw directly on your skin following your idea."
   },
   {
     "question": "+ How does the deposit work?",
@@ -30,7 +30,7 @@ export const FaqPageData = [
   },
   {
     "question": "+ What will I need the day of my tattoo? ",
-    "answer": "You will need to bring an acceptable form of identification, ID. We recommend you come we’ll-rested, well-hydrated to your appointment. Please read through our COVID-19 policies before visiting the studio."
+    "answer": "You will need to bring an acceptable form of identification, ID. We recommend you to come well-rested, and well-hydrated to your appointment. Please read through our COVID-19 policy before visiting the studio."
   },
   {
     "question": "+ How to take care of the tattoo?",
@@ -49,7 +49,7 @@ export const FaqDataLeft = [
   },
   {
     "question": "How does the custom design work?",
-    "answer": "Describe your idea well, with placement and size of the tattoo. You can also send us recent pictures of the tattoo. Please describe it in details !!. Artist will show you the design/sketch on the day of the session, or will draw directly on your skin following your idea."
+    "answer": "Describe your idea well, with placement and size of the tattoo. You can send us inspirations and ideas regarding the design. Please describe it in details ! Artist will show you the design/sketch on the day of the session, or will draw directly on your skin following your idea."
   },
   {
     "question": "How does the deposit work?",
@@ -76,7 +76,7 @@ export const FaqDataRight = [
   },
   {
     "question": "What will I need the day of my tattoo? ",
-    "answer": "You will need to bring an acceptable form of identification, ID. We recommend you come we’ll-rested, well-hydrated to your appointment. Please read through our COVID-19 policies before visiting the studio."
+    "answer": "You will need to bring an acceptable form of identification, ID. We recommend you to come well-rested, and well-hydrated to your appointment. Please read through our COVID-19 policy before visiting the studio."
   },
   {
     "question": "How to take care of the tattoo?",
