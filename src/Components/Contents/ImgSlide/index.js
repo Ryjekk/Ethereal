@@ -5,6 +5,7 @@ import Gallery from "react-photo-gallery";
 import {
     tattooAnna,
     tattooMarta,
+    tottooPola,
     tattooMyrra,
     tattooOak,
     tattooRoman,
@@ -27,7 +28,12 @@ function ImgSlide(props) {
         } else if (person === 'myrra') {
             setGallery(tattooMyrra)
             setRowHeight(280)
-        } else if (person === 'marta') {
+        }
+        else if (person === 'pola') {
+            setGallery(tottooPola)
+            setRowHeight(280)
+        }
+        else if (person === 'marta') {
             setGallery(tattooMarta)
             setRowHeight(100)
         } else if (person === 'roman') {

@@ -24,7 +24,7 @@ export const ArtistData = [
         "ima": `${PolaImg}`,
         "heading": "eerie.m_tattoo",
         "btn_text": "Gallery soon...",
-        'btn_link': '/',
+        'btn_link': '/eerie',
         'paragraph_one': '(ᴏ˘◡˘ᴏ)',
         "paragraph_two": ``,
     },
