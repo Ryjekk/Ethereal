@@ -1,34 +1,35 @@
-import React from "react";
-import { Formik, ErrorMessage } from "formik";
+import React, {useState} from "react";
+import { Formik , Field } from "formik";
 import FormikControll from "./components/FormikContoll";
 import * as Yup from 'yup'
 import emailjs from 'emailjs-com';
 import {
-    FormInput,
     FormLabel,
     FormWrapper,
     FormButton,
-    FormFieldset, FormStyled, ErrorSpan
+    FormStyled
 } from "./stye";
+import { TextField } from 'formik-material-ui';
+import {MuiPickersUtilsProvider} from "@material-ui/pickers";
+import DateFnsUtils from "@date-io/date-fns";
 import './style.css'
+import Popup from "./components/popup";
 
 const design = [
-    {key: 'Flashworks', value: 'Flashworks'},
-    {key: 'Custom Design', value: 'Custom Design'}
+    'Flashworks', 'Custom Design'
 ]
 
 const artist = [
-    {key: 'Anna', value: 'Anna'},
-    {key: 'Myrra', value: 'Myrra'}
+    'Anna', 'Myrra', 'Eerie.m'
 ]
 
 const guests = [
-    {key: 'Roman', value: 'Roman'},
-    {key: 'Bymosler', value: 'Bymosler'},
-    {key: 'Oakbranch', value: 'Oakbranch'},
-    {key: 'Prostolinijna', value: 'Prostolinijna'},
-    {key: 'Sianko', value: 'Sianko'},
-    {key: 'SztukaWojny', value: 'SztukaWojny'}
+    'Roman',
+    'Bymosler',
+    'Oakbranch',
+    'Prostolinijna',
+    'Sianko',
+    'SztukaWojny',
 ]
 
 const initialValues = {
@@ -45,24 +46,6 @@ const initialValues = {
     howyoufindus: '',
     date: null
 }
-// todo api key
-function sendEmail(data) {
-    const apiKey = process.env.REACT_APP_API_KEY;
-    emailjs.send('etherealtattoo', 'etheraltattoo', data, `${apiKey}`)
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            alert(`🤯 There was problem with submitting your form, please try again. SERVER ERROR`)
-            console.log(error.text);
-        });
-}
-
-const onSubmit = (values, onSubmitProps) => {
-    // console.log(values)
-    const data = JSON.parse(JSON.stringify(values))
-    sendEmail(data)
-    onSubmitProps.resetForm()
-}
 
 const validationSchema = Yup.object({
     name: Yup.string().required('Required'),
@@ -75,8 +58,31 @@ const validationSchema = Yup.object({
 })
 
 const BookingForm = () => {
+    const [showPopup, SetPopup] = useState(false)
+
+    const sendEmail = (data) => {
+        const apiKey = process.env.REACT_APP_API_KEY;
+        emailjs.send('etherealtattoo', 'etheraltattoo', data, `${apiKey}`)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                alert(`🤯 There was problem with submitting your form, please try again. SERVER ERROR`)
+                console.log(error.text);
+            });
+    }
+
+    const onSubmit = (values, onSubmitProps) => {
+        const date = values.date.toUTCString();
+        const transformedData = {...values, date}
+        const data = JSON.parse(JSON.stringify(transformedData))
+        sendEmail(data)
+        onSubmitProps.resetForm()
+        SetPopup(true)
+    }
 
     return (
+        <MuiPickersUtilsProvider utils={DateFnsUtils}>
+            {showPopup === false ? '' : <Popup/>}
         <FormWrapper>
             <Formik
                 initialValues={initialValues}
@@ -86,25 +92,29 @@ const BookingForm = () => {
                 <FormStyled>
                     {/* Name */}
                     <FormLabel htmlFor="name"/>
-                    <FormInput
+                    <Field
+                        component={TextField}
+                        variant='outlined'
                         id="name"
                         name="name"
                         type="text"
                         placeholder="Full Name *"
                     />
-                    <ErrorMessage name="name" component={ErrorSpan}/>
                     {/* Email */}
                     <FormLabel htmlFor="email"/>
-                    <FormInput
+                    <Field
+                        component={TextField}
+                        variant='outlined'
                         id="email"
                         name="email"
                         type="text"
                         placeholder="Your email *"
                     />
-                    <ErrorMessage name='email' component={ErrorSpan}/>
                     {/* Phone */}
                     <FormLabel htmlFor="phone"/>
-                    <FormInput
+                    <Field
+                        component={TextField}
+                        variant='outlined'
                         id="phone"
                         name="phone"
                         type="text"
@@ -112,65 +122,65 @@ const BookingForm = () => {
                     />
                     {/* From */}
                     <FormLabel htmlFor="etnicity"/>
-                    <FormInput
+                    <Field
+                        component={TextField}
+                        variant='outlined'
                         id="etnicity"
                         name="etnicity"
                         type="text"
                         placeholder="Are you Local or Tourist"
                     />
                     {/* Artist*/}
-                    <FormFieldset>
                         <FormikControll
-                            control="checkbox"
+                            control="select"
                             label='Select Artists *'
                             name='artist'
+                            multiselect={true}
                             options={artist}
                         />
-                    </FormFieldset>
                     {/* Guests*/}
-                    <FormFieldset>
                         <FormikControll
-                            control="checkbox"
+                            control="select"
                             label='Select Guests'
                             name='guests'
+                            multiselect={true}
                             options={guests}
                         />
-                    </FormFieldset>
                     {/* Placement */}
                     <FormLabel htmlFor="placement"/>
-                    <FormInput
+                    <Field
+                        component={TextField}
+                        variant='outlined'
                         id="placement"
                         name="placement"
                         type="text"
                         placeholder="Placement on your Body *"
                     />
-                    <ErrorMessage name='placement' component={ErrorSpan}/>
                     {/* Size */}
                     <FormLabel htmlFor="size"/>
-                    <FormInput
+                    <Field
+                        component={TextField}
+                        variant='outlined'
                         id="size"
                         name="size"
                         type="text"
                         placeholder="Approximate Size (in cm) *"
                     />
-                    <ErrorMessage name='size' component={ErrorSpan}/>
                     {/* Design */}
-                    <FormFieldset>
                         <FormikControll
-                            control='radio'
+                            control="select"
+                            multiselect={false}
                             label='Flashwork or custom design? *'
                             name='design'
                             options={design}
                         />
-                    </FormFieldset>
+
                     {/* Date */}
-                    <FormFieldset>
                         <FormikControll
                             control="date"
                             label="Pick a date * [for the guest spot artist you will be subscribed to the waiting list]"
                             name="date"
                         />
-                    </FormFieldset>
                     {/* Desc */}
                     <FormikControll
                         control='textarea'
@@ -179,7 +189,9 @@ const BookingForm = () => {
                     />
                     {/* How */}
                     <FormLabel htmlFor="source"/>
-                    <FormInput
+                    <Field
+                        component={TextField}
+                        variant='outlined'
                         id="howyoufindus"
                         name="howyoufindus"
                         type="text"
@@ -189,6 +201,7 @@ const BookingForm = () => {
                 </FormStyled>
             </Formik>
         </FormWrapper>
+        </MuiPickersUtilsProvider>
     )
 }
 

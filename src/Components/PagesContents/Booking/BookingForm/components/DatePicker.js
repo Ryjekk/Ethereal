@@ -1,33 +1,14 @@
 import React from "react";
-import DateView from 'react-datepicker'
-import 'react-datepicker/dist/react-datepicker.css'
-import {ErrorMessage} from "formik";
-import {ErrorSpan, FormInput, FormLabel} from "../stye";
+import {Field} from "formik";
+import {DatePicker as PickerDate} from 'formik-material-ui-pickers';
+
 
 const DatePicker = (props) => {
     const {label, name, ...rest} = props
     return(
         <>
-            <legend>{label}</legend>
-            <FormLabel htmlFor={name}/>
-            <FormInput name={name}>
-                {
-                    ({form, field}) => {
-                        const { setFieldValue } = form
-                        const { value } = field
-                        return <DateView
-                            id={name}
-                            {...field}
-                            {...rest}
-                            selected={value}
-                            onChange={val => setFieldValue(name, val)}
-                        />
-                    }
-                }
-            </FormInput>
-            <ErrorMessage name={name} component={ErrorSpan}/>
+            <Field component={PickerDate} name={name} label={label} style={{marginBottom: "10px"}} />
         </>
     )
 }
-
 export default DatePicker;
