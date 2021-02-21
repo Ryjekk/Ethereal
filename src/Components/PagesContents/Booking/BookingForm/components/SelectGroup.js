@@ -5,7 +5,7 @@ import {InputLabel, MenuItem, FormControl} from '@material-ui/core';
 import {Select} from 'formik-material-ui';
 
 const SelectGroup = (props) => {
-    const {label, name, options, multiselect, ...rest} = props
+    const {label, name, options, multiselect} = props
     return(
         <FormControl style={{margin: '10px 0'}}>
             <InputLabel htmlFor="tags" style={{ color: '#4e5559'}}>
