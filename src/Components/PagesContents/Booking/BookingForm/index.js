@@ -179,9 +179,10 @@ const BookingForm = () => {
                     {/* Date */}
                         <FormikControll
                             control="date"
-                            label="Pick a date * [for the guest spot artist you will be subscribed to the waiting list]"
+                            label="Pick a date *"
                             name="date"
                         />
+                    <FormLabel>[for the guest spot artist you will be subscribed to the waiting list]</FormLabel>
                     {/* Desc */}
                     <FormikControll
                         control='textarea'
