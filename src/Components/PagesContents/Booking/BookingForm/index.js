@@ -60,11 +60,13 @@ const validationSchema = Yup.object({
 const BookingForm = () => {
     const [showPopup, SetPopup] = useState(false)
 
-    const sendEmail = (data) => {
+    const sendEmail = (data, onSubmitProps) => {
         const apiKey = process.env.REACT_APP_API_KEY;
         emailjs.send('etherealtattoo', 'etheraltattoo', data, `${apiKey}`)
             .then((result) => {
                 console.log(result.text);
+                onSubmitProps.resetForm()
+                SetPopup(true)
             }, (error) => {
                 alert(`🤯 There was problem with submitting your form, please try again. SERVER ERROR`)
                 console.log(error.text);
@@ -75,9 +77,8 @@ const BookingForm = () => {
         const date = values.date.toUTCString();
         const transformedData = {...values, date}
         const data = JSON.parse(JSON.stringify(transformedData))
-        sendEmail(data)
-        onSubmitProps.resetForm()
-        SetPopup(true)
+        sendEmail(data, onSubmitProps)
+        // onSubmitProps.resetForm()
     }
 
     return (
