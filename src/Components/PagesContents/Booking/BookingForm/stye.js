@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {COLORS, QUERIES, FONTS, CenterBox} from "../../../../Style";
-import {Form, Field } from "formik";
+import {Form} from "formik";
 
 export const FormWrapper = styled(CenterBox)`
     font-family: Arial;
@@ -16,51 +16,11 @@ export const FormStyled = styled(Form)`
     position: relative;
 `;
 
-export const FormFieldset = styled.fieldset`
-    border: 1px solid ${COLORS.darkestGray};
-    border-radius: 5px;
-    margin 20px 0;
-
-    legend {
-        color: ${COLORS.darkGray};
-        padding: 10px 20px;
-    }
-
-    label {
-        color: ${COLORS.darkGray};
-        padding-right: 15px;
-    }
-
-    input {
-        margin-right: 10px;
-    }
-`;
-
 export const FormLabel = styled.label`
     color: ${COLORS.darkGray};
-    padding-bottom: 10px;
+    padding-top: 10px;
 `;
 
-export const FormInput = styled(Field)`
-    color: ${COLORS.darkGray};
-    padding: 10px 0;
-    font-size: 16px;
-    margin: 0 0 15px 0;
-    border: none;
-    border-bottom: 1px solid ${COLORS.darkestGray};
-    outline: none;
-    background: rgba(255,255,255, .01);
-    border-radius: 5px;
-    padding-left: 15px;
-    width: 100%;
-
-    &::after {
-        color: orangered;
-        content: "*";
-        opacity: 1;
-        margin: -15px 0 0 4px;
-    }
-`;
 
 export const FormButton = styled.button`
     align-self: center;

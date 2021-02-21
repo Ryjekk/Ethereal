@@ -42,3 +42,18 @@ a {
 .react-photo-gallery--gallery > div > img {
   filter: grayscale(60%);
 }
+
+/*// MATERIAL UI STYLES */
+.MuiInputBase-root {
+  color: #eee !important;
+}
+
+.MuiOutlinedInput-root {
+  border: 1px solid #4e5559;
+}
+.MuiInput-underline:before {
+  border-bottom: 1px solid #4e5559 !important;
+}
+.MuiInputLabel-animated {
+  color:#4e5559 !important;
+}
