@@ -57,3 +57,16 @@ a {
 .MuiInputLabel-animated {
   color:#4e5559 !important;
 }
+.Mui-error {
+  border-color: transparent;
+}
+.MuiInput-underline:after {
+  border-bottom-color: #ae8f94 !important;
+}
+.Mui-focused fieldset {
+  border-color: #ae8f94 !important;
+}
+/*// MATERIAL UI DATEPICKER*/
+.MuiPickersToolbar-toolbar, .MuiPickersDay-daySelected {
+  background-color: #ae8f94 !important;
+}
