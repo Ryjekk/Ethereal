@@ -53,7 +53,7 @@ const validationSchema = Yup.object({
     placement: Yup.string().required('Required'),
     size: Yup.string().required('Required'),
     design: Yup.string().required('Required'),
-    artist: Yup.array().required('Required'),
+    // artist: Yup.array().required('Required'),
     date: Yup.date().required('Required').nullable(),
 })
 
@@ -134,7 +134,7 @@ const BookingForm = () => {
                     {/* Artist*/}
                         <FormikControll
                             control="select"
-                            label='Select Artists *'
+                            label='Select Artists'
                             name='artist'
                             multiselect={true}
                             options={artist}
