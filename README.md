@@ -7,6 +7,7 @@
 ### Stack: 
 
 - ReactJS 16.13.x
+- GraphQL 15.5.x
 - Styled-components 5.1.x
 - Formik 2.2.x
 - Yup 0.29.x
@@ -14,6 +15,7 @@
 - React-datepicker 3.3.x
 - React-spring 8.0.x
 - EmailJS 2.6.x
+- Strapi
 
 ## Available Scripts
 
