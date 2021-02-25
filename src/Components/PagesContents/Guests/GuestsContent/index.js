@@ -6,25 +6,31 @@ import DivBtn from "../../../UI/DivBtn";
 import {GuestBox, GuestWrap, GuestImage, GuestTextBox} from "./style"
 import {ArtistButtonWrapper} from "../../Artist/style";
 import {OptionsLink} from "../../../../Style";
-// Assets
-import {GuestData} from '../../../../Data/guestsData'
+// GQL
+import { useQuery } from "@apollo/react-hooks";
+import GUEST_QUERY from "../../../../queries/guestQuery";
 
 const GuestsContent = () => {
+    const {data, loading, error} = useQuery(GUEST_QUERY);
+    if (loading) return 'Loading...';
+    if (error) return `Error! ${error.message}`;
+    const {guestPageData} = data
 
     return (
         <GuestWrap>
-            {GuestData.map((el) => (
+            {guestPageData.map((el) => (
                 <GuestBox>
-                    <GuestImage src={el.ima}/>
+                    {/*todo channge this string*/}
+                    <GuestImage src={`http://localhost:1337${el.guestImg[0].url}`}/>
                     <GuestTextBox>
                         {/*<MediumHeading>*/}
                         {/*    {el.heading}*/}
                         {/*</MediumHeading>*/}
                         <ArtistButtonWrapper>
                             <DivBtn>
-                                <Link to={el.btn_link}>
+                                <Link to='/guests'>
                                     <OptionsLink>
-                                        {el.btn_text}
+                                        {el.guestName}
                                     </OptionsLink>
                                 </Link>
                             </DivBtn>

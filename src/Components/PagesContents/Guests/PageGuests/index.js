@@ -2,16 +2,22 @@ import React from "react";
 import {Inner} from "../../../../Style";
 import GuestText from "./GuestText";
 import GuestBio from "./GuestBio";
-
-import {GuestBioTab} from '../../../../Data/guestBioTab'
+// GQL
+import { useQuery } from "@apollo/react-hooks";
+import GUEST_QUERY from "../../../../queries/guestQuery";
 
 const PageGuests = () => {
+    const {data, loading, error} = useQuery(GUEST_QUERY);
+    if (loading) return 'Loading...';
+    if (error) return `Error! ${error.message}`;
+    const {guestPageData} = data
+
     return (
         <Inner>
             <GuestText/>
-            {GuestBioTab.map(el => (
+            {guestPageData.map(el => (
                 <GuestBio
-                    guestImg={el.guestImg}
+                    guestImg={`http://localhost:1337${el.guestImg[0].url}`}
                     guestName={el.guestName}
                     guestDates={el.guestDates}
                     guestParagraph1={el.guestParagraph1}

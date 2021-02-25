@@ -1,16 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 // Style
 import {Inner, SmallHeading} from "../../../../Style";
 import { InnerFaq, FaqHeading, Question, Answer } from './style'
 import '../../../../index.css'
-// Assets
-import { FaqPageData } from '../../../../Data/faqData'
-
-const {useState} = React;
+// GQL
+import { useQuery } from "@apollo/react-hooks";
+import FAQ_QUERY from "../../../../queries/faqQuery";
 
 const FaqPage = () => {
-    const faqs = FaqPageData;
     const [ selectedQuestion, toggleQuestion ] = useState(-1);
+
+    const {data, loading, error} = useQuery(FAQ_QUERY);
+    if (loading) return 'Loading...';
+    if (error) return `Error! ${error.message}`;
+    const faqs = data.faqMainData;
+
 
     function openQuestion(index) {
         toggleQuestion(selectedQuestion === index ? -1 : index);
