@@ -5,16 +5,22 @@ import DivBtn from "../../../UI/DivBtn";
 // Style
 import {ArtistBox, ArtistImage, ArtistWrap, ArtistButtonWrapper} from "../style";
 import {Paragraph, MediumHeading, OptionsLink} from "../../../../Style";
-// Assets
-import {ArtistData} from "../../../../Data/artistData";
+// GQL
+import { useQuery } from "@apollo/react-hooks";
+import TEAM_QUERY from "../../../../queries/teamQuery";
 
 const ArtistContent = () => {
-
+    const {data, loading, error} = useQuery(TEAM_QUERY);
+    if (loading) return 'Loading...';
+    if (error) return `Error! ${error.message}`;
+    const {mainArtistsData} = data;
+    console.log(data)
     return (
         <ArtistWrap>
-            {ArtistData.map((el) => (
+            {/*TODO link remove*/}
+            {mainArtistsData.map((el) => (
                 <ArtistBox>
-                    <ArtistImage src={el.ima}/>
+                    <ArtistImage src={`http://localhost:1337${el.ima[0].url}`}/>
                     <MediumHeading>
                         {el.heading}
                     </MediumHeading>

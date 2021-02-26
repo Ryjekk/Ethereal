@@ -14,6 +14,7 @@ const PageGuests = () => {
 
     return (
         <Inner>
+            {/*todo channge this string*/}
             <GuestText/>
             {guestPageData.map(el => (
                 <GuestBio
