@@ -9,7 +9,6 @@ import {Paragraph, MediumHeading, OptionsLink} from "../../../../Style";
 import {ArtistData} from "../../../../Data/artistData";
 
 const ArtistContent = () => {
-
     return (
         <ArtistWrap>
             {ArtistData.map((el) => (
