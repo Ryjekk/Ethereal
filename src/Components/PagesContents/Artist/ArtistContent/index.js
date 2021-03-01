@@ -5,16 +5,13 @@ import DivBtn from "../../../UI/DivBtn";
 // Style
 import {ArtistBox, ArtistImage, ArtistWrap, ArtistButtonWrapper} from "../style";
 import {Paragraph, MediumHeading, OptionsLink} from "../../../../Style";
-// Assets
-import {ArtistData} from "../../../../Data/artistData";
 
-const ArtistContent = () => {
-
+const ArtistContent = ({mainArtistsData}) => {
     return (
         <ArtistWrap>
-            {ArtistData.map((el) => (
+            {mainArtistsData.map((el) => (
                 <ArtistBox>
-                    <ArtistImage src={el.ima}/>
+                    <ArtistImage src={`${process.env.REACT_APP_BACKEND_URL}${el.ima[0].url}`}/>
                     <MediumHeading>
                         {el.heading}
                     </MediumHeading>

@@ -6,39 +6,24 @@ import DivBtn from "../../../UI/DivBtn";
 import {GuestBox, GuestWrap, GuestImage, GuestTextBox} from "./style"
 import {ArtistButtonWrapper} from "../../Artist/style";
 import {OptionsLink} from "../../../../Style";
-// Assets
-import {GuestData} from '../../../../Data/guestsData'
 
-const GuestsContent = () => {
-
+const GuestsContent = ({guestPageData}) => {
     return (
         <GuestWrap>
-            {GuestData.map((el) => (
+            {guestPageData.map((el) => (
                 <GuestBox>
-                    <GuestImage src={el.ima}/>
+                    <GuestImage src={`${process.env.REACT_APP_BACKEND_URL}${el.guestImg[0].url}`}/>
                     <GuestTextBox>
-                        {/*<MediumHeading>*/}
-                        {/*    {el.heading}*/}
-                        {/*</MediumHeading>*/}
                         <ArtistButtonWrapper>
                             <DivBtn>
-                                <Link to={el.btn_link}>
+                                <Link to='/guests'>
                                     <OptionsLink>
-                                        {el.btn_text}
+                                        {el.guestName}
                                     </OptionsLink>
                                 </Link>
                             </DivBtn>
                         </ArtistButtonWrapper>
                     </GuestTextBox>
-                    {/*<Paragraph>*/}
-                    {/*    {el.paragraph_one}*/}
-                    {/*</Paragraph>*/}
-                    {/*<Paragraph>*/}
-                    {/*    {el.paragraph_two}*/}
-                    {/*</Paragraph>*/}
-                    {/*<Paragraph>*/}
-                    {/*    {el.paragraph_three}*/}
-                    {/*</Paragraph>*/}
                 </GuestBox>
             ))}
         </GuestWrap>

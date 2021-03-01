@@ -4,6 +4,8 @@ import './index.css';
 import ScrollToTop from "./Handler/ScrollToTop";
 import * as serviceWorker from './serviceWorker';
 import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
+import { ApolloProvider } from '@apollo/client';
+import client from "./utils/apolloClient";
 
 import App from './Views/App';
 import Artist from './Views/Pages/Artist'
@@ -20,23 +22,25 @@ import NotFound from './Views/Pages/NotFound'
 
 const routing = (
     <BrowserRouter>
-        <ScrollToTop>
-            <Switch>
-                <Route exact path='/' component={App} />
-                <Route exact path='/artist' component={Artist} />
-                <Route exact path='/anna' component={AnnaPage} />
-                <Route exact path='/myrra' component={MyrraPage} />
-                <Route exact path='/eerie' component={PolaPage} />
-                <Route exact path='/guests' component={Guests} />
-                <Route exact path='/join' component={Join} />
-                <Route exact path='/booking' component={Booking} />
-                <Route exact path='/faq' component={Faq} />
-                <Route exact path='/covid-19' component={Covid} />
-                {/*<Route exact path='/shop' component={Shop} />*/}
-                <Route path="/404" component={NotFound} />
-                <Redirect to="/404" />
-            </Switch>
-        </ScrollToTop>
+        <ApolloProvider client={client}>
+            <ScrollToTop>
+                <Switch>
+                    <Route exact path='/' component={App} />
+                    <Route exact path='/artist' component={Artist} />
+                    <Route exact path='/anna' component={AnnaPage} />
+                    <Route exact path='/myrra' component={MyrraPage} />
+                    <Route exact path='/eerie' component={PolaPage} />
+                    <Route exact path='/guests' component={Guests} />
+                    <Route exact path='/join' component={Join} />
+                    <Route exact path='/booking' component={Booking} />
+                    <Route exact path='/faq' component={Faq} />
+                    <Route exact path='/covid-19' component={Covid} />
+                    {/*<Route exact path='/shop' component={Shop} />*/}
+                    <Route path="/404" component={NotFound} />
+                    <Redirect to="/404" />
+                </Switch>
+            </ScrollToTop>
+        </ApolloProvider>
     </BrowserRouter>
 );
 
