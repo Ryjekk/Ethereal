@@ -11,7 +11,7 @@ const ArtistContent = ({mainArtistsData}) => {
         <ArtistWrap>
             {mainArtistsData.map((el) => (
                 <ArtistBox>
-                    <ArtistImage src={`${process.env.REACT_APP_BACKEND_URL}${el.ima[0].url}`}/>
+                    <ArtistImage src={`${el.ima[0].url}`}/>
                     <MediumHeading>
                         {el.heading}
                     </MediumHeading>

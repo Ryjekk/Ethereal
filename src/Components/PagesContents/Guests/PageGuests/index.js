@@ -18,7 +18,7 @@ const PageGuests = () => {
             <GuestText/>
             {guestPageData.map(el => (
                 <GuestBio
-                    guestImg={`${process.env.REACT_APP_BACKEND_URL}${el.guestImg[0].url}`}
+                    guestImg={`${el.guestImg[0].url}`}
                     guestName={el.guestName}
                     guestDates={el.guestDates}
                     guestParagraph1={el.guestParagraph1}

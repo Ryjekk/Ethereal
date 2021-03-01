@@ -24,7 +24,7 @@ function ImgSlide(props) {
                         return {
                             width: el.img_gallery.width,
                             height: el.img_gallery.height,
-                            src: `${process.env.REACT_APP_BACKEND_URL}${pic.url}`
+                            src: `${pic.url}`
                         }
                     })
                      return arrOfPics.push(transformedData)
