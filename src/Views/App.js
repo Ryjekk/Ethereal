@@ -15,6 +15,7 @@ import { useQuery } from "@apollo/react-hooks";
 import FAQ_QUERY from "../queries/faqQuery";
 import TEAM_QUERY from "../queries/teamQuery";
 import GUEST_QUERY from "../queries/guestQuery";
+import Loader from "../Components/Contents/Loader";
 
 const App = () => {
 
@@ -23,7 +24,7 @@ const App = () => {
     const {data: dataTeam, loading: loadingTeam, error: errorTeam} = useQuery(TEAM_QUERY);
 
 
-    if (loading || loadingGuest || loadingTeam) return 'Loading...';
+    if (loading || loadingGuest || loadingTeam) return <Loader/>;
     if (error || errorGuest || errorTeam) return `Error! ${error.message}`;
     const {faqLeftData} = data
     const {faqRightData} = data
