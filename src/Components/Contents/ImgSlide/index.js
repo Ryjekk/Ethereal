@@ -32,7 +32,6 @@ function ImgSlide(props) {
             }
             makeObjectArr(data.mainArtistsData)
             makeObjectArr(data.guestPageData)
-            console.log(arrOfPics)
         }
 
 

@@ -5,17 +5,8 @@ import DivBtn from "../../../UI/DivBtn";
 // Style
 import {ArtistBox, ArtistImage, ArtistWrap, ArtistButtonWrapper} from "../style";
 import {Paragraph, MediumHeading, OptionsLink} from "../../../../Style";
-// GQL
-import { useQuery } from "@apollo/react-hooks";
-import TEAM_QUERY from "../../../../queries/teamQuery";
 
-const ArtistContent = () => {
-    const {data, loading, error} = useQuery(TEAM_QUERY);
-
-    if (loading) return 'Loading...';
-    if (error) return `Error! ${error.message}`;
-    const {mainArtistsData} = data;
-    
+const ArtistContent = ({mainArtistsData}) => {
     return (
         <ArtistWrap>
             {mainArtistsData.map((el) => (

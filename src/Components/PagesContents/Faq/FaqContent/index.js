@@ -2,21 +2,11 @@ import React from "react";
 // Style
 import {ColWrapper, FaqWrapper, LeftColumn, RightColumn} from "./style";
 import {MediumHeading, Paragraph} from "../../../../Style";
-// GQL
-import { useQuery } from "@apollo/react-hooks";
-import FAQ_QUERY from "../../../../queries/faqQuery";
 
-const FaqContent = () => {
-    const {data, loading, error} = useQuery(FAQ_QUERY);
-
-    if (loading) return 'Loading...';
-    if (error) return `Error! ${error.message}`;
-    const {faqLeftData} = data
-    const {faqRightData} = data
-
+const FaqContent = ({faqRightData, faqLeftData}) => {
     return (
         <FaqWrapper>
-            {data ? <>
+            {faqRightData || faqLeftData ? <>
                 <LeftColumn className="left">
                     {faqLeftData.map(({ question, answer }, index) => (
                         <ColWrapper key={`${index}`}>
