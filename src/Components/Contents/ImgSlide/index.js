@@ -15,7 +15,6 @@ function ImgSlide(props) {
     const [photoGallery, setGallery] = useState(null);
     const [rowHeight, setRowHeight] = useState(null)
 
-    //todo channge this string
     useEffect(() => {
         const arrOfPics = []
         if (data) {
@@ -25,7 +24,7 @@ function ImgSlide(props) {
                         return {
                             width: el.img_gallery.width,
                             height: el.img_gallery.height,
-                            src: `http://localhost:1337${pic.url}`
+                            src: `${process.env.REACT_APP_BACKEND_URL}${pic.url}`
                         }
                     })
                      return arrOfPics.push(transformedData)

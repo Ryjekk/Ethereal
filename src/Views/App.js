@@ -9,16 +9,12 @@ import FaqContent from '../Components/PagesContents/Faq/FaqContent'
 import MapsGoogle from "../Components/Contents/MapsGoogle";
 import FooterContent from '../Components/Contents/FooterContent'
 import DivideComponent from "../Components/Contents/DivideComponent";
-// import ComingSoon from "../Components/PagesContents/ComingSoon";
 import { Container, Inner } from '../Style';
 
 class App extends React.Component {
-
     render() {
         return (
             <Container>
-                {/*<ComingSoon/>*/}
-                {/* TODO uncoment */}
                 <NavBar/>
                 <Parallax pages={2} className="ClearSearchbar">
                     <ParallaxLayer speed={0.5}>
@@ -31,9 +27,7 @@ class App extends React.Component {
                     <ArtistContent/>
                 </Inner>
                 <DivideComponent text={"OUR GUESTS"} paragraph={"Meet Our Guests. (Guests Spots are time-framed events)"}/>
-                {/*<Inner>*/}
-                    <GuestsContent/>
-                {/*</Inner>*/}
+                <GuestsContent/>
                 <DivideComponent text={"FAQ"} paragraph={"Frequently Asked Questions"}/>
                 <Inner>
                     <FaqContent />

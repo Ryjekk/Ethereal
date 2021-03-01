@@ -8,6 +8,7 @@ import FAQ_QUERY from "../../../../queries/faqQuery";
 
 const FaqContent = () => {
     const {data, loading, error} = useQuery(FAQ_QUERY);
+
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
     const {faqLeftData} = data

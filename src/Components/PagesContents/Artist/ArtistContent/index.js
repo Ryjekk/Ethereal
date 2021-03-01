@@ -11,16 +11,16 @@ import TEAM_QUERY from "../../../../queries/teamQuery";
 
 const ArtistContent = () => {
     const {data, loading, error} = useQuery(TEAM_QUERY);
+
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
     const {mainArtistsData} = data;
-    console.log(data)
+    
     return (
         <ArtistWrap>
-            {/*TODO link remove*/}
             {mainArtistsData.map((el) => (
                 <ArtistBox>
-                    <ArtistImage src={`http://localhost:1337${el.ima[0].url}`}/>
+                    <ArtistImage src={`${process.env.REACT_APP_BACKEND_URL}${el.ima[0].url}`}/>
                     <MediumHeading>
                         {el.heading}
                     </MediumHeading>

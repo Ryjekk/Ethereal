@@ -12,6 +12,7 @@ import GUEST_QUERY from "../../../../queries/guestQuery";
 
 const GuestsContent = () => {
     const {data, loading, error} = useQuery(GUEST_QUERY);
+
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
     const {guestPageData} = data
@@ -20,12 +21,8 @@ const GuestsContent = () => {
         <GuestWrap>
             {guestPageData.map((el) => (
                 <GuestBox>
-                    {/*todo channge this string*/}
-                    <GuestImage src={`http://localhost:1337${el.guestImg[0].url}`}/>
+                    <GuestImage src={`${process.env.REACT_APP_BACKEND_URL}${el.guestImg[0].url}`}/>
                     <GuestTextBox>
-                        {/*<MediumHeading>*/}
-                        {/*    {el.heading}*/}
-                        {/*</MediumHeading>*/}
                         <ArtistButtonWrapper>
                             <DivBtn>
                                 <Link to='/guests'>
@@ -36,15 +33,6 @@ const GuestsContent = () => {
                             </DivBtn>
                         </ArtistButtonWrapper>
                     </GuestTextBox>
-                    {/*<Paragraph>*/}
-                    {/*    {el.paragraph_one}*/}
-                    {/*</Paragraph>*/}
-                    {/*<Paragraph>*/}
-                    {/*    {el.paragraph_two}*/}
-                    {/*</Paragraph>*/}
-                    {/*<Paragraph>*/}
-                    {/*    {el.paragraph_three}*/}
-                    {/*</Paragraph>*/}
                 </GuestBox>
             ))}
         </GuestWrap>
