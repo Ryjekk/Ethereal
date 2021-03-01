@@ -12,7 +12,7 @@ const GuestsContent = ({guestPageData}) => {
         <GuestWrap>
             {guestPageData.map((el) => (
                 <GuestBox>
-                    <GuestImage src={`${process.env.REACT_APP_BACKEND_URL}${el.guestImg[0].url}`}/>
+                    <GuestImage src={`${el.guestImg[0].url}`}/>
                     <GuestTextBox>
                         <ArtistButtonWrapper>
                             <DivBtn>
